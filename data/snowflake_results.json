@@ -1,0 +1,606 @@
+{
+  "headline": [
+    {
+      "GROUP_NAME": "Everyone else",
+      "N": 41747,
+      "MEDIAN_DAYS": "8.000",
+      "MEAN_DAYS": "26.2",
+      "P90_DAYS": "63.000"
+    },
+    {
+      "GROUP_NAME": "Bully-type",
+      "N": 9657,
+      "MEDIAN_DAYS": "28.000",
+      "MEAN_DAYS": "65.9",
+      "P90_DAYS": "172.399"
+    }
+  ],
+  "by_color": [
+    {
+      "COLOR": "Blue",
+      "N": 2064,
+      "MEDIAN_DAYS": "22.000",
+      "PCT_BULLY": 81
+    },
+    {
+      "COLOR": "Brown Brindle",
+      "N": 2520,
+      "MEDIAN_DAYS": "16.000",
+      "PCT_BULLY": 43
+    },
+    {
+      "COLOR": "Fawn",
+      "N": 617,
+      "MEDIAN_DAYS": "16.000",
+      "PCT_BULLY": 60
+    },
+    {
+      "COLOR": "Brown",
+      "N": 7085,
+      "MEDIAN_DAYS": "10.000",
+      "PCT_BULLY": 16
+    },
+    {
+      "COLOR": "Chocolate",
+      "N": 1163,
+      "MEDIAN_DAYS": "10.000",
+      "PCT_BULLY": 23
+    },
+    {
+      "COLOR": "White",
+      "N": 8796,
+      "MEDIAN_DAYS": "10.000",
+      "PCT_BULLY": 21
+    },
+    {
+      "COLOR": "Red",
+      "N": 2006,
+      "MEDIAN_DAYS": "9.000",
+      "PCT_BULLY": 13
+    },
+    {
+      "COLOR": "Black",
+      "N": 13919,
+      "MEDIAN_DAYS": "9.000",
+      "PCT_BULLY": 12
+    },
+    {
+      "COLOR": "Yellow",
+      "N": 448,
+      "MEDIAN_DAYS": "8.000",
+      "PCT_BULLY": 2
+    },
+    {
+      "COLOR": "Sable",
+      "N": 671,
+      "MEDIAN_DAYS": "8.000",
+      "PCT_BULLY": 2
+    },
+    {
+      "COLOR": "Tan",
+      "N": 6236,
+      "MEDIAN_DAYS": "8.000",
+      "PCT_BULLY": 14
+    },
+    {
+      "COLOR": "Tricolor",
+      "N": 2074,
+      "MEDIAN_DAYS": "7.000",
+      "PCT_BULLY": 5
+    },
+    {
+      "COLOR": "Buff",
+      "N": 466,
+      "MEDIAN_DAYS": "7.000",
+      "PCT_BULLY": 6
+    },
+    {
+      "COLOR": "Cream",
+      "N": 770,
+      "MEDIAN_DAYS": "7.000",
+      "PCT_BULLY": 2
+    },
+    {
+      "COLOR": "Gray",
+      "N": 410,
+      "MEDIAN_DAYS": "6.000",
+      "PCT_BULLY": 15
+    }
+  ],
+  "by_color_controlled": [
+    {
+      "COLOR": "Brown",
+      "N_BULLY": 1122,
+      "BULLY_MEDIAN": "32.500",
+      "N_OTHER": 5963,
+      "OTHER_MEDIAN": "9.000"
+    },
+    {
+      "COLOR": "Black",
+      "N_BULLY": 1608,
+      "BULLY_MEDIAN": "31.000",
+      "N_OTHER": 12311,
+      "OTHER_MEDIAN": "8.000"
+    },
+    {
+      "COLOR": "Tan",
+      "N_BULLY": 844,
+      "BULLY_MEDIAN": "30.000",
+      "N_OTHER": 5392,
+      "OTHER_MEDIAN": "7.000"
+    },
+    {
+      "COLOR": "White",
+      "N_BULLY": 1880,
+      "BULLY_MEDIAN": "29.000",
+      "N_OTHER": 6916,
+      "OTHER_MEDIAN": "8.000"
+    },
+    {
+      "COLOR": "Red",
+      "N_BULLY": 253,
+      "BULLY_MEDIAN": "27.000",
+      "N_OTHER": 1753,
+      "OTHER_MEDIAN": "8.000"
+    },
+    {
+      "COLOR": "Chocolate",
+      "N_BULLY": 272,
+      "BULLY_MEDIAN": "26.500",
+      "N_OTHER": 891,
+      "OTHER_MEDIAN": "8.000"
+    },
+    {
+      "COLOR": "Blue",
+      "N_BULLY": 1662,
+      "BULLY_MEDIAN": "26.000",
+      "N_OTHER": 402,
+      "OTHER_MEDIAN": "11.000"
+    },
+    {
+      "COLOR": "Brown Brindle",
+      "N_BULLY": 1082,
+      "BULLY_MEDIAN": "25.000",
+      "N_OTHER": 1438,
+      "OTHER_MEDIAN": "11.000"
+    }
+  ],
+  "spread": [
+    {
+      "COLOR_SPREAD_WITHIN_BULLY": "7.500",
+      "COLOR_SPREAD_WITHIN_OTHER": "4.000",
+      "WORST_CASE_GAP_BETWEEN_GROUPS": "14.000"
+    }
+  ],
+  "by_breed": [
+    {
+      "BREED": "American Pit Bull Terrier",
+      "BULLY": true,
+      "N": 877,
+      "MEDIAN_DAYS": "48.000"
+    },
+    {
+      "BREED": "American Bulldog",
+      "BULLY": true,
+      "N": 421,
+      "MEDIAN_DAYS": "28.000"
+    },
+    {
+      "BREED": "Pit Bull",
+      "BULLY": true,
+      "N": 6291,
+      "MEDIAN_DAYS": "28.000"
+    },
+    {
+      "BREED": "Staffordshire",
+      "BULLY": true,
+      "N": 536,
+      "MEDIAN_DAYS": "23.000"
+    },
+    {
+      "BREED": "Black Mouth Cur",
+      "BULLY": false,
+      "N": 474,
+      "MEDIAN_DAYS": "13.000"
+    },
+    {
+      "BREED": "Rottweiler",
+      "BULLY": false,
+      "N": 404,
+      "MEDIAN_DAYS": "13.000"
+    },
+    {
+      "BREED": "Catahoula",
+      "BULLY": false,
+      "N": 587,
+      "MEDIAN_DAYS": "12.000"
+    },
+    {
+      "BREED": "Boxer",
+      "BULLY": false,
+      "N": 763,
+      "MEDIAN_DAYS": "12.000"
+    },
+    {
+      "BREED": "German Shepherd",
+      "BULLY": false,
+      "N": 3697,
+      "MEDIAN_DAYS": "11.000"
+    },
+    {
+      "BREED": "Pointer",
+      "BULLY": false,
+      "N": 507,
+      "MEDIAN_DAYS": "11.000"
+    },
+    {
+      "BREED": "Labrador Retriever",
+      "BULLY": false,
+      "N": 6622,
+      "MEDIAN_DAYS": "11.000"
+    },
+    {
+      "BREED": "Australian Cattle Dog",
+      "BULLY": false,
+      "N": 1666,
+      "MEDIAN_DAYS": "11.000"
+    },
+    {
+      "BREED": "Great Pyrenees",
+      "BULLY": false,
+      "N": 710,
+      "MEDIAN_DAYS": "9.000"
+    },
+    {
+      "BREED": "Australian Shepherd",
+      "BULLY": false,
+      "N": 565,
+      "MEDIAN_DAYS": "9.000"
+    },
+    {
+      "BREED": "Border Collie",
+      "BULLY": false,
+      "N": 811,
+      "MEDIAN_DAYS": "8.000"
+    },
+    {
+      "BREED": "Siberian Husky",
+      "BULLY": false,
+      "N": 1148,
+      "MEDIAN_DAYS": "8.000"
+    },
+    {
+      "BREED": "Chihuahua Shorthair",
+      "BULLY": false,
+      "N": 4307,
+      "MEDIAN_DAYS": "6.000"
+    },
+    {
+      "BREED": "Jack Russell Terrier",
+      "BULLY": false,
+      "N": 477,
+      "MEDIAN_DAYS": "6.000"
+    },
+    {
+      "BREED": "Anatol Shepherd",
+      "BULLY": false,
+      "N": 429,
+      "MEDIAN_DAYS": "6.000"
+    },
+    {
+      "BREED": "Rat Terrier",
+      "BULLY": false,
+      "N": 434,
+      "MEDIAN_DAYS": "6.000"
+    },
+    {
+      "BREED": "Miniature Poodle",
+      "BULLY": false,
+      "N": 434,
+      "MEDIAN_DAYS": "5.000"
+    },
+    {
+      "BREED": "Cairn Terrier",
+      "BULLY": false,
+      "N": 447,
+      "MEDIAN_DAYS": "5.000"
+    },
+    {
+      "BREED": "Dachshund",
+      "BULLY": false,
+      "N": 728,
+      "MEDIAN_DAYS": "5.000"
+    }
+  ],
+  "waiting_ranked": [
+    {
+      "ANIMAL_ID": "7950",
+      "NAME": "Pancho",
+      "BREED": "Cairn Terrier",
+      "COLOR": "White",
+      "INTAKE_DATE": "2025-05-23",
+      "DAYS_WAITING": 448,
+      "BULLY": false,
+      "COHORT_MEDIAN": "8.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "99.7"
+    },
+    {
+      "ANIMAL_ID": "8438",
+      "NAME": "Fritz",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "Brown",
+      "INTAKE_DATE": "2025-05-28",
+      "DAYS_WAITING": 443,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "98.5"
+    },
+    {
+      "ANIMAL_ID": "8711",
+      "NAME": "Emmitt",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "Brown Brindle",
+      "INTAKE_DATE": "2025-06-01",
+      "DAYS_WAITING": 439,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "98.4"
+    },
+    {
+      "ANIMAL_ID": "9035",
+      "NAME": "Walter",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "Black",
+      "INTAKE_DATE": "2025-06-05",
+      "DAYS_WAITING": 435,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "98.4"
+    },
+    {
+      "ANIMAL_ID": "9472",
+      "NAME": "Whitley",
+      "BREED": "American Staffordshire Terrier",
+      "COLOR": "Black",
+      "INTAKE_DATE": "2025-06-10",
+      "DAYS_WAITING": 430,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "98.4"
+    },
+    {
+      "ANIMAL_ID": "9712",
+      "NAME": "Hank",
+      "BREED": "American Staffordshire Terrier",
+      "COLOR": "Fawn",
+      "INTAKE_DATE": "2025-06-12",
+      "DAYS_WAITING": 428,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "98.4"
+    },
+    {
+      "ANIMAL_ID": "9673",
+      "NAME": "Paxton",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "Tan",
+      "INTAKE_DATE": "2025-06-12",
+      "DAYS_WAITING": 428,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "98.4"
+    },
+    {
+      "ANIMAL_ID": "11056",
+      "NAME": "Marshall",
+      "BREED": "Boxer",
+      "COLOR": "Black Brindle",
+      "INTAKE_DATE": "2025-06-27",
+      "DAYS_WAITING": 413,
+      "BULLY": false,
+      "COHORT_MEDIAN": "8.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "99.7"
+    },
+    {
+      "ANIMAL_ID": "11399",
+      "NAME": null,
+      "BREED": "German Shepherd",
+      "COLOR": "Brown",
+      "INTAKE_DATE": "2025-07-02",
+      "DAYS_WAITING": 408,
+      "BULLY": false,
+      "COHORT_MEDIAN": "8.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "99.7"
+    },
+    {
+      "ANIMAL_ID": "11400",
+      "NAME": "Mariah",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "Brown",
+      "INTAKE_DATE": "2025-07-02",
+      "DAYS_WAITING": 408,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "98.2"
+    },
+    {
+      "ANIMAL_ID": "11454",
+      "NAME": "Broccoli",
+      "BREED": "German Shepherd",
+      "COLOR": "Black",
+      "INTAKE_DATE": "2025-07-03",
+      "DAYS_WAITING": 407,
+      "BULLY": false,
+      "COHORT_MEDIAN": "8.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "99.7"
+    },
+    {
+      "ANIMAL_ID": "11468",
+      "NAME": "Xena",
+      "BREED": "Boxer",
+      "COLOR": "Black",
+      "INTAKE_DATE": "2025-07-03",
+      "DAYS_WAITING": 407,
+      "BULLY": false,
+      "COHORT_MEDIAN": "8.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "99.7"
+    },
+    {
+      "ANIMAL_ID": "11791",
+      "NAME": "Beef",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "Black",
+      "INTAKE_DATE": "2025-07-10",
+      "DAYS_WAITING": 400,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "98.1"
+    },
+    {
+      "ANIMAL_ID": "8211",
+      "NAME": "Sweet Pea",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "Blue",
+      "INTAKE_DATE": "2025-07-11",
+      "DAYS_WAITING": 399,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "98.1"
+    },
+    {
+      "ANIMAL_ID": "12430",
+      "NAME": "Mae",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "Brown Brindle",
+      "INTAKE_DATE": "2025-07-21",
+      "DAYS_WAITING": 389,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "97.9"
+    },
+    {
+      "ANIMAL_ID": "12660",
+      "NAME": "Draco",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "White",
+      "INTAKE_DATE": "2025-07-23",
+      "DAYS_WAITING": 387,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "97.9"
+    },
+    {
+      "ANIMAL_ID": "12883",
+      "NAME": "Rocko",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "Brindle",
+      "INTAKE_DATE": "2025-07-28",
+      "DAYS_WAITING": 382,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "97.8"
+    },
+    {
+      "ANIMAL_ID": "13097",
+      "NAME": "Cornelia",
+      "BREED": "Siberian Husky",
+      "COLOR": "Black",
+      "INTAKE_DATE": "2025-08-01",
+      "DAYS_WAITING": 378,
+      "BULLY": false,
+      "COHORT_MEDIAN": "8.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "99.5"
+    },
+    {
+      "ANIMAL_ID": "14243",
+      "NAME": "Brooklyn",
+      "BREED": "German Shepherd",
+      "COLOR": "Brown",
+      "INTAKE_DATE": "2025-08-24",
+      "DAYS_WAITING": 355,
+      "BULLY": false,
+      "COHORT_MEDIAN": "8.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "99.5"
+    },
+    {
+      "ANIMAL_ID": "13529",
+      "NAME": "Tiger",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "Brown Brindle",
+      "INTAKE_DATE": "2025-08-27",
+      "DAYS_WAITING": 352,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "97.3"
+    },
+    {
+      "ANIMAL_ID": "13892",
+      "NAME": "Bear",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "Brown",
+      "INTAKE_DATE": "2025-09-03",
+      "DAYS_WAITING": 345,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "97.2"
+    },
+    {
+      "ANIMAL_ID": "13891",
+      "NAME": "Teddy",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "Black Brindle",
+      "INTAKE_DATE": "2025-09-03",
+      "DAYS_WAITING": 345,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "97.2"
+    },
+    {
+      "ANIMAL_ID": "15198",
+      "NAME": "Ginger",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "Tan",
+      "INTAKE_DATE": "2025-09-09",
+      "DAYS_WAITING": 339,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "97.1"
+    },
+    {
+      "ANIMAL_ID": "15212",
+      "NAME": "Loki",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "White",
+      "INTAKE_DATE": "2025-09-10",
+      "DAYS_WAITING": 338,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "97.0"
+    },
+    {
+      "ANIMAL_ID": "15268",
+      "NAME": "Abner",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "Black Brindle",
+      "INTAKE_DATE": "2025-09-11",
+      "DAYS_WAITING": 337,
+      "BULLY": true,
+      "COHORT_MEDIAN": "28.000",
+      "PCT_OF_COHORT_HOME_BY_NOW": "97.0"
+    }
+  ],
+  "waiting_groups": [
+    {
+      "GROUP_NAME": "Everyone else",
+      "DOGS_WAITING": 298,
+      "MEDIAN_DAYS_SO_FAR": "45.000",
+      "OVER_A_YEAR": 6
+    },
+    {
+      "GROUP_NAME": "Bully-type",
+      "DOGS_WAITING": 218,
+      "MEDIAN_DAYS_SO_FAR": "91.000",
+      "OVER_A_YEAR": 12
+    }
+  ]
+}

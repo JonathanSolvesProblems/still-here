@@ -144,11 +144,23 @@ def main():
     spread_other = max(c["other"]["median"] for c in controlled) - min(
         c["other"]["median"] for c in controlled
     )
+    # The cleanest statement of the finding is not a single spread number, it is
+    # that the two bands never touch: the fastest bully-type coat is still
+    # slower than the slowest coat of every other breed.
+    bully_band = (min(c["bully"]["median"] for c in controlled),
+                  max(c["bully"]["median"] for c in controlled))
+    other_band = (min(c["other"]["median"] for c in controlled),
+                  max(c["other"]["median"] for c in controlled))
     stats["spread"] = {
         "raw_color_days": spread_raw,
         "within_bully_days": spread_bully,
         "within_other_days": spread_other,
+        "within_worst_days": max(spread_bully, spread_other),
         "between_groups_days": st.median(bully_days) - st.median(other_days),
+        "bully_band": list(bully_band),
+        "other_band": list(other_band),
+        "bands_overlap": bully_band[0] <= other_band[1],
+        "worst_case_gap_days": bully_band[0] - other_band[1],
     }
 
     # ---- breeds --------------------------------------------------------------

@@ -326,7 +326,18 @@
     "raw_color_days": 16.0,
     "within_bully_days": 7.5,
     "within_other_days": 4.0,
-    "between_groups_days": 20
+    "within_worst_days": 7.5,
+    "between_groups_days": 20,
+    "bully_band": [
+      25.0,
+      32.5
+    ],
+    "other_band": [
+      7.0,
+      11.0
+    ],
+    "bands_overlap": false,
+    "worst_case_gap_days": 14.0
   },
   "by_breed": [
     {

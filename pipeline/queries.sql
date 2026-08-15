@@ -60,9 +60,15 @@ $$
   OR LOWER(BREED) LIKE '%american bulldog%'
 $$;
 
-CREATE OR REPLACE VIEW ADOPTIONS AS
+-- ADOPTIONS is a table, not a view, on purpose. As a view over DOG_STAYS the
+-- BULLY column is the expression IS_BULLY(BREED), and Snowflake inlines that
+-- back into any downstream GROUP BY, which then fails with "BREED is neither an
+-- aggregate nor in the group by clause". Materialising it makes BULLY a real
+-- column, and at 51k rows the copy is free.
+CREATE OR REPLACE TABLE ADOPTIONS AS
 SELECT
-  *,
+  ERA, ANIMAL_ID, NAME, BREED, COLOR, INTAKE_DATE, OUTCOME_DATE,
+  DAYS_IN_SHELTER, OUTCOME_STATUS, INTAKE_TYPE, INTAKE_CONDITION,
   IS_BULLY(BREED) AS BULLY
 FROM DOG_STAYS
 WHERE ADOPTED = 1

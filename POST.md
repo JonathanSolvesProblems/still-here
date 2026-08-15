@@ -65,9 +65,9 @@ So I split every color by whether the dog was a bully-type breed, meaning pit bu
 | Blue | 26 | 11 |
 | Brown Brindle | 25 | 11 |
 
-The two columns do not overlap anywhere. Every bully-type cell is between 25 and 32.5 days. Every other cell is between 7 and 11.
+The two columns do not overlap anywhere. Every bully-type cell is between 25 and 32.5 days. Every other cell is between 7 and 11. The *fastest* bully-type coat is still 14 days slower than the *slowest* coat outside the group.
 
-**Hold the breed still and coat color moves the wait by about 4 days. Change the breed and it moves by 20.**
+**Within a breed group, coat color moves the median wait by at most 7.5 days. Changing the breed group moves it by 20.**
 
 Black only looked fast in the first table because black dogs are the *least* likely to be bully-type: 12% of them, against 81% of the blue ones. The color signal was a breed signal the whole time. A black dog that is not a bully breed waits 8 days. A black pit bull waits 31.
 

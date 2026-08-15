@@ -113,21 +113,53 @@ def main():
     body = open(sql_path, encoding="utf-8").read()
     # Everything from the IS_BULLY definition onward; the DDL above already ran.
     body = body[body.index("CREATE OR REPLACE FUNCTION IS_BULLY"):]
+
+    # Split on semicolons that are outside a $$ ... $$ function body, then strip
+    # the leading comment block and blank lines off each statement. Without that
+    # strip a statement begins with "-- 2. The headline..." and any test for
+    # CREATE silently skips it, which is how six of eight views went missing.
     stmts, buf, in_dollar = [], [], False
     for line in body.splitlines():
-        if line.strip().startswith("--") and not buf:
-            continue
-        if "$$" in line:
-            in_dollar = not in_dollar if line.count("$$") == 1 else in_dollar
+        if line.count("$$") % 2 == 1:
+            in_dollar = not in_dollar
         buf.append(line)
         if line.rstrip().endswith(";") and not in_dollar:
-            stmts.append("\n".join(buf).strip())
+            stmts.append("\n".join(buf))
             buf = []
+    if buf:
+        stmts.append("\n".join(buf))
+
+    def strip_lead(s):
+        lines = s.splitlines()
+        while lines and (not lines[0].strip() or lines[0].lstrip().startswith("--")):
+            lines.pop(0)
+        return "\n".join(lines).strip()
+
+    wanted = [strip_lead(s) for s in stmts]
+    wanted = [s for s in wanted if s.upper().startswith("CREATE")]
+
+    # ADOPTIONS changed from a view to a table between runs, and Snowflake
+    # refuses to CREATE OR REPLACE across object kinds. Drop both spellings of
+    # anything we are about to recreate so a re-run is always clean.
+    for s in wanted:
+        parts = s.split()
+        kind = parts[3].upper() if parts[1].upper() == "OR" else parts[1].upper()
+        name = parts[4] if parts[1].upper() == "OR" else parts[2]
+        name = name.split("(")[0]
+        if kind in ("TABLE", "VIEW"):
+            for other in ("VIEW", "TABLE"):
+                try:
+                    run(f"DROP {other} IF EXISTS {name}", quiet=True)
+                except Exception:
+                    pass
+
     created = 0
-    for s in stmts:
-        if s.upper().startswith("CREATE"):
-            run(s.rstrip(";"), quiet=True)
-            created += 1
+    for s in wanted:
+        run(s.rstrip(";"), quiet=True)
+        print(f"    {' '.join(s.split()[:5])}")
+        created += 1
+    if created != len(wanted) or created < 8:
+        sys.exit(f"only {created} of {len(wanted)} objects created. Aborting before results.")
     print(f"    {created} functions/views created")
 
     print("\n-- results --")
@@ -148,7 +180,11 @@ def main():
               f"within other {r['COLOR_SPREAD_WITHIN_OTHER']}d, "
               f"gap between groups {r['WORST_CASE_GAP_BETWEEN_GROUPS']}d")
     grab("by_breed", "SELECT * FROM BY_BREED")
-    top = grab("waiting_ranked", "SELECT * FROM WAITING_RANKED LIMIT 25")
+    # A view's ORDER BY is not guaranteed to survive into an outer query in
+    # Snowflake, so the ordering has to be restated here or this returns an
+    # arbitrary 25 dogs rather than the longest-waiting ones.
+    top = grab("waiting_ranked",
+               "SELECT * FROM WAITING_RANKED ORDER BY DAYS_WAITING DESC LIMIT 25")
     if top:
         t = top[0]
         print(f"    longest waiting: {t['NAME']} {t['DAYS_WAITING']}d, "

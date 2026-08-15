@@ -297,12 +297,14 @@ footer{padding:40px 0 60px;font-size:12px;color:var(--ink-3)}
     </div>
 
     <div class="callout">
-      <p>Hold the breed still and coat color moves the wait by
-        <span class="big" id="sp-in">—</span>.
-        Change the breed and it moves by <span class="big" id="sp-bt">—</span>.
-        Black only looked fast because black dogs are the least likely to be
-        pit bulls: <span class="big" id="pct-black">—</span> of them, against
-        <span class="big" id="pct-blue">—</span> of the blue ones.</p>
+      <p>Every bully-type coat lands between <span class="big" id="band-b">—</span>.
+        Every other coat lands between <span class="big" id="band-o">—</span>.
+        The two bands never touch: the fastest bully-type coat is still
+        <span class="big" id="gap">—</span> slower than the slowest coat outside
+        the group.</p>
+      <p style="margin-top:16px">Black only looked fast because black dogs are the
+        least likely to be pit bulls: <span class="big" id="pct-black">—</span> of
+        them, against <span class="big" id="pct-blue">—</span> of the blue ones.</p>
     </div>
 
     <div class="sec-head" style="margin-top:56px">
@@ -519,8 +521,10 @@ function renderCharts(){
   })));
 
   const sp = S.spread;
-  $('#sp-in').textContent = sp.within_other_days + ' days';
-  $('#sp-bt').textContent = sp.between_groups_days + ' days';
+  const band = b => `${b[0]} and ${b[1]} days`;
+  $('#band-b').textContent = band(sp.bully_band);
+  $('#band-o').textContent = band(sp.other_band);
+  $('#gap').textContent = sp.worst_case_gap_days + ' days';
   const black = S.by_color.find(c => c.color === 'Black');
   const blue  = S.by_color.find(c => c.color === 'Blue');
   $('#pct-black').textContent = (black ? black.pct_bully : 0) + '%';
