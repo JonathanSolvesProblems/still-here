@@ -13,7 +13,7 @@ so re-running produces byte-identical scripts and the demo is reproducible.
 
 Usage:  python pipeline/voices.py [count]
 Needs:  ELEVENLABS_API_KEY in .env
-Writes: audio/<animal_id>.mp3 and web/audio/manifest.json
+Writes: audio/<animal_id>.mp3 and audio/manifest.json
         data/scripts.json (the text, so the writeup can quote it verbatim)
 """
 
@@ -119,9 +119,9 @@ def script_for(d):
             f"I have been here {days} days.",
         ], d["animal_id"], "len")
 
-    # 5. the comparison, which is the only claim that comes from the analysis
-    group = "dogs like me" if d["bully"] else "dogs like me"
-    compare = (f"{pct} percent of {group} were already home by now. "
+    # 5. the comparison, the only claim that comes from the analysis rather
+    #    than straight off the record. "dogs like me" means same breed group.
+    compare = (f"{pct} percent of dogs like me were already home by now. "
                f"The usual wait is {int(d['cohort_median'])} days.")
 
     # 6. no plea, no sentiment the record cannot support
