@@ -1,0 +1,169 @@
+"""
+Draw the dogs nobody photographed.
+
+135 of the 515 have no picture anywhere public. Diagonal hatching said so
+honestly but told you nothing about the animal, and an AI-generated portrait of
+a real dog would be a lie about a real dog. So each of them gets a silhouette
+instead: unmistakably a drawing, never mistakable for a photograph, but built
+from that dog's own record.
+
+Head-and-shoulders, front on, because that is how the real photographs in the
+sheet are cropped. The shape comes from the breed group and the fill comes from
+the coat color the shelter wrote down, so a black pit bull and a white Great
+Pyrenees do not get the same mark.
+
+Writes: assets/silhouettes.svg  (one <symbol> per type, inlined by the page)
+        assets/icon.svg / favicon files for the browser tab
+"""
+
+import os
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ASSETS = os.path.join(ROOT, "assets")
+
+# Breed -> silhouette. Ordered: first substring match wins, so put the specific
+# spellings before the loose ones ("bulldog" before "bull").
+BREED_MAP = [
+    ("bully",     ("pit bull", "staffordshire", "american bulldog", "bulldog",
+                   "cane corso", "boxer", "bull terrier")),
+    ("guardian",  ("great pyrenees", "mastiff", "rottweiler", "akita", "newfoundland",
+                   "saint bernard", "dogo", "presa")),
+    ("shepherd",  ("german shepherd", "belgian", "dutch shepherd", "anatolian",
+                   "malinois", "shepherd")),
+    ("spitz",     ("husky", "malamute", "chow", "shiba", "pomeranian", "samoyed",
+                   "american eskimo")),
+    ("herder",    ("border collie", "collie", "australian cattle", "australian shepherd",
+                   "heeler", "corgi", "sheepdog")),
+    ("hound",     ("hound", "beagle", "basset", "dachshund", "coonhound", "plott", "cur")),
+    ("toy",       ("chihuahua", "maltese", "shih tzu", "yorkshire", "pomerian",
+                   "pug", "papillon", "poodle - miniature", "miniature poodle",
+                   "toy poodle", "havanese", "pekingese")),
+    ("terrier",   ("cairn", "jack russell", "rat terrier", "fox terrier", "schnauzer",
+                   "westie", "west highland", "terrier")),
+    ("retriever", ("labrador", "golden", "retriever", "pointer", "vizsla", "weimaraner",
+                   "setter", "spaniel")),
+]
+
+# Coat -> a muted ink for the silhouette. These are deliberately desaturated:
+# the mark should read as a drawing sitting in the frame, not as a paint chip.
+COAT = {
+    "black": "#3E4442", "white": "#C9C6BC", "brown": "#6B5340", "tan": "#9C8563",
+    "brown brindle": "#5E4936", "black brindle": "#42403A", "yellow brindle": "#8A7346",
+    "red": "#8A5638", "blue": "#5A6570", "grey": "#6E7378", "gray": "#6E7378",
+    "cream": "#B5A98C", "fawn": "#A08A66", "chocolate": "#5A4334", "sable": "#6E5A42",
+    "tricolor": "#5C5348", "tri color": "#5C5348", "buff": "#AE9A78",
+    "silver": "#8C9095", "gold": "#A98A55", "apricot": "#B08A64",
+}
+DEFAULT_COAT = "#6E7373"
+
+# Every silhouette is a front-on head and shoulders in a 100x100 box. They are
+# built from a skull, two ears and a muzzle so the breed reads at 40px.
+# Side profile, facing right. A front-on silhouette needs interior detail to
+# read as a dog and a flat fill cannot give it, which is why the first three
+# attempts came out as snowmen. In profile the muzzle length and the ear carry
+# the breed on their own.
+#
+# Shared anatomy, 100x100: skull dome around x=30..62, muzzle running right to
+# the nose, jaw returning under it, throat closing back to the neck at x=16.
+SHAPES = {
+    "bully": """
+      <path d="M16 66C11 50 18 32 36 27c9-3 18-1 24 5l4 5 22 3c6 1 8 7 4 11l-6 5
+               c-3 2-7 3-11 3l-11-1-3 6c-3 6-9 10-17 11l-14 1c-6 0-11-4-12-10z"/>
+      <path d="M40 28 28 12c-2-3 1-6 4-4l14 12z"/>""",
+    "shepherd": """
+      <path d="M16 66C11 50 17 32 35 27c8-2 16 0 22 5l5 6 26 8c6 2 6 8 1 11l-8 4
+               c-3 2-7 2-10 1l-12-4-4 6c-4 6-10 9-18 10l-13 1c-6 0-11-4-12-10z"/>
+      <path d="M40 29 27 6c-2-4 2-7 5-4l16 19z"/>""",
+    "spitz": """
+      <path d="M16 65C11 49 18 32 36 27c8-2 16 0 22 5l5 6 21 6c6 2 6 8 1 11l-6 3
+               c-3 2-7 2-10 1l-10-3-4 6c-4 6-10 9-18 10l-13 1c-6 0-11-4-12-10z"/>
+      <path d="M40 28 28 9c-2-4 2-6 5-4l15 15z"/>""",
+    "toy": """
+      <path d="M18 66C13 52 20 36 36 32c8-2 15 0 20 5l4 5 16 2c5 1 6 6 2 9l-5 4
+               c-3 2-6 2-9 2l-8-1-3 5c-3 5-9 8-16 9l-12 1c-5 0-9-3-10-8z"/>
+      <path d="M41 33 25 13c-2-3 1-6 4-4l17 15z"/>""",
+    "terrier": """
+      <path d="M18 65C13 51 20 34 36 30c8-2 15 0 20 5l4 5 18 3c5 1 6 6 2 9l-5 4
+               c-3 2-6 2-9 2l-9-1-3 5c-3 6-9 9-16 10l-12 1c-5 0-9-3-10-8z"/>
+      <path d="M41 31 30 15c-2-3 1-6 4-4l14 12z"/>""",
+    "retriever": """
+      <path d="M16 64C11 48 18 31 36 26c9-2 17 0 23 6l4 6 24 6c6 2 6 8 1 11l-7 4
+               c-3 2-7 2-10 1l-11-3-4 6c-4 6-10 9-18 10l-13 1c-6 0-11-4-12-10z"/>
+      <path d="M33 29c-9 1-14 12-13 27 1 11 6 17 11 15 5-2 7-11 6-22-1-9-2-16-4-20z"/>""",
+    "hound": """
+      <path d="M16 62C11 46 18 30 36 25c9-2 17 0 23 6l4 6 26 7c6 2 6 8 1 11l-7 4
+               c-3 2-7 2-10 1l-12-3-4 6c-4 6-10 9-18 10l-13 1c-6 0-11-4-12-10z"/>
+      <path d="M32 27c-11 2-17 17-15 37 2 14 9 21 15 18 5-3 7-15 5-31-1-11-3-19-5-24z"/>""",
+    "guardian": """
+      <path d="M14 68C9 50 17 30 37 25c10-3 20 0 26 7l5 7 22 4c6 1 8 7 3 11l-7 5
+               c-3 2-7 3-11 2l-10-2-4 7c-4 7-11 11-20 12l-14 1c-7 0-12-4-13-11z"/>
+      <path d="M34 28c-7 1-11 9-10 20 1 8 5 12 9 10 4-2 5-8 4-17-1-6-2-11-3-13z"/>""",
+    "herder": """
+      <path d="M16 64C11 48 18 31 36 26c9-2 17 0 23 6l4 6 23 6c6 2 6 8 1 11l-6 4
+               c-3 2-7 2-10 1l-11-3-4 6c-4 6-10 9-18 10l-13 1c-6 0-11-4-12-10z"/>
+      <path d="M34 28c-8 0-12 8-11 18 1 7 5 11 8 9 3-2 4-8 4-16 0-6 0-9-1-11z"/>""",
+    "generic": """
+      <path d="M16 65C11 49 18 32 36 27c9-2 17 0 23 6l4 6 23 6c6 2 6 8 1 11l-7 4
+               c-3 2-7 2-10 1l-11-3-4 6c-4 6-10 9-18 10l-13 1c-6 0-11-4-12-10z"/>
+      <path d="M33 28c-9 1-14 11-13 24 1 10 6 15 10 13 4-2 6-10 5-20-1-8-1-14-2-17z"/>""",
+}
+
+
+def breed_to_shape(breed):
+    b = (breed or "").lower()
+    for name, keys in BREED_MAP:
+        if any(k in b for k in keys):
+            return name
+    return "generic"
+
+
+def coat_to_ink(color):
+    return COAT.get((color or "").strip().lower(), DEFAULT_COAT)
+
+
+def build_sprite():
+    syms = []
+    for name, body in SHAPES.items():
+        syms.append(f'<symbol id="sil-{name}" viewBox="0 0 100 100">'
+                    f'<g fill="currentColor">{body}</g></symbol>')
+    return ('<svg xmlns="http://www.w3.org/2000/svg" style="display:none">'
+            + "".join(syms) + "</svg>")
+
+
+def build_icon():
+    """Browser tab mark: the bully head, which is 42% of the dogs waiting."""
+    return (
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">'
+        '<rect width="100" height="100" rx="18" fill="#0E1210"/>'
+        '<g fill="#E8B44A" transform="translate(50 52) scale(1.06) translate(-50 -50)">'
+        + SHAPES["bully"] +
+        '</g></svg>'
+    )
+
+
+def main():
+    os.makedirs(ASSETS, exist_ok=True)
+    with open(os.path.join(ASSETS, "silhouettes.svg"), "w", encoding="utf-8") as f:
+        f.write(build_sprite())
+    with open(os.path.join(ASSETS, "icon.svg"), "w", encoding="utf-8") as f:
+        f.write(build_icon())
+    print(f"wrote {len(SHAPES)} silhouettes + icon to assets/")
+
+    # coverage report against the dogs that actually need one
+    import json
+    p = os.path.join(ROOT, "data", "stats.json")
+    if os.path.exists(p):
+        import collections
+        s = json.load(open(p, encoding="utf-8"))
+        no = [d for d in s["waiting"] if not d["photo"]]
+        c = collections.Counter(breed_to_shape(d["raw_breed"]) for d in no)
+        print(f"\n{len(no)} dogs need one:")
+        for k, v in c.most_common():
+            print(f"  {v:3d}  {k}")
+        gen = [d["raw_breed"] for d in no if breed_to_shape(d["raw_breed"]) == "generic"]
+        if gen:
+            print(f"  falling back to generic: {sorted(set(gen))}")
+
+
+if __name__ == "__main__":
+    main()

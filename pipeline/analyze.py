@@ -20,7 +20,11 @@ import csv
 import json
 import os
 import statistics as st
+import sys
 from collections import defaultdict
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from silhouettes import breed_to_shape, coat_to_ink
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
@@ -222,6 +226,11 @@ def main():
                 "intake_name": intake_name,
                 "given_name": given if given and given.lower() != intake_name.lower() else "",
                 "photo": p.get("picture", ""),
+                # For the 135 with no picture: which drawn head to show, and in
+                # what ink. Decided here rather than in the browser so the rule
+                # is inspectable in stats.json alongside the record it came from.
+                "sil": breed_to_shape(d["raw_breed"] or d["breed"]),
+                "ink": coat_to_ink(d["color"]),
                 "adopt_url": p.get("adopt_url", ""),
                 "kennel": p.get("kennel", ""),
                 "breed": d["breed"],
