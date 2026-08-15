@@ -31,7 +31,9 @@ AUDIO = os.path.join(ROOT, "audio")
 
 API = "https://api.elevenlabs.io/v1"
 MODEL = "eleven_multilingual_v2"
-DEFAULT_VOICE = "21m00Tcm4TlvDq8ikWAM"  # Rachel, calm and unperformed
+DEFAULT_VOICE = "SAz9YHcvj6GT2YYXdXww"  # River: neutral, relaxed, informative.
+# Premade voices only. Library/cloned voices 402 on the free tier, and a
+# performed read would sentimentalise scripts that are deliberately flat.
 
 MONTHS = ["January", "February", "March", "April", "May", "June", "July",
           "August", "September", "October", "November", "December"]
