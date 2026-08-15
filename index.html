@@ -94,8 +94,10 @@ header.top .wrap{display:flex;justify-content:space-between;align-items:baseline
 .brand{font-family:var(--display);font-size:21px;font-weight:600;letter-spacing:-.03em}
 .masthead-meta{font-size:11.5px;color:var(--light-3);letter-spacing:.03em}
 .pulse{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--e3);
-  margin-right:8px;vertical-align:middle;box-shadow:0 0 8px var(--e3);
+  margin-right:8px;vertical-align:middle;
   animation:breathe 4s ease-in-out infinite}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pulse{box-shadow:0 0 8px var(--e3)}}
+:root[data-theme="dark"] .pulse{box-shadow:0 0 8px var(--e3)}
 @keyframes breathe{0%,100%{opacity:1}50%{opacity:.3}}
 
 /* ---- the print: one frame, enlarged ---- */
@@ -148,7 +150,8 @@ header.top .wrap{display:flex;justify-content:space-between;align-items:baseline
 .btn[disabled]{opacity:.3;cursor:default}
 .btn[disabled]:hover{color:var(--light-2);border-color:var(--edge)}
 .btn.play{border-color:var(--e2);color:var(--e3)}
-.btn.play:hover{box-shadow:0 0 18px -4px var(--e2);border-color:var(--e3)}
+.btn.play:hover{border-color:var(--e3);color:var(--e4)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.play:hover{box-shadow:0 0 18px -4px var(--e2)}}
 .btn:focus-visible,.mini:focus-visible{outline:2px solid var(--e3);outline-offset:2px}
 
 /* ---- strip ---- */
@@ -182,8 +185,8 @@ section{padding:70px 0;border-bottom:1px solid var(--edge-2)}
 }
 @keyframes develop{from{opacity:0}to{opacity:1}}
 .fr .idx{position:absolute;top:8px;right:8px;z-index:2;font-size:9.5px;
-  color:var(--light-2);letter-spacing:.1em;background:rgba(14,18,16,.72);
-  padding:2px 5px;backdrop-filter:none}
+  color:var(--light-2);letter-spacing:.1em;background:var(--ground);
+  padding:2px 5px;opacity:.92}
 /* The contact sheet finally has frames on it. The photo is the exposure; the
    ramp stays in the border and the day count, because tinting a dog's face by
    how long it has waited would make the one thing a person came to see harder
@@ -246,7 +249,9 @@ a.adopt:focus-visible{outline:2px solid var(--e3);outline-offset:3px}
 .bar .tr{display:block;background:var(--edge-2);height:18px;position:relative}
 .bar .fi{display:block;height:100%;background:var(--light-3);
   transition:width .8s cubic-bezier(.2,.7,.3,1)}
-.bar.hl .fi{background:var(--e3);box-shadow:0 0 14px -3px var(--e3)}
+.bar.hl .fi{background:var(--e3)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .bar.hl .fi{box-shadow:0 0 14px -3px var(--e3)}}
+:root[data-theme="dark"] .bar.hl .fi{box-shadow:0 0 14px -3px var(--e3)}
 .bar.hl .cl{color:var(--light);font-weight:600}
 .bar .vv{text-align:right;color:var(--light-2);font-variant-numeric:tabular-nums}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:8px}
@@ -326,8 +331,8 @@ footer{padding:44px 0 64px;font-size:12.5px;color:var(--light-3)}
       <span class="label kicker">The contact sheet</span>
       <h2>Everyone still on the record</h2>
       <p>One frame per dog, ordered by how long it has been waiting. The day
-         count and the glow around each frame are that wait: the longer a dog
-         has been here, the more it has burned into the plate. Photographs come
+         count carries that wait: the longer a dog has been here, the more it
+         has burned into the plate. Photographs come
          from Austin's own adoption listings, so clicking a dog opens the page
          where you could actually adopt it. <span id="nophoto-note"></span></p>
     </div>
@@ -492,6 +497,14 @@ let S = null, shown = 60, filter = 'all', audio = null, CLIPS = new Set(), MAXD 
    argument lives, and the floor plus a legible --e0 carries the bottom.      */
 const STOPS = ['--e0','--e1','--e2','--e3','--e4'];
 function hexOf(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+/* Light is the print, not the negative. Emission is a dark-theme material: a
+   glow rendered on pale stock is just a muddy drop shadow, so on light the
+   exposure reads purely as ink density and nothing bleeds. */
+function isDark(){
+  const set = document.documentElement.getAttribute('data-theme');
+  if (set) return set === 'dark';
+  return matchMedia('(prefers-color-scheme: dark)').matches;
+}
 function toRGB(h){ h=h.replace('#',''); return [0,2,4].map(i=>parseInt(h.slice(i,i+2),16)); }
 let RAMP = [];
 function buildRamp(){ RAMP = STOPS.map(s => toRGB(hexOf(s))); }
@@ -520,9 +533,10 @@ function renderHero(){
   const days = $('#hero-days');
   days.textContent = fmt(d.days_waiting);
   days.style.color = c;
-  days.style.textShadow = `0 0 46px ${c}`;
+  days.style.textShadow = isDark() ? `0 0 46px ${c}` : 'none';
   // the halo is the frame's own emission, scaled by how long it has burned
-  $('#print').style.setProperty('--halo', rampColor(e).replace('rgb(', 'rgba(').replace(')', ',.13)'));
+  $('#print').style.setProperty('--halo',
+    isDark() ? rampColor(e).replace('rgb(', 'rgba(').replace(')', ',.13)') : 'transparent');
 
   const plate = $('#hero-plate');
   plate.className = '';
@@ -594,7 +608,7 @@ function renderBoard(){
     if(d.health && d.health!=='Normal') tags.push(`<span class="tag">${d.health.toLowerCase()}</span>`);
     // frames arrive in order, like a sheet developing
     const delay=Math.min(i,40)*22;
-    const glow=e>.55?`box-shadow:0 0 ${Math.round(e*34)}px -12px ${c};`:'';
+    const glow=(isDark()&&e>.55)?`box-shadow:0 0 ${Math.round(e*34)}px -12px ${c};`:'';
     const alt = `${d.name||'An unnamed dog'}, ${d.raw_breed||d.breed}, waiting ${d.days_waiting} days at Austin Animal Center`;
     const ph = d.photo
       ? `<span class="ph"><img loading="lazy" src="${d.photo}" alt="${alt.replace(/"/g,'&quot;')}"
