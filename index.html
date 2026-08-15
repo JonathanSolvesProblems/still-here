@@ -116,9 +116,9 @@ header.top .wrap{display:flex;justify-content:space-between;align-items:baseline
 }
 .print-head{display:flex;justify-content:space-between;gap:16px;
   padding-bottom:14px;margin-bottom:26px;border-bottom:1px solid var(--edge-2)}
-.print-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:38px;align-items:end;
+.print-grid{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:32px;align-items:end;
   position:relative;z-index:1}
-@media(max-width:760px){.print-grid{grid-template-columns:1fr;gap:24px}}
+@media(max-width:900px){.print-grid{grid-template-columns:1fr;gap:24px}.plate{width:100%;max-width:260px}}
 .dogname{font-size:clamp(42px,7.5vw,74px);line-height:.92;letter-spacing:-.04em;
   font-weight:600;margin-bottom:8px}
 .dogsub{color:var(--light-2);font-size:14px;margin-bottom:22px}
@@ -181,8 +181,36 @@ section{padding:70px 0;border-bottom:1px solid var(--edge-2)}
   animation:develop .7s ease-out both;
 }
 @keyframes develop{from{opacity:0}to{opacity:1}}
-.fr .idx{position:absolute;top:9px;right:11px;font-size:9.5px;color:var(--light-3);
-  letter-spacing:.1em}
+.fr .idx{position:absolute;top:8px;right:8px;z-index:2;font-size:9.5px;
+  color:var(--light-2);letter-spacing:.1em;background:rgba(14,18,16,.72);
+  padding:2px 5px;backdrop-filter:none}
+/* The contact sheet finally has frames on it. The photo is the exposure; the
+   ramp stays in the border and the day count, because tinting a dog's face by
+   how long it has waited would make the one thing a person came to see harder
+   to look at. */
+.fr .ph{display:block;position:relative;aspect-ratio:4/3;overflow:hidden;
+  background:var(--ground);border:1px solid var(--edge-2);margin-bottom:2px}
+.fr .ph img{width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.fr:hover .ph img{transform:scale(1.035)}
+.fr .ph.blank{display:flex;align-items:center;justify-content:center;
+  background:repeating-linear-gradient(135deg,var(--ground) 0 7px,var(--ground-2) 7px 14px)}
+.fr .ph.blank span{font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--light-3);text-align:center;padding:0 10px;line-height:1.5}
+a.adopt{text-decoration:none;color:inherit;display:block}
+a.adopt:focus-visible{outline:2px solid var(--e3);outline-offset:3px}
+.fr .given{font-size:10px;color:var(--light-3);letter-spacing:.02em;margin-top:-3px}
+/* hero plate */
+.plate{width:210px;flex:none}
+#hero-plate{align-self:center}
+.plate img{width:100%;display:block;border:1px solid var(--edge)}
+.plate.blank{aspect-ratio:4/3;border:1px solid var(--edge);display:flex;
+  align-items:center;justify-content:center;text-align:center;padding:14px;
+  background:repeating-linear-gradient(135deg,var(--ground) 0 9px,var(--ground-2) 9px 18px)}
+.plate.blank span{font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--light-3);line-height:1.7}
+.credit{font-size:11.5px;color:var(--light-3);margin-top:18px}
+.credit a{color:var(--e3)}
 .fr .nm{font-family:var(--display);font-size:19px;font-weight:600;letter-spacing:-.02em;
   line-height:1.15;padding-right:26px}
 .fr .nm.anon{color:var(--light-3);font-weight:400;font-style:italic;font-size:16px}
@@ -259,9 +287,9 @@ footer{padding:44px 0 64px;font-size:12.5px;color:var(--light-3)}
 
 <div class="hero">
   <div class="wrap">
-    <p class="lede">None of these dogs has a photograph in the public record.
-      All any of them has is a row that says when it arrived and
-      <em>nothing about it leaving</em>.</p>
+    <p class="lede">Austin's open data records when each of these dogs arrived and
+      <em>nothing about it leaving</em>. Most of them have a photograph on the
+      city's adoption site. The one who has waited longest does not.</p>
 
     <div class="print" id="print">
       <div class="print-head">
@@ -269,6 +297,7 @@ footer{padding:44px 0 64px;font-size:12.5px;color:var(--light-3)}
         <span class="label" id="hero-id">—</span>
       </div>
       <div class="print-grid">
+        <div id="hero-plate"></div>
         <div>
           <h1 class="dogname" id="hero-name">—</h1>
           <div class="dogsub" id="hero-sub">—</div>
@@ -296,10 +325,11 @@ footer{padding:44px 0 64px;font-size:12.5px;color:var(--light-3)}
     <div class="sec-head">
       <span class="label kicker">The contact sheet</span>
       <h2>Everyone still on the record</h2>
-      <p>One frame per dog, ordered by how long it has been waiting. The
-         brightness of each frame is its wait: the longer a dog has been here,
-         the more it has burned into the plate. Names are the ones the shelter
-         wrote down at intake. The ones in italics arrived without one.</p>
+      <p>One frame per dog, ordered by how long it has been waiting. The day
+         count and the glow around each frame are that wait: the longer a dog
+         has been here, the more it has burned into the plate. Photographs come
+         from Austin's own adoption listings, so clicking a dog opens the page
+         where you could actually adopt it. <span id="nophoto-note"></span></p>
     </div>
     <div class="controls" id="controls">
       <button class="btn on" data-f="all">All</button>
@@ -413,11 +443,27 @@ footer{padding:44px 0 64px;font-size:12.5px;color:var(--light-3)}
         21%, so "bully-type" means <em>what Austin wrote down</em>, which is also
         what an adopter reads.</p>
 
+      <h3>The photographs</h3>
+      <p>The open data has no images in it. The photographs here come from
+        Austin Animal Center's own adoption listings, which run on Adopets, and
+        they join to the open data because both use the same animal id. They are
+        embedded from the shelter's platform rather than copied, and every dog
+        links back to its real adoption page. <span id="m-photos">—</span></p>
+      <p>The dogs with no photograph are mostly not being overlooked: they are
+        recent arrivals still inside a mandatory stray hold, which is why their
+        median wait is <span id="m-unlisted">—</span> days against
+        <span id="m-listed">—</span> for the listed ones. A few are not recent at
+        all. Pancho, the longest wait on the board, is one of them.</p>
+      <p>Where a dog arrived without a name, the shelter often gave it one later.
+        <span id="m-renamed">—</span> of the dogs here are shown under a name
+        somebody chose for them after they arrived.</p>
+
       <h3>Sources</h3>
       <p>
         <a href="https://data.austintexas.gov/resource/pyqf-r2dc.json" target="_blank" rel="noopener">Live intakes</a> ·
         <a href="https://data.austintexas.gov/resource/gsvs-ypi7.json" target="_blank" rel="noopener">Live outcomes</a> ·
-        <a href="https://github.com/JonathanSolvesProblems/still-here" target="_blank" rel="noopener">Code</a>
+        <a href="https://github.com/JonathanSolvesProblems/still-here" target="_blank" rel="noopener">Code</a> ·
+        <a href="https://adopt.adopets.com/shelter/austin-animal-center" target="_blank" rel="noopener">Austin Animal Center adoption listings</a>
       </p>
     </div>
   </div>
@@ -477,6 +523,17 @@ function renderHero(){
   days.style.textShadow = `0 0 46px ${c}`;
   // the halo is the frame's own emission, scaled by how long it has burned
   $('#print').style.setProperty('--halo', rampColor(e).replace('rgb(', 'rgba(').replace(')', ',.13)'));
+
+  const plate = $('#hero-plate');
+  plate.className = '';
+  if (d.photo){
+    plate.innerHTML = `<a class="adopt plate" href="${d.adopt_url||'#'}" target="_blank" rel="noopener">
+      <img src="${d.photo}" alt="${(d.name||'A dog')} at Austin Animal Center"></a>`;
+  } else {
+    // The longest wait on the board has no listing and therefore no picture.
+    // Saying so plainly is better than hiding the gap behind a placeholder dog.
+    plate.innerHTML = `<span class="plate blank"><span>no photograph<br>on file</span></span>`;
+  }
 
   $('#hero-fields').innerHTML = [
     ['Intake date', d.intake_date],
@@ -538,9 +595,18 @@ function renderBoard(){
     // frames arrive in order, like a sheet developing
     const delay=Math.min(i,40)*22;
     const glow=e>.55?`box-shadow:0 0 ${Math.round(e*34)}px -12px ${c};`:'';
+    const alt = `${d.name||'An unnamed dog'}, ${d.raw_breed||d.breed}, waiting ${d.days_waiting} days at Austin Animal Center`;
+    const ph = d.photo
+      ? `<span class="ph"><img loading="lazy" src="${d.photo}" alt="${alt.replace(/"/g,'&quot;')}"
+           onerror="this.parentNode.classList.add('blank');this.remove()"></span>`
+      : `<span class="ph blank"><span>no photograph<br>on file</span></span>`;
+    const inner = `${ph}${nm}${d.given_name?`<div class="given">named ${d.given_name} by the shelter</div>`:''}`;
+    const head = d.adopt_url
+      ? `<a class="adopt" href="${d.adopt_url}" target="_blank" rel="noopener">${inner}</a>`
+      : inner;
     return `<article class="fr${e>.8?' hot':''}" style="animation-delay:${delay}ms;${glow}">
       <span class="idx num">${String(i+1).padStart(3,'0')}</span>
-      ${nm}
+      ${head}
       <span class="d num" style="color:${c}">${d.days_waiting}<small>DAYS</small></span>
       <div class="meta">${dogLine(d)}<br>in since ${d.intake_date}</div>
       ${tags.length?`<div class="tags">${tags.join('')}</div>`:''}
@@ -598,6 +664,13 @@ fetch('audio/manifest.json').then(r=>r.ok?r.json():[]).catch(()=>[])
     $('#n-adopted').textContent=fmt(s.corpus.stays_adopted);
     $('#m-dropped').textContent=fmt(s.generated_from.outcomes_archive_dropped);
     $('#m-dead').textContent=s.generated_from.excluded_dead_on_intake;
+    const ph=s.photos||{};
+    $('#m-photos').textContent=`${ph.with_photo} of the ${s.waiting_summary.count} dogs here have one.`;
+    $('#m-unlisted').textContent=ph.median_wait_unlisted;
+    $('#m-listed').textContent=ph.median_wait_listed;
+    $('#m-renamed').textContent=ph.named_after_arriving_nameless;
+    $('#nophoto-note').textContent=
+      `${ph.without_photo} have no listing and no photograph.`;
     $('#foot').textContent=
       `${fmt(s.corpus.stays_total)} completed stays, ${s.corpus.earliest} to ${s.corpus.latest}. `+
       `${fmt(s.waiting_summary.count)} dogs still without an outcome.`;

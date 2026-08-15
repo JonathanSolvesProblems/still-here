@@ -1,10 +1,10 @@
 {
-  "fetched_at_utc": "2026-08-15T11:27:36.704164+00:00",
+  "fetched_at_utc": "2026-08-15T12:40:55.287179+00:00",
   "outcomes_total": 99905,
   "outcomes_archive": 93853,
   "outcomes_archive_dropped": 652,
   "outcomes_live": 6052,
-  "waiting_now": 516,
+  "waiting_now": 515,
   "excluded_dead_on_intake": 15,
   "longest_wait_days": 448,
   "longest_wait_name": "Pancho",

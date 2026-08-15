@@ -254,9 +254,22 @@ def build_waiting():
                 "date_of_birth": (r.get("date_of_birth") or "")[:10],
             }
         )
+    # One row per intake, so a dog booked in twice without an outcome between
+    # (Princess, 22830, arrived 2026-04-06 and again on the 07th) appears twice
+    # and inflates the count. Keep the most recent intake per animal.
+    waiting.sort(key=lambda d: d["intake_date"], reverse=True)
+    seen, deduped = set(), []
+    for d in waiting:
+        if d["animal_id"] in seen:
+            continue
+        seen.add(d["animal_id"])
+        deduped.append(d)
+    dupes = len(waiting) - len(deduped)
+    waiting = deduped
+
     waiting.sort(key=lambda d: d["days_waiting"], reverse=True)
     print(f"  waiting: {len(waiting)} dogs with no recorded outcome "
-          f"({excluded_dead} dead-on-intake excluded)")
+          f"({excluded_dead} dead-on-intake excluded, {dupes} duplicate intake(s) merged)")
     return waiting, excluded_dead
 
 

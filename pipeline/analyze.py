@@ -188,15 +188,42 @@ def main():
     bully_sorted = sorted(bully_days)
     other_sorted = sorted(other_days)
 
+    # Faces, if photos.py has run. Kept as a separate optional layer because it
+    # comes from a different source (Austin's adoption platform) than everything
+    # else here, and the site has to work without it.
+    photos = {}
+    ppath = os.path.join(DATA, "photos.json")
+    if os.path.exists(ppath):
+        photos = json.load(open(ppath, encoding="utf-8"))
+
+    # Intake staff write "Unknown"/"Unknow" when a stray arrives with no name.
+    # That is not a name, it is the absence of one, and it should not be printed
+    # as though the dog were called Unknown.
+    NON_NAMES = {"", "unknown", "unknow", "*", "-", "n/a", "none"}
+
     enriched = []
     for d in waiting:
         days = int(d["days_waiting"])
         b = is_bully(d["raw_breed"] or d["breed"])
         ref = bully_sorted if b else other_sorted
+        p = photos.get(d["animal_id"], {})
+        intake_name = (d["name"] or "").strip()
+        if intake_name.strip("*").strip().lower() in NON_NAMES:
+            intake_name = ""
+        # If the shelter named the dog after intake, that later name is the one
+        # a person would actually meet it under.
+        given = (p.get("listed_name") or "").strip()
+        if given.isdigit():          # some listings just repeat the animal id
+            given = ""
         enriched.append(
             {
                 "animal_id": d["animal_id"],
-                "name": d["name"] or "",
+                "name": intake_name or given,
+                "intake_name": intake_name,
+                "given_name": given if given and given.lower() != intake_name.lower() else "",
+                "photo": p.get("picture", ""),
+                "adopt_url": p.get("adopt_url", ""),
+                "kennel": p.get("kennel", ""),
                 "breed": d["breed"],
                 "raw_breed": d["raw_breed"],
                 "color": d["color"],
@@ -214,6 +241,21 @@ def main():
         )
     enriched.sort(key=lambda d: -d["days_waiting"])
     stats["waiting"] = enriched
+
+    listed = [d for d in enriched if d["photo"]]
+    unlisted = [d for d in enriched if not d["photo"]]
+    stats["photos"] = {
+        "with_photo": len(listed),
+        "without_photo": len(unlisted),
+        "pct": round(100.0 * len(listed) / len(enriched)) if enriched else 0,
+        # The gap is mostly stray hold, not neglect. Quote both medians so the
+        # writeup cannot imply the unlisted dogs are being hidden.
+        "median_wait_listed": st.median([d["days_waiting"] for d in listed]) if listed else 0,
+        "median_wait_unlisted": st.median([d["days_waiting"] for d in unlisted]) if unlisted else 0,
+        "renamed_by_shelter": sum(1 for d in enriched if d["given_name"]),
+        "named_after_arriving_nameless": sum(
+            1 for d in enriched if not d["intake_name"] and d["given_name"]),
+    }
 
     stats["waiting_summary"] = {
         "count": len(enriched),
