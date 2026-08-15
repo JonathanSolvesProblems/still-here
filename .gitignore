@@ -1,5 +1,4 @@
 .env
 __pycache__/
-data/outcomes.csv
-web/audio/
+web/audio/*.mp3
 *.pyc
