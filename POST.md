@@ -75,6 +75,16 @@ Across the whole corpus: **bully-type dogs wait a median of 28 days, and every o
 
 And it is not a historical curiosity. Of the 515 dogs sitting in that shelter today, **217 are bully-type**. Four of the five longest waits on the board right now are pit bulls.
 
+## The thing the adoption site does not tell you
+
+Austin Animal Center publishes, in open data, exactly how long every dog has been in its care. Its adoption site shows none of it.
+
+I checked the listings the city actually serves to adopters. A listing carries breed, sex, size, age, kennel number, and a set of behaviour tags. There is no intake date on it, no length of stay, and no way to sort or filter by either. There is a manual "Long-term resident" characteristic a staff member can tick, but nothing that tells you a number.
+
+So a person browsing Austin's adoption page can look straight at Fritz and have no idea he arrived on May 28 of last year.
+
+Both halves of that are public. They are just never printed next to each other. Still Here is the join.
+
 ## What I actually built
 
 **[Still Here](https://stillhere.jonathanandrei.com/)** does two things.
