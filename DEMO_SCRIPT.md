@@ -3,7 +3,7 @@
 Written before the first line of app code, per the focus rule. If the build stops
 fitting this script, the build is wrong, not the script.
 
-**Pitch sentence:** Anyone can meet the 516 dogs sitting in the Austin shelter
+**Pitch sentence:** Anyone can meet the 515 dogs sitting in the Austin shelter
 tonight, hear each one make its own case, and see the 99,905-record reason the
 ones at the top have been there so long.
 
@@ -27,10 +27,10 @@ ones at the top have been there so long.
 
 ### 0:22-0:35 | The board
 
-*Pull back to the contact sheet. 516 frames, brightest first, dimming down the page.*
+*Pull back to the contact sheet. 515 frames, brightest first, dimming down the page.*
 
 > He isn't alone. Every frame here is a dog with an intake record at
-> this shelter and no outcome, five hundred and sixteen of them, pulled live from
+> this shelter and no outcome, five hundred and fifteen of them, pulled live from
 > Austin's open data an hour ago. Two hundred and eighteen of them are
 > bully-type dogs.
 

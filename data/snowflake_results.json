@@ -53,16 +53,22 @@
       "PCT_BULLY": 21
     },
     {
+      "COLOR": "Black",
+      "N": 13919,
+      "MEDIAN_DAYS": "9.000",
+      "PCT_BULLY": 12
+    },
+    {
       "COLOR": "Red",
       "N": 2006,
       "MEDIAN_DAYS": "9.000",
       "PCT_BULLY": 13
     },
     {
-      "COLOR": "Black",
-      "N": 13919,
-      "MEDIAN_DAYS": "9.000",
-      "PCT_BULLY": 12
+      "COLOR": "Tan",
+      "N": 6236,
+      "MEDIAN_DAYS": "8.000",
+      "PCT_BULLY": 14
     },
     {
       "COLOR": "Yellow",
@@ -77,10 +83,10 @@
       "PCT_BULLY": 2
     },
     {
-      "COLOR": "Tan",
-      "N": 6236,
-      "MEDIAN_DAYS": "8.000",
-      "PCT_BULLY": 14
+      "COLOR": "Cream",
+      "N": 770,
+      "MEDIAN_DAYS": "7.000",
+      "PCT_BULLY": 2
     },
     {
       "COLOR": "Tricolor",
@@ -93,12 +99,6 @@
       "N": 466,
       "MEDIAN_DAYS": "7.000",
       "PCT_BULLY": 6
-    },
-    {
-      "COLOR": "Cream",
-      "N": 770,
-      "MEDIAN_DAYS": "7.000",
-      "PCT_BULLY": 2
     },
     {
       "COLOR": "Gray",
@@ -180,15 +180,15 @@
       "MEDIAN_DAYS": "48.000"
     },
     {
-      "BREED": "American Bulldog",
-      "BULLY": true,
-      "N": 421,
-      "MEDIAN_DAYS": "28.000"
-    },
-    {
       "BREED": "Pit Bull",
       "BULLY": true,
       "N": 6291,
+      "MEDIAN_DAYS": "28.000"
+    },
+    {
+      "BREED": "American Bulldog",
+      "BULLY": true,
+      "N": 421,
       "MEDIAN_DAYS": "28.000"
     },
     {
@@ -210,15 +210,15 @@
       "MEDIAN_DAYS": "13.000"
     },
     {
-      "BREED": "Catahoula",
-      "BULLY": false,
-      "N": 587,
-      "MEDIAN_DAYS": "12.000"
-    },
-    {
       "BREED": "Boxer",
       "BULLY": false,
       "N": 763,
+      "MEDIAN_DAYS": "12.000"
+    },
+    {
+      "BREED": "Catahoula",
+      "BULLY": false,
+      "N": 587,
       "MEDIAN_DAYS": "12.000"
     },
     {
@@ -228,9 +228,9 @@
       "MEDIAN_DAYS": "11.000"
     },
     {
-      "BREED": "Pointer",
+      "BREED": "Australian Cattle Dog",
       "BULLY": false,
-      "N": 507,
+      "N": 1666,
       "MEDIAN_DAYS": "11.000"
     },
     {
@@ -240,9 +240,9 @@
       "MEDIAN_DAYS": "11.000"
     },
     {
-      "BREED": "Australian Cattle Dog",
+      "BREED": "Pointer",
       "BULLY": false,
-      "N": 1666,
+      "N": 507,
       "MEDIAN_DAYS": "11.000"
     },
     {
@@ -276,15 +276,15 @@
       "MEDIAN_DAYS": "6.000"
     },
     {
-      "BREED": "Jack Russell Terrier",
-      "BULLY": false,
-      "N": 477,
-      "MEDIAN_DAYS": "6.000"
-    },
-    {
       "BREED": "Anatol Shepherd",
       "BULLY": false,
       "N": 429,
+      "MEDIAN_DAYS": "6.000"
+    },
+    {
+      "BREED": "Jack Russell Terrier",
+      "BULLY": false,
+      "N": 477,
       "MEDIAN_DAYS": "6.000"
     },
     {
@@ -292,12 +292,6 @@
       "BULLY": false,
       "N": 434,
       "MEDIAN_DAYS": "6.000"
-    },
-    {
-      "BREED": "Miniature Poodle",
-      "BULLY": false,
-      "N": 434,
-      "MEDIAN_DAYS": "5.000"
     },
     {
       "BREED": "Cairn Terrier",
@@ -309,6 +303,12 @@
       "BREED": "Dachshund",
       "BULLY": false,
       "N": 728,
+      "MEDIAN_DAYS": "5.000"
+    },
+    {
+      "BREED": "Miniature Poodle",
+      "BULLY": false,
+      "N": 434,
       "MEDIAN_DAYS": "5.000"
     }
   ],
@@ -369,10 +369,10 @@
       "PCT_OF_COHORT_HOME_BY_NOW": "98.4"
     },
     {
-      "ANIMAL_ID": "9712",
-      "NAME": "Hank",
-      "BREED": "American Staffordshire Terrier",
-      "COLOR": "Fawn",
+      "ANIMAL_ID": "9673",
+      "NAME": "Paxton",
+      "BREED": "American Pit Bull Terrier",
+      "COLOR": "Tan",
       "INTAKE_DATE": "2025-06-12",
       "DAYS_WAITING": 428,
       "BULLY": true,
@@ -380,10 +380,10 @@
       "PCT_OF_COHORT_HOME_BY_NOW": "98.4"
     },
     {
-      "ANIMAL_ID": "9673",
-      "NAME": "Paxton",
-      "BREED": "American Pit Bull Terrier",
-      "COLOR": "Tan",
+      "ANIMAL_ID": "9712",
+      "NAME": "Hank",
+      "BREED": "American Staffordshire Terrier",
+      "COLOR": "Fawn",
       "INTAKE_DATE": "2025-06-12",
       "DAYS_WAITING": 428,
       "BULLY": true,
@@ -424,9 +424,9 @@
       "PCT_OF_COHORT_HOME_BY_NOW": "98.2"
     },
     {
-      "ANIMAL_ID": "11454",
-      "NAME": "Broccoli",
-      "BREED": "German Shepherd",
+      "ANIMAL_ID": "11468",
+      "NAME": "Xena",
+      "BREED": "Boxer",
       "COLOR": "Black",
       "INTAKE_DATE": "2025-07-03",
       "DAYS_WAITING": 407,
@@ -435,9 +435,9 @@
       "PCT_OF_COHORT_HOME_BY_NOW": "99.7"
     },
     {
-      "ANIMAL_ID": "11468",
-      "NAME": "Xena",
-      "BREED": "Boxer",
+      "ANIMAL_ID": "11454",
+      "NAME": "Broccoli",
+      "BREED": "German Shepherd",
       "COLOR": "Black",
       "INTAKE_DATE": "2025-07-03",
       "DAYS_WAITING": 407,
@@ -534,10 +534,10 @@
       "PCT_OF_COHORT_HOME_BY_NOW": "97.3"
     },
     {
-      "ANIMAL_ID": "13892",
-      "NAME": "Bear",
+      "ANIMAL_ID": "13891",
+      "NAME": "Teddy",
       "BREED": "American Pit Bull Terrier",
-      "COLOR": "Brown",
+      "COLOR": "Black Brindle",
       "INTAKE_DATE": "2025-09-03",
       "DAYS_WAITING": 345,
       "BULLY": true,
@@ -545,10 +545,10 @@
       "PCT_OF_COHORT_HOME_BY_NOW": "97.2"
     },
     {
-      "ANIMAL_ID": "13891",
-      "NAME": "Teddy",
+      "ANIMAL_ID": "13892",
+      "NAME": "Bear",
       "BREED": "American Pit Bull Terrier",
-      "COLOR": "Black Brindle",
+      "COLOR": "Brown",
       "INTAKE_DATE": "2025-09-03",
       "DAYS_WAITING": 345,
       "BULLY": true,
@@ -598,7 +598,7 @@
     },
     {
       "GROUP_NAME": "Bully-type",
-      "DOGS_WAITING": 218,
+      "DOGS_WAITING": 217,
       "MEDIAN_DAYS_SO_FAR": "91.000",
       "OVER_A_YEAR": 12
     }

@@ -1,6 +1,6 @@
 # Still Here
 
-**516 dogs have an intake record at the Austin animal shelter and no outcome record. This is the board.**
+**515 dogs have an intake record at the Austin animal shelter and no outcome record. This is the board.**
 
 Built for the [DEV Weekend Challenge: Dog Days Edition](https://dev.to/challenges/weekend-2026-08-13), August 2026.
 
@@ -35,7 +35,7 @@ The two columns never overlap. Hold breed constant and coat color moves the
 median wait by about 4 days; change the breed and it moves by 20. Overall,
 bully-type dogs wait a median of **28 days** against **8** for every other dog.
 
-218 of the 516 dogs waiting right now are bully-type.
+217 of the 515 dogs waiting right now are bully-type.
 
 ## Running it
 
@@ -55,7 +55,7 @@ without any keys, because Austin's data needs no authentication.
 
 ```
 Austin Socrata feeds ──▶ fetch.py ──▶ data/outcomes.csv   (99,905 completed stays)
-   (no API key)                   └──▶ data/waiting.csv    (516 dogs, no outcome)
+   (no API key)                   └──▶ data/waiting.csv    (515 dogs, no outcome)
                                         │
                                         ├──▶ analyze.py ──▶ data/stats.json ──▶ index.html
                                         │
@@ -78,7 +78,7 @@ a view. Two things live there deliberately:
 - **`IS_BULLY()`** is a SQL function, so the single judgement call in the whole
   analysis sits in one auditable place instead of being scattered through
   application code.
-- **`WAITING_RANKED`** ranks each of the 516 live waits against all 51,404
+- **`WAITING_RANKED`** ranks each of the 515 live waits against all 51,404
   completed adoptions in that dog's breed group. That is the number on every
   card, and it is the part that actually wants a warehouse.
 
