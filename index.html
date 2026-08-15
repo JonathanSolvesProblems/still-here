@@ -219,6 +219,10 @@ a.adopt:focus-visible{outline:2px solid var(--e3);outline-offset:3px}
 .fr .nm.anon{color:var(--light-3);font-weight:400;font-style:italic;font-size:16px}
 .fr .d{font-family:var(--display);font-size:31px;font-weight:600;line-height:1;
   letter-spacing:-.04em}
+button.pin{background:none;border:0;padding:0;text-align:left;cursor:pointer;
+  font-family:var(--display)}
+button.pin:hover{text-decoration:underline;text-underline-offset:4px}
+button.pin:focus-visible{outline:2px solid var(--e3);outline-offset:3px}
 .fr .d small{font-size:10px;letter-spacing:.1em;color:var(--light-3);margin-left:4px;
   font-family:var(--ui);font-weight:500}
 .fr .meta{font-size:11.5px;color:var(--light-2);line-height:1.5}
@@ -313,6 +317,7 @@ footer{padding:44px 0 64px;font-size:12.5px;color:var(--light-3)}
           <span class="u">days waiting</span>
           <div style="margin-top:18px">
             <button class="btn play" id="hero-play" disabled>▶ Hear from him</button>
+            <button class="btn" id="hero-share" style="margin-top:9px">Copy link</button>
           </div>
         </div>
       </div>
@@ -454,11 +459,22 @@ footer{padding:44px 0 64px;font-size:12.5px;color:var(--light-3)}
         they join to the open data because both use the same animal id. They are
         embedded from the shelter's platform rather than copied, and every dog
         links back to its real adoption page. <span id="m-photos">—</span></p>
-      <p>The dogs with no photograph are mostly not being overlooked: they are
-        recent arrivals still inside a mandatory stray hold, which is why their
-        median wait is <span id="m-unlisted">—</span> days against
-        <span id="m-listed">—</span> for the listed ones. A few are not recent at
-        all. Pancho, the longest wait on the board, is one of them.</p>
+      <p>"No photograph" covers two different situations. Most of it is process:
+        <span id="m-strayhold">—</span>% of the dogs here under 30 days are not
+        listed yet, because a stray has to sit out a mandatory hold before it can
+        be offered for adoption, and that is why the unlisted median wait is only
+        <span id="m-unlisted">—</span> days against <span id="m-listed">—</span>
+        for the listed ones.</p>
+      <p>The rest is harder to explain. The unlisted share never falls below
+        about a sixth at any length of stay, and
+        <strong><span id="m-long-unlisted">—</span> dogs have waited more than a
+        hundred days without appearing on the public adoption site at all</strong>.
+        Pancho, at the top of this page, is one of them, and so is a German
+        Shepherd who arrived in July of last year and never got a name. A dog can
+        be held back for medical treatment, a bite investigation, a behavioural
+        assessment, or simply be in a foster home, and none of that is published,
+        so this page does not guess. It only notes that the longest waits on the
+        board belong to dogs the public cannot currently see.</p>
       <p>Where a dog arrived without a name, the shelter often gave it one later.
         <span id="m-renamed">—</span> of the dogs here are shown under a name
         somebody chose for them after they arrived.</p>
@@ -621,7 +637,8 @@ function renderBoard(){
     return `<article class="fr${e>.8?' hot':''}" style="animation-delay:${delay}ms;${glow}">
       <span class="idx num">${String(i+1).padStart(3,'0')}</span>
       ${head}
-      <span class="d num" style="color:${c}">${d.days_waiting}<small>DAYS</small></span>
+      <button class="pin d num" data-pin="${d.animal_id}" style="color:${c}"
+        title="Pin ${d.name||'this dog'} to the top">${d.days_waiting}<small>DAYS</small></button>
       <div class="meta">${dogLine(d)}<br>in since ${d.intake_date}</div>
       ${tags.length?`<div class="tags">${tags.join('')}</div>`:''}
       <div class="foot">
@@ -683,18 +700,50 @@ fetch('audio/manifest.json').then(r=>r.ok?r.json():[]).catch(()=>[])
     $('#m-unlisted').textContent=ph.median_wait_unlisted;
     $('#m-listed').textContent=ph.median_wait_listed;
     $('#m-renamed').textContent=ph.named_after_arriving_nameless;
+    $('#m-strayhold').textContent=ph.pct_unlisted_under_30d;
+    $('#m-long-unlisted').textContent=ph.unlisted_over_100d;
     $('#nophoto-note').textContent=
       `${ph.without_photo} have no listing and no photograph.`;
     $('#foot').textContent=
       `${fmt(s.corpus.stays_total)} completed stays, ${s.corpus.earliest} to ${s.corpus.latest}. `+
       `${fmt(s.waiting_summary.count)} dogs still without an outcome.`;
-    renderHero(); renderStrip(); renderBoard(); renderCharts();
+    const want = new URLSearchParams(location.search).get('dog');
+    if (!(want && heroFor(want))) renderHero();
+    renderStrip(); renderBoard(); renderCharts();
+    $('#hero-share').onclick = shareHero;
   }).catch(e=>{
     $('#masthead').textContent='could not load data/stats.json: run pipeline/fetch.py';
     console.error(e);
   });
 
+/* ?dog=<animal_id> pins that dog to the top of the page, so a person can send
+   someone a link to one animal rather than to a wall of 515. */
+function heroFor(id){
+  const d = S.waiting.find(x => String(x.animal_id) === String(id));
+  if (!d) return false;
+  S.waiting_summary.longest = d;
+  renderHero();
+  return true;
+}
+function shareHero(){
+  const d = S.waiting_summary.longest;
+  const url = location.origin + location.pathname + '?dog=' + d.animal_id;
+  const done = () => { const b=$('#hero-share'); b.textContent='Link copied';
+                       setTimeout(()=>b.textContent='Copy link to '+(d.name||'this dog'),2200); };
+  if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, done);
+  else done();
+  history.replaceState(null,'',url);
+}
+
 $('#more').onclick=()=>{ shown+=120; renderBoard(); };
+document.addEventListener('click',e=>{
+  const p=e.target.closest('[data-pin]');
+  if(!p) return;
+  if(heroFor(p.dataset.pin)){
+    history.replaceState(null,'',location.pathname+'?dog='+p.dataset.pin);
+    document.querySelector('.print').scrollIntoView({behavior:'smooth',block:'center'});
+  }
+});
 $('#controls').onclick=e=>{
   const b=e.target.closest('button[data-f]'); if(!b) return;
   filter=b.dataset.f; shown=60;

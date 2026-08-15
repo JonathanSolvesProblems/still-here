@@ -11887,7 +11887,10 @@
     "median_wait_listed": 83.5,
     "median_wait_unlisted": 20,
     "renamed_by_shelter": 50,
-    "named_after_arriving_nameless": 45
+    "named_after_arriving_nameless": 45,
+    "unlisted_under_30d": 79,
+    "unlisted_over_100d": 32,
+    "pct_unlisted_under_30d": 46
   },
   "waiting_summary": {
     "count": 515,

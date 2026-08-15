@@ -255,6 +255,14 @@ def main():
         "renamed_by_shelter": sum(1 for d in enriched if d["given_name"]),
         "named_after_arriving_nameless": sum(
             1 for d in enriched if not d["intake_name"] and d["given_name"]),
+        # Two different populations hide inside "no photo". Most are inside a
+        # stray hold and will be listed shortly. A smaller group has been
+        # waiting for months and is still not publicly visible anywhere.
+        "unlisted_under_30d": sum(1 for d in unlisted if d["days_waiting"] < 30),
+        "unlisted_over_100d": sum(1 for d in unlisted if d["days_waiting"] >= 100),
+        "pct_unlisted_under_30d": round(
+            100.0 * sum(1 for d in enriched if d["days_waiting"] < 30 and not d["photo"])
+            / max(1, sum(1 for d in enriched if d["days_waiting"] < 30))),
     }
 
     stats["waiting_summary"] = {
