@@ -1,0 +1,87 @@
+{
+  "project": "still-here",
+  "date": "2026-08-15",
+  "mode": "redesign",
+  "platform": "web-artifact",
+  "family": "luminous-emissive",
+  "metaphor": "a long-exposure photograph: they never got a picture, so the page exposes one, and the thing on the plate is time",
+
+  "category_convention_avoided": "Every adoption site is white, rounded, photo-led, Nunito/Poppins, teal or orange CTA, paw icons. Unavailable here: none of the 516 dogs has a photograph in the public record.",
+
+  "design_code": [
+    "Light is the material on a dark ground, because the only record these animals have is the one quantity that accumulates: days waited.",
+    "Frame brightness is a blackbody ramp driven by days_waiting, because exposure is literally time on the plate. Pancho at 448 days is the brightest object on the page and that is the whole argument.",
+    "Nothing flashes; only the longest waits breathe, on a 9s cycle, because the subject is duration rather than urgency. Alarm coding would misstate what the data says."
+  ],
+
+  "anti_brief": [
+    "No cute register: no paws, bones, rounded friendly type. 516 animals nobody has come for.",
+    "No red alarm coding. This is duration, not an emergency dashboard.",
+    "No paper, stamps, perforation or monospace record fields. That was the previous pass and it is the barred family."
+  ],
+
+  "expressive_axis": "luminosity. The exposure gradient across 516 frames is the one loud thing; type, structure and motion are restrained.",
+
+  "canvas": "dark",
+  "canvas_posture": "dark is home. Light theme is the print rather than the negative: exposure reads as ink density instead of emitted light.",
+
+  "palette": {
+    "dark": {
+      "ground": "#0E1210",
+      "ground_2": "#141917",
+      "frame": "#171C1A",
+      "edge": "#242B28",
+      "edge_2": "#1C2320",
+      "light": "#F4EFE4",
+      "light_2": "#A8AFA9",
+      "light_3": "#868E88",
+      "ramp": ["#7E8A84", "#9A7A45", "#C08E33", "#E8B44A", "#FFF3D4"]
+    },
+    "light": {
+      "ground": "#EDEAE2",
+      "ground_2": "#E4E0D6",
+      "frame": "#F7F5EF",
+      "edge": "#CFC9BB",
+      "edge_2": "#DED9CC",
+      "light": "#191D1B",
+      "light_2": "#4B534E",
+      "light_3": "#646C66",
+      "ramp": ["#7E7A6E", "#9C7434", "#8A5A18", "#6B3F0C", "#2E1C05"]
+    },
+    "contrast_verified": {
+      "dark": { "light": 15.04, "light_2": 7.7, "light_3": 5.12, "ramp_0": 4.81, "ramp_4": 15.63 },
+      "light": { "light": 15.62, "light_2": 7.28, "light_3": 4.5, "ramp_0": 3.93, "ramp_4": 15.0 },
+      "note": "measured against --frame. ramp_0 carries only the day count, which is 31px/600 or larger and therefore large text at a 3:1 floor."
+    }
+  },
+
+  "type": {
+    "voice": "a plate exposed slowly, then read carefully",
+    "display": "Fraunces",
+    "ui": "Inter Tight",
+    "mono": "none, deliberately: monospace was the previous pass's tell",
+    "scale_ratio": 1.32,
+    "numerals": "tabular everywhere a count appears (.num), because day counts are compared down a column"
+  },
+
+  "structure": "contact-sheet grid. Frames are numbered 001.. and ordered by exposure, so the sheet reads as one strip rather than a card gallery.",
+
+  "edge_and_depth": {
+    "radius": "0 throughout; a frame edge is a frame edge",
+    "border": "1px hairline",
+    "depth": "emitted. Elevation is a halo and a box-shadow tinted with the frame's own ramp color, never a neutral drop shadow. Glow appears only above 0.55 exposure, so it encodes data rather than decorating."
+  },
+
+  "motion": {
+    "explains": "the sheet developing, in exposure order",
+    "signature": "frames fade up staggered 22ms in wait order on load; the 7 longest waits breathe their border on a 9s cycle",
+    "resting": "still",
+    "durations": { "develop": "700ms", "hold": "9s", "ui": "200ms" },
+    "reduced_motion": "all animation and transition disabled"
+  },
+
+  "supersedes": {
+    "previous_pass": "kennel-card, print-editorial",
+    "why": "disqualified at ledger check. Collided with cooldown on canvas (light-neutral), accent (stamp red hue 13 vs 8), ornament (perforation), type (mono display+body) and depth (flat print), and print-editorial is barred until three non-print projects ship."
+  }
+}
