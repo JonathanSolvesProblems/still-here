@@ -142,6 +142,8 @@ header.top .wrap{display:flex;justify-content:space-between;align-items:baseline
 .verdict{margin-top:26px;padding-top:18px;border-top:1px solid var(--edge-2);
   font-size:14.5px;color:var(--light-2);position:relative;z-index:1}
 .verdict strong{color:var(--e3);font-weight:600}
+.notlisted{font-size:12.5px;color:var(--light-3);display:inline-block;max-width:54ch;
+  border-left:2px dashed var(--edge);padding-left:12px;line-height:1.6}
 
 /* ---- buttons ---- */
 .btn{
@@ -244,6 +246,9 @@ button.pin:focus-visible{outline:2px solid var(--e3);outline-offset:3px}
 .tag{font-size:9px;letter-spacing:.11em;text-transform:uppercase;padding:3px 6px;
   border:1px solid var(--edge);color:var(--light-3)}
 .tag.bully{border-color:var(--e2);color:var(--e3)}
+/* 134 dogs have no adoption page to open. Saying so is better than a card that
+   simply does not respond when you click it. */
+.tag.off{border-style:dashed;color:var(--light-3)}
 .fr .foot{margin-top:auto;padding-top:9px;border-top:1px solid var(--edge-2);
   display:flex;justify-content:space-between;align-items:center;gap:8px}
 .fr .pctl{font-size:10px;color:var(--light-3);line-height:1.35}
@@ -366,6 +371,7 @@ footer{padding:44px 0 64px;font-size:12.5px;color:var(--light-3)}
           </div>
         </div>
       </div>
+      <div id="hero-adopt" style="margin-top:20px;position:relative;z-index:1"></div>
       <div class="verdict" id="hero-verdict">—</div>
     </div>
   </div>
@@ -627,6 +633,13 @@ function renderHero(){
     ['Cohort median', d.cohort_median + ' days']
   ].map(([l,v]) => `<div class="field"><span class="label">${l}</span><span class="v">${v}</span></div>`).join('');
 
+  const ad = $('#hero-adopt');
+  if (ad) ad.innerHTML = d.adopt_url
+    ? `<a class="btn play" style="display:inline-block;text-decoration:none"
+         href="${d.adopt_url}" target="_blank" rel="noopener">Adopt ${d.name||'this dog'}</a>`
+    : `<span class="notlisted">Not listed for adoption. Austin publishes no adoption
+         page for this dog, so there is nowhere for this button to send you.</span>`;
+
   $('#hero-verdict').innerHTML =
     `<strong>${d.pct_of_cohort_home_by_now}%</strong> of the dogs like ${d.name||'him'} in this
      dataset (same breed group) were adopted in less time than ${d.name||'he'} has
@@ -676,6 +689,7 @@ function renderBoard(){
     const tags=[];
     if(d.bully) tags.push('<span class="tag bully">bully-type</span>');
     if(d.is_puppy) tags.push('<span class="tag">puppy</span>');
+    if(!d.adopt_url) tags.push('<span class="tag off">not listed for adoption</span>');
     if(d.health && d.health!=='Normal') tags.push(`<span class="tag">${d.health.toLowerCase()}</span>`);
     // frames arrive in order, like a sheet developing
     const delay=Math.min(i,40)*22;

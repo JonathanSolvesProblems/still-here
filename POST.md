@@ -115,7 +115,13 @@ The piece that genuinely wants a warehouse is the per-dog percentile: for each o
 
 I also kept the Python implementation and made the two argue. `verify.py` re-runs every headline question locally and diffs it against what Snowflake returned, across the medians, the counts, the colour table, the controlled split, the spreads, and the per-dog percentile for the top 25 dogs. **102 of 102 checks agree.** If they ever disagree, one of them is wrong and the number does not go in the writeup.
 
-**ElevenLabs** turns each script into speech. Sixteen clips, about 4,000 characters, read in a deliberately flat, neutral voice. A warm performed read would have sentimentalised a set of sentences whose whole point is that they are only the record.
+**ElevenLabs** turns each script into speech, and then into an animal.
+
+Every clip opens with a real generated sound for that breed group, made with ElevenLabs' sound generation: a mournful howl for the hounds, a husky's howl for the spitz breeds, a tiny yip for the toy dogs, a single deep woof for the guardians. Then a different voice per breed group reads the record. The pit bulls deliberately got Brian, the warmest and deepest voice available, because 51 of the dogs without photographs are pit bulls and a growling read would reinforce the exact prejudice the other 99,905 records spend this whole page dismantling.
+
+The words stay factual either way. The character comes from who is reading and from the animal you hear first, never from invented biography.
+
+Twenty-three clips, covering all ten breed groups. A straight top-16 by wait length would have been thirteen pit bulls and the howls would never have played anywhere, so the generator tops up with the longest waiter from every group the top-16 missed.
 
 Everything else is deliberately plain: Python and the standard library for the pipeline, and a single static HTML page with no framework and no build step.
 
