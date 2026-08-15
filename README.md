@@ -40,12 +40,22 @@ bully-type dogs wait a median of **28 days** against **8** for every other dog.
 ## Running it
 
 ```bash
-python pipeline/fetch.py        # pull both data eras, rebuild the corpus
-python pipeline/analyze.py      # compute stats.json (feeds the site)
+python pipeline/fetch.py            # pull both data eras, rebuild the corpus
+python pipeline/photos.py           # join Austin's adoption listings for faces
+python pipeline/analyze.py          # compute stats.json (feeds the site)
 python pipeline/load_snowflake.py   # load into Snowflake, run the views
-python pipeline/voices.py 16    # generate ElevenLabs clips for the longest waits
-python -m http.server 8931      # then open /index.html
+python pipeline/verify.py           # assert Snowflake and Python agree
+python pipeline/voices.py 16        # ElevenLabs clips for the longest waits
+python pipeline/factcheck.py        # assert the writeup matches the data
+python -m http.server 8931          # then open /index.html
 ```
+
+`verify.py` and `factcheck.py` are the two that matter before publishing.
+The first re-runs every headline question in Python and diffs it against
+Snowflake (102 checks). The second re-reads `stats.json` and asserts each
+number quoted in `README.md` and `POST.md`, because a figure written on
+Saturday and a pipeline re-run on Sunday is exactly how a writeup ends up
+lying about its own data.
 
 Copy `.env.example` to `.env` and fill in credentials first. Only
 `load_snowflake.py` and `voices.py` need them; the corpus and the site work
@@ -84,6 +94,24 @@ a view. Two things live there deliberately:
 
 `verify.py` re-runs the same questions in Python and diffs the two, so the
 warehouse and the local pipeline have to agree before anything ships.
+
+### The photographs
+
+The open data has no images in it. Austin's adoption listings run on Adopets,
+and that platform's `code` field is the same animal id the Socrata feeds use, so
+the two join directly: **380 of the 515 dogs on the board have a real photo**.
+They are embedded from the shelter's platform rather than copied, and every
+frame links back to that dog's real adoption page.
+
+`photos.py` refuses to write the join if fewer than 90% of matched, named dogs
+agree on the name, because a wrong face on a real animal is worse than no face.
+It currently sits at 97%; the disagreements are all the shelter renaming a dog
+after intake (`Unknown` becomes `Tinkerbelle`, `Fat Boy` becomes `Big Boy`).
+
+The 135 without a photo are mostly not being overlooked. They are recent
+arrivals still inside a mandatory stray hold, and their median wait is 20 days
+against 84 for the listed ones. A few are not recent at all: Pancho, the longest
+wait on the board, is one of them.
 
 ### ElevenLabs
 
