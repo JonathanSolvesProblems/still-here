@@ -209,10 +209,23 @@ section{padding:70px 0;border-bottom:1px solid var(--edge-2)}
 .fr:hover .ph img{transform:scale(1.035)}
 .fr .ph.blank{display:flex;align-items:center;justify-content:center;
   background:repeating-linear-gradient(135deg,var(--ground) 0 7px,var(--ground-2) 7px 14px)}
-.fr .ph.blank span{font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--light-3);text-align:center;padding:0 10px;line-height:1.5;
-  position:absolute;bottom:9px;left:0;right:0}
-.sil{width:66%;height:66%;display:block}
+.fr .ph.blank span:last-child{font-size:9.5px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--light-3);text-align:center;padding:4px 10px;
+  line-height:1.5;position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(transparent,var(--frame) 45%)}
+/* The breed art is used as a mask, not as a picture: the alpha channel carries
+   the drawing and the fill is the coat colour the shelter recorded. Hidden
+   where masks are unsupported, so it degrades to the text rather than to a
+   coloured rectangle. */
+.sil{display:none}
+@supports ((-webkit-mask-image:url(a)) or (mask-image:url(a))){
+  /* Sits high in the frame so the caption underneath stays readable across
+     the dog's chest. */
+  .sil{display:block;width:62%;height:62%;margin-bottom:14px;
+    -webkit-mask-size:contain;mask-size:contain;
+    -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
+    -webkit-mask-position:center;mask-position:center}
+}
 .fr .ph.blank,.plate.blank{position:relative}
 a.adopt{text-decoration:none;color:inherit;display:block}
 a.adopt:focus-visible{outline:2px solid var(--e3);outline-offset:3px}
@@ -227,7 +240,7 @@ a.adopt:focus-visible{outline:2px solid var(--e3);outline-offset:3px}
   background:repeating-linear-gradient(135deg,var(--ground) 0 9px,var(--ground-2) 9px 18px)}
 .plate.blank span{font-size:10px;letter-spacing:.14em;text-transform:uppercase;
   color:var(--light-3);line-height:1.7;position:absolute;bottom:12px;left:0;right:0}
-.plate.blank .sil{width:60%;height:60%;position:static}
+.plate.blank .sil{width:66%;height:66%;position:static}
 .credit{font-size:11.5px;color:var(--light-3);margin-top:18px}
 .credit a{color:var(--e3)}
 .fr .nm{font-family:var(--display);font-size:19px;font-weight:600;letter-spacing:-.02em;
@@ -305,37 +318,6 @@ footer{padding:44px 0 64px;font-size:12.5px;color:var(--light-3)}
 </style>
 </head>
 <body>
-<svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="sil-bully" viewBox="0 0 100 100"><g fill="currentColor">
-      <path d="M16 66C11 50 18 32 36 27c9-3 18-1 24 5l4 5 22 3c6 1 8 7 4 11l-6 5
-               c-3 2-7 3-11 3l-11-1-3 6c-3 6-9 10-17 11l-14 1c-6 0-11-4-12-10z"/>
-      <path d="M40 28 28 12c-2-3 1-6 4-4l14 12z"/></g></symbol><symbol id="sil-shepherd" viewBox="0 0 100 100"><g fill="currentColor">
-      <path d="M16 66C11 50 17 32 35 27c8-2 16 0 22 5l5 6 26 8c6 2 6 8 1 11l-8 4
-               c-3 2-7 2-10 1l-12-4-4 6c-4 6-10 9-18 10l-13 1c-6 0-11-4-12-10z"/>
-      <path d="M40 29 27 6c-2-4 2-7 5-4l16 19z"/></g></symbol><symbol id="sil-spitz" viewBox="0 0 100 100"><g fill="currentColor">
-      <path d="M16 65C11 49 18 32 36 27c8-2 16 0 22 5l5 6 21 6c6 2 6 8 1 11l-6 3
-               c-3 2-7 2-10 1l-10-3-4 6c-4 6-10 9-18 10l-13 1c-6 0-11-4-12-10z"/>
-      <path d="M40 28 28 9c-2-4 2-6 5-4l15 15z"/></g></symbol><symbol id="sil-toy" viewBox="0 0 100 100"><g fill="currentColor">
-      <path d="M18 66C13 52 20 36 36 32c8-2 15 0 20 5l4 5 16 2c5 1 6 6 2 9l-5 4
-               c-3 2-6 2-9 2l-8-1-3 5c-3 5-9 8-16 9l-12 1c-5 0-9-3-10-8z"/>
-      <path d="M41 33 25 13c-2-3 1-6 4-4l17 15z"/></g></symbol><symbol id="sil-terrier" viewBox="0 0 100 100"><g fill="currentColor">
-      <path d="M18 65C13 51 20 34 36 30c8-2 15 0 20 5l4 5 18 3c5 1 6 6 2 9l-5 4
-               c-3 2-6 2-9 2l-9-1-3 5c-3 6-9 9-16 10l-12 1c-5 0-9-3-10-8z"/>
-      <path d="M41 31 30 15c-2-3 1-6 4-4l14 12z"/></g></symbol><symbol id="sil-retriever" viewBox="0 0 100 100"><g fill="currentColor">
-      <path d="M16 64C11 48 18 31 36 26c9-2 17 0 23 6l4 6 24 6c6 2 6 8 1 11l-7 4
-               c-3 2-7 2-10 1l-11-3-4 6c-4 6-10 9-18 10l-13 1c-6 0-11-4-12-10z"/>
-      <path d="M33 29c-9 1-14 12-13 27 1 11 6 17 11 15 5-2 7-11 6-22-1-9-2-16-4-20z"/></g></symbol><symbol id="sil-hound" viewBox="0 0 100 100"><g fill="currentColor">
-      <path d="M16 62C11 46 18 30 36 25c9-2 17 0 23 6l4 6 26 7c6 2 6 8 1 11l-7 4
-               c-3 2-7 2-10 1l-12-3-4 6c-4 6-10 9-18 10l-13 1c-6 0-11-4-12-10z"/>
-      <path d="M32 27c-11 2-17 17-15 37 2 14 9 21 15 18 5-3 7-15 5-31-1-11-3-19-5-24z"/></g></symbol><symbol id="sil-guardian" viewBox="0 0 100 100"><g fill="currentColor">
-      <path d="M14 68C9 50 17 30 37 25c10-3 20 0 26 7l5 7 22 4c6 1 8 7 3 11l-7 5
-               c-3 2-7 3-11 2l-10-2-4 7c-4 7-11 11-20 12l-14 1c-7 0-12-4-13-11z"/>
-      <path d="M34 28c-7 1-11 9-10 20 1 8 5 12 9 10 4-2 5-8 4-17-1-6-2-11-3-13z"/></g></symbol><symbol id="sil-herder" viewBox="0 0 100 100"><g fill="currentColor">
-      <path d="M16 64C11 48 18 31 36 26c9-2 17 0 23 6l4 6 23 6c6 2 6 8 1 11l-6 4
-               c-3 2-7 2-10 1l-11-3-4 6c-4 6-10 9-18 10l-13 1c-6 0-11-4-12-10z"/>
-      <path d="M34 28c-8 0-12 8-11 18 1 7 5 11 8 9 3-2 4-8 4-16 0-6 0-9-1-11z"/></g></symbol><symbol id="sil-generic" viewBox="0 0 100 100"><g fill="currentColor">
-      <path d="M16 65C11 49 18 32 36 27c9-2 17 0 23 6l4 6 23 6c6 2 6 8 1 11l-7 4
-               c-3 2-7 2-10 1l-11-3-4 6c-4 6-10 9-18 10l-13 1c-6 0-11-4-12-10z"/>
-      <path d="M33 28c-9 1-14 11-13 24 1 10 6 15 10 13 4-2 6-10 5-20-1-8-1-14-2-17z"/></g></symbol></svg>
 
 <header class="top">
   <div class="wrap">
@@ -620,9 +602,9 @@ function renderHero(){
     // The longest wait on the board has no listing and therefore no picture.
     // Saying so plainly is better than hiding the gap behind a placeholder dog.
     plate.innerHTML = `<span class="plate blank">
-        <svg class="sil" style="color:${d.ink}" role="img"
-             aria-label="Drawing of a ${d.raw_breed||d.breed} head; no photograph exists"
-        ><use href="#sil-${d.sil}"/></svg>
+        <span class="sil" role="img"
+              aria-label="Illustration of a ${d.sil} type dog; no photograph of this dog exists"
+              style="background:${d.ink};-webkit-mask-image:url(assets/breeds/${d.sil}.png);mask-image:url(assets/breeds/${d.sil}.png)"></span>
         <span>no photograph<br>on file</span></span>`;
   }
 
@@ -699,9 +681,9 @@ function renderBoard(){
       ? `<span class="ph"><img loading="lazy" src="${d.photo}" alt="${alt.replace(/"/g,'&quot;')}"
            onerror="this.parentNode.classList.add('blank');this.remove()"></span>`
       : `<span class="ph blank" title="${d.raw_breed||d.breed}, ${d.color}">
-           <svg class="sil" style="color:${d.ink}" role="img"
-                aria-label="Drawing of a ${d.raw_breed||d.breed} head; no photograph exists"
-           ><use href="#sil-${d.sil}"/></svg>
+           <span class="sil" role="img"
+                 aria-label="Illustration of a ${d.sil} type dog; no photograph of this dog exists"
+                 style="background:${d.ink};-webkit-mask-image:url(assets/breeds/${d.sil}.png);mask-image:url(assets/breeds/${d.sil}.png)"></span>
            <span>no photograph<br>on file</span></span>`;
     const inner = `${ph}${nm}${d.given_name?`<div class="given">named ${d.given_name} by the shelter</div>`:''}`;
     const head = d.adopt_url
