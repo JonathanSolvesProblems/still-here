@@ -144,8 +144,8 @@ def main():
     grab("by_color", "SELECT * FROM BY_COLOR")
     grab("by_color_controlled", "SELECT * FROM BY_COLOR_CONTROLLED")
     for r in grab("spread", "SELECT * FROM SPREAD"):
-        print(f"    colour within bully {r['COLOUR_SPREAD_WITHIN_BULLY']}d, "
-              f"within other {r['COLOUR_SPREAD_WITHIN_OTHER']}d, "
+        print(f"    color within bully {r['COLOR_SPREAD_WITHIN_BULLY']}d, "
+              f"within other {r['COLOR_SPREAD_WITHIN_OTHER']}d, "
               f"gap between groups {r['WORST_CASE_GAP_BETWEEN_GROUPS']}d")
     grab("by_breed", "SELECT * FROM BY_BREED")
     top = grab("waiting_ranked", "SELECT * FROM WAITING_RANKED LIMIT 25")

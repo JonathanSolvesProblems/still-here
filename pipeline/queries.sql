@@ -82,9 +82,9 @@ FROM ADOPTIONS
 GROUP BY BULLY;
 
 -- ---------------------------------------------------------------------------
--- 3. The myth. Median wait by coat colour, uncontrolled.
+-- 3. The myth. Median wait by coat color, uncontrolled.
 --    This is the table that makes people believe in black dog syndrome, and
---    on its own it does look like colour is doing the work.
+--    on its own it does look like color is doing the work.
 -- ---------------------------------------------------------------------------
 CREATE OR REPLACE VIEW BY_COLOR AS
 SELECT
@@ -98,8 +98,8 @@ HAVING COUNT(*) >= 400
 ORDER BY MEDIAN_DAYS DESC;
 
 -- ---------------------------------------------------------------------------
--- 4. The answer. The same colours, split by breed type.
---    A colour needs 250 adoptions on BOTH sides of the split to appear: at a
+-- 4. The answer. The same colors, split by breed type.
+--    A color needs 250 adoptions on BOTH sides of the split to appear: at a
 --    lower floor a 35-dog cell sets the reported spread and the comparison
 --    stops meaning anything.
 -- ---------------------------------------------------------------------------
@@ -115,12 +115,12 @@ GROUP BY COLOR
 HAVING COUNT_IF(BULLY) >= 250 AND COUNT_IF(NOT BULLY) >= 250
 ORDER BY BULLY_MEDIAN DESC;
 
--- How much does colour move the wait once breed is held still, against how
+-- How much does color move the wait once breed is held still, against how
 -- much breed moves it? This single row is the finding.
 CREATE OR REPLACE VIEW SPREAD AS
 SELECT
-  MAX(BULLY_MEDIAN) - MIN(BULLY_MEDIAN)  AS COLOUR_SPREAD_WITHIN_BULLY,
-  MAX(OTHER_MEDIAN) - MIN(OTHER_MEDIAN)  AS COLOUR_SPREAD_WITHIN_OTHER,
+  MAX(BULLY_MEDIAN) - MIN(BULLY_MEDIAN)  AS COLOR_SPREAD_WITHIN_BULLY,
+  MAX(OTHER_MEDIAN) - MIN(OTHER_MEDIAN)  AS COLOR_SPREAD_WITHIN_OTHER,
   MIN(BULLY_MEDIAN) - MAX(OTHER_MEDIAN)  AS WORST_CASE_GAP_BETWEEN_GROUPS
 FROM BY_COLOR_CONTROLLED;
 

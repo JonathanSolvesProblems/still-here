@@ -13,7 +13,7 @@ so re-running produces byte-identical scripts and the demo is reproducible.
 
 Usage:  python pipeline/voices.py [count]
 Needs:  ELEVENLABS_API_KEY in .env
-Writes: web/audio/<animal_id>.mp3 and web/audio/manifest.json
+Writes: audio/<animal_id>.mp3 and web/audio/manifest.json
         data/scripts.json (the text, so the writeup can quote it verbatim)
 """
 
@@ -27,7 +27,7 @@ import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
-AUDIO = os.path.join(ROOT, "web", "audio")
+AUDIO = os.path.join(ROOT, "audio")
 
 API = "https://api.elevenlabs.io/v1"
 MODEL = "eleven_multilingual_v2"
@@ -189,7 +189,7 @@ def main():
 
     json.dump(made, open(os.path.join(AUDIO, "manifest.json"), "w"), indent=2)
     json.dump(scripts, open(os.path.join(DATA, "scripts.json"), "w", encoding="utf-8"), indent=2)
-    print(f"\n{len(made)} clips in web/audio, {total_chars} characters of speech")
+    print(f"\n{len(made)} clips in audio/, {total_chars} characters of speech")
 
 
 if __name__ == "__main__":

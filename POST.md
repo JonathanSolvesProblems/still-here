@@ -6,6 +6,14 @@ tags: weekendchallenge, snowflake, datascience, showdev
 
 *This is my entry for the [DEV Weekend Challenge: Dog Days Edition](https://dev.to/challenges/weekend-2026-08-13).*
 
+My family's dog died recently. He lived with my mom, I met him the day he was born, and I knew him almost his whole life. It was hard on all of us in the way that is difficult to explain to anyone who has not had it happen.
+
+A little while later my mom brought home another dog. He does not replace the first one, and nobody in my family pretends otherwise. But a house with a dog in it is a different house, and hers is whole again.
+
+That exchange happens hundreds of thousands of times a year in the United States. What I had not thought about until this weekend is that there is a queue for it, that the queue is very long for some dogs and very short for others, and that the difference is not what almost everyone believes it is.
+
+This is about the dogs at the back of that queue.
+
 There is a dog called Pancho in the Austin animal shelter. He is a white Cairn Terrier, he was picked up as a stray on May 23, 2025, and as I write this he has been there **448 days**.
 
 I know that because Austin publishes its shelter records as open data, and Pancho has an intake row with no outcome row. Nobody has adopted him, nobody has reclaimed him, and he has not been transferred anywhere. He is just still there.
@@ -20,7 +28,7 @@ If you have spent any time around animal shelters you have heard of **black dog 
 
 It is a genuinely checkable claim, and Austin has published enough records to check it.
 
-I pulled every completed dog stay the city has released since October 2013 and reconstructed how long each one lasted: **99,905 stays**, of which **51,404 ended in adoption**. Then I took the median wait for each coat colour.
+I pulled every completed dog stay the city has released since October 2013 and reconstructed how long each one lasted: **99,905 stays**, of which **51,404 ended in adoption**. Then I took the median wait for each coat color.
 
 | coat | median days to adoption | n |
 |---|---|---|
@@ -40,11 +48,11 @@ So the myth does not survive its first contact with the data. That much matches 
 
 But there is something much more interesting sitting in that same table, and it took me a second pass to see it.
 
-## The colours that wait are the colours pit bulls come in
+## The colors that wait are the colors pit bulls come in
 
-Look at the top of that list again. Blue, brown brindle, fawn. Those are not random slow colours. They are the coats you picture when you picture a pit bull.
+Look at the top of that list again. Blue, brown brindle, fawn. Those are not random slow colors. They are the coats you picture when you picture a pit bull.
 
-So I split every colour by whether the dog was a bully-type breed, meaning pit bull, Staffordshire, or American bulldog:
+So I split every color by whether the dog was a bully-type breed, meaning pit bull, Staffordshire, or American bulldog:
 
 | coat | bully-type | everyone else |
 |---|---|---|
@@ -59,9 +67,9 @@ So I split every colour by whether the dog was a bully-type breed, meaning pit b
 
 The two columns do not overlap anywhere. Every bully-type cell is between 25 and 32.5 days. Every other cell is between 7 and 11.
 
-**Hold the breed still and coat colour moves the wait by about 4 days. Change the breed and it moves by 20.**
+**Hold the breed still and coat color moves the wait by about 4 days. Change the breed and it moves by 20.**
 
-Black only looked fast in the first table because black dogs are the *least* likely to be bully-type: 12% of them, against 81% of the blue ones. The colour signal was a breed signal the whole time. A black dog that is not a bully breed waits 8 days. A black pit bull waits 31.
+Black only looked fast in the first table because black dogs are the *least* likely to be bully-type: 12% of them, against 81% of the blue ones. The color signal was a breed signal the whole time. A black dog that is not a bully breed waits 8 days. A black pit bull waits 31.
 
 Across the whole corpus: **bully-type dogs wait a median of 28 days, and every other dog waits 8.** That is 3.5 times, on 9,657 bully-type adoptions against 41,747 others.
 
@@ -97,7 +105,7 @@ Everything else is deliberately plain: Python and the standard library for the p
 
 **Medians, not averages.** Length of stay is heavily right-skewed. The mean wait for a bully-type dog is 66 days against a median of 28, because a handful of dogs stay for years. Every headline number here is a median.
 
-**Then the mistake.** My first controlled table required only 30 adoptions per cell, and it reported that coat colour moved the wait by 28 days within bully-type dogs, which would have undercut the entire finding. The top and bottom of that table were Yellow Brindle at n=35 and Gray at n=62. Two thin cells were setting the whole spread. At a floor of 250 the same table shows 8 days, and that is the number above.
+**Then the mistake.** My first controlled table required only 30 adoptions per cell, and it reported that coat color moved the wait by 28 days within bully-type dogs, which would have undercut the entire finding. The top and bottom of that table were Yellow Brindle at n=35 and Gray at n=62. Two thin cells were setting the whole spread. At a floor of 250 the same table shows 8 days, and that is the number above.
 
 **And one I nearly published.** 15 of the dogs on my first board had arrived dead. Animals recorded dead on intake never get an outcome row, so the anti-join that finds waiting dogs finds them too, and there they were on a page captioned *nobody has come for them yet*. They are filtered out now. The count went from 531 to 516.
 
@@ -113,11 +121,13 @@ Breed labels also deserve a warning. They are assigned by staff from appearance,
 
 ## Why I built it
 
-The interesting thing about the black dog myth is not that it is wrong. It is that it is a *kinder* thing to believe. If dogs are passed over for their colour, that is a superstition, and superstitions can be argued away with a good photo and a hashtag.
+The interesting thing about the black dog myth is not that it is wrong. It is that it is a *kinder* thing to believe. If dogs are passed over for their color, that is a superstition, and superstitions can be argued away with a good photo and a hashtag.
 
-The real pattern is not a superstition. People are avoiding a breed, and 218 of the dogs in that shelter tonight are that breed, and the ones at the top of the board have been waiting since before last summer.
+The real pattern is not a superstition. People are avoiding a breed. 218 of the dogs in that shelter tonight are that breed, and the ones at the top of the board have been waiting since before last summer.
 
-Pancho is not a pit bull. He is a small white terrier and he has been there 448 days, which is the part I cannot explain and did not try to.
+Pancho is not one of them. He is a small white terrier and he has been there 448 days, which is the part I cannot explain and did not try to.
+
+When my mom brought that second dog home, one dog stopped waiting. I did not think about it in those terms at the time and I doubt she did either. This weekend I built the list of everyone still waiting, and it turns out to be 516 names long.
 
 ---
 

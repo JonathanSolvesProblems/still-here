@@ -273,14 +273,14 @@ footer{padding:40px 0 60px;font-size:12px;color:var(--ink-3)}
       <p>It is the most repeated claim in animal sheltering. I checked it against
          every completed dog stay Austin has published since 2013: <span id="n-stays">—</span>
          of them, <span id="n-adopted">—</span> ending in adoption. Here is the median
-         wait by coat colour.</p>
+         wait by coat color.</p>
     </div>
     <div class="chart" id="chart-color"></div>
 
     <div class="sec-head" style="margin-top:56px">
       <h2>It is not true. And the reason is hiding in the same table.</h2>
       <p>Black dogs leave faster than white, brown or chocolate. But look what
-         happens when you split each colour by whether the dog is a bully-type
+         happens when you split each color by whether the dog is a bully-type
          breed (pit bull, Staffordshire, American bulldog).</p>
     </div>
     <div class="split">
@@ -297,7 +297,7 @@ footer{padding:40px 0 60px;font-size:12px;color:var(--ink-3)}
     </div>
 
     <div class="callout">
-      <p>Hold the breed still and coat colour moves the wait by
+      <p>Hold the breed still and coat color moves the wait by
         <span class="big" id="sp-in">—</span>.
         Change the breed and it moves by <span class="big" id="sp-bt">—</span>.
         Black only looked fast because black dogs are the least likely to be
@@ -348,7 +348,7 @@ footer{padding:40px 0 60px;font-size:12px;color:var(--ink-3)}
       <h3>Medians, not averages</h3>
       <p>Length of stay is heavily right-skewed: a small number of dogs stay for
         years and drag every average upward. Every headline number here is a
-        median. Colour cells in the controlled comparison need at least 250
+        median. Color cells in the controlled comparison need at least 250
         adoptions on each side of the split to appear, because at a lower floor a
         35-dog cell was setting the reported spread.</p>
 
@@ -442,7 +442,7 @@ function renderStrip(){
     [w.bully_pct + '%', 'of them are bully-type'],
     [w.median_days_waiting, 'median days already waited'],
     [w.over_year, 'have been there over a year'],
-    [fmt(S.corpus.stays_total), 'completed stays analysed']
+    [fmt(S.corpus.stays_total), 'completed stays analyzed']
   ];
   $('#strip').innerHTML = items.map(([n,l]) =>
     `<div class="stat"><span class="n num">${n}</span><span class="l">${l}</span></div>`).join('');
@@ -492,7 +492,7 @@ function renderBoard(){
 /* ---- charts -------------------------------------------------------------- */
 function bars(el, rows, opt = {}){
   // opt.max lets two charts share one scale. Without it, side-by-side panels
-  // each normalise to their own maximum and a 32-day bar renders exactly as
+  // each normalize to their own maximum and a 32-day bar renders exactly as
   // long as a 9-day one, which is the opposite of what the comparison says.
   const max = opt.max || Math.max(...rows.map(r => r.v));
   $(el).innerHTML = rows.map(r =>
@@ -532,7 +532,7 @@ fetch('audio/manifest.json')
   .then(r => r.ok ? r.json() : [])
   .catch(() => [])
   .then(ids => { CLIPS = new Set((ids || []).map(String)); })
-  .then(() => fetch('../data/stats.json').then(r => r.ok ? r : fetch('data/stats.json')))
+  .then(() => fetch('data/stats.json'))
   .then(r => r.json()).then(s => {
   S = s;
   const when = new Date(s.generated_from.fetched_at_utc);

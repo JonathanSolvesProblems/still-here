@@ -9,8 +9,8 @@ deliberately careful:
      the slow ones. Medians are quoted everywhere; means are kept alongside so
      the writeup can show both.
 
-  2. The colour finding is only meaningful controlled for breed. Reporting the
-     raw colour table alone reproduces the exact error the piece is debunking,
+  2. The color finding is only meaningful controlled for breed. Reporting the
+     raw color table alone reproduces the exact error the piece is debunking,
      so analyze() always emits the controlled split next to it.
 
 Output: data/stats.json
@@ -33,7 +33,7 @@ BULLY_MARKERS = (
 )
 
 MIN_N = 400          # cohort floor for a headline table
-# Controlled cells split an already-small colour into two, so the floor has to be
+# Controlled cells split an already-small color into two, so the floor has to be
 # high enough that a 35-dog cell can't set the reported spread. At 30 the table
 # was topped and tailed by Yellow Brindle (n=35) and Gray (n=62) and claimed a
 # 28-day within-group spread; at 250 the same table shows 7.
@@ -104,7 +104,7 @@ def main():
         ),
     }
 
-    # ---- the myth: raw colour table -----------------------------------------
+    # ---- the myth: raw color table -----------------------------------------
     by_color = defaultdict(list)
     for r in adopted:
         by_color[r["color"]].append(r)
@@ -119,7 +119,7 @@ def main():
     colors.sort(key=lambda d: -d["median"])
     stats["by_color"] = colors
 
-    # ---- the answer: same colours, split by breed type ------------------------
+    # ---- the answer: same colors, split by breed type ------------------------
     controlled = []
     for c, rows in by_color.items():
         b = [r["days"] for r in rows if r["bully"]]
@@ -136,7 +136,7 @@ def main():
     controlled.sort(key=lambda d: -d["bully"]["median"])
     stats["controlled"] = controlled
 
-    # How flat is colour once breed is held constant? Quote this, not a p-value.
+    # How flat is color once breed is held constant? Quote this, not a p-value.
     spread_raw = max(c["median"] for c in colors) - min(c["median"] for c in colors)
     spread_bully = max(c["bully"]["median"] for c in controlled) - min(
         c["bully"]["median"] for c in controlled
@@ -224,7 +224,7 @@ def main():
     print(f"bully-type     median {h['bully']['median']:.0f}d  n={h['bully']['n']:,}")
     print(f"everyone else  median {h['other']['median']:.0f}d  n={h['other']['n']:,}")
     print(f"ratio          {h['median_ratio']}x median")
-    print(f"colour spread  raw {stats['spread']['raw_color_days']:.0f}d -> within-bully {stats['spread']['within_bully_days']:.0f}d, within-other {stats['spread']['within_other_days']:.0f}d")
+    print(f"color spread  raw {stats['spread']['raw_color_days']:.0f}d -> within-bully {stats['spread']['within_bully_days']:.0f}d, within-other {stats['spread']['within_other_days']:.0f}d")
     print(f"waiting now    {w['count']} dogs, {w['bully_pct']}% bully-type, {w['over_year']} over a year")
     print(f"longest        {w['longest']['name']} {w['longest']['days_waiting']}d "
           f"({w['longest']['pct_of_cohort_home_by_now']}% of his cohort were home by now)")

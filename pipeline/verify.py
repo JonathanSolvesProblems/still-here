@@ -51,12 +51,12 @@ def main():
         num(sf_head["Everyone else"]["MEDIAN_DAYS"]))
     cmp("other n", py["headline"]["other"]["n"], num(sf_head["Everyone else"]["N"]))
 
-    # 2. colour table
+    # 2. color table
     sf_col = {r["COLOR"]: r for r in sf["by_color"]}
     for c in py["by_color"]:
         if c["color"] in sf_col:
-            cmp(f"colour {c['color']} median", c["median"], num(sf_col[c["color"]]["MEDIAN_DAYS"]))
-            cmp(f"colour {c['color']} n", c["n"], num(sf_col[c["color"]]["N"]))
+            cmp(f"color {c['color']} median", c["median"], num(sf_col[c["color"]]["MEDIAN_DAYS"]))
+            cmp(f"color {c['color']} n", c["n"], num(sf_col[c["color"]]["N"]))
 
     # 3. controlled split, the finding itself
     sf_ctl = {r["COLOR"]: r for r in sf["by_color_controlled"]}
@@ -71,9 +71,9 @@ def main():
     if sf.get("spread"):
         s = sf["spread"][0]
         cmp("spread within bully", py["spread"]["within_bully_days"],
-            num(s["COLOUR_SPREAD_WITHIN_BULLY"]))
+            num(s["COLOR_SPREAD_WITHIN_BULLY"]))
         cmp("spread within other", py["spread"]["within_other_days"],
-            num(s["COLOUR_SPREAD_WITHIN_OTHER"]))
+            num(s["COLOR_SPREAD_WITHIN_OTHER"]))
 
     # 5. the per-dog percentile that appears on every card
     sf_wait = {str(r["ANIMAL_ID"]): r for r in sf.get("waiting_ranked", [])}

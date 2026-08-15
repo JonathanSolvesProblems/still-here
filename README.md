@@ -11,13 +11,13 @@ has already been waiting.
 
 ## The finding
 
-Black dog syndrome, the belief that black dogs are passed over for their colour,
+Black dog syndrome, the belief that black dogs are passed over for their color,
 does not appear in Austin's records. Across **99,905 completed dog stays** since
 2013, black dogs leave in a median of **9 days**, faster than white, brown or
 chocolate.
 
-The colours that *do* wait are blue, brindle and fawn, which are the coats
-bully-type dogs come in. Split each colour by breed group and the picture
+The colors that *do* wait are blue, brindle and fawn, which are the coats
+bully-type dogs come in. Split each color by breed group and the picture
 resolves:
 
 | coat | bully-type | everyone else |
@@ -29,7 +29,7 @@ resolves:
 | Blue | 26 | 11 |
 | Brown Brindle | 25 | 11 |
 
-The two columns never overlap. Hold breed constant and coat colour moves the
+The two columns never overlap. Hold breed constant and coat color moves the
 median wait by about 4 days; change the breed and it moves by 20. Overall,
 bully-type dogs wait a median of **28 days** against **8** for every other dog.
 
@@ -42,7 +42,7 @@ python pipeline/fetch.py        # pull both data eras, rebuild the corpus
 python pipeline/analyze.py      # compute stats.json (feeds the site)
 python pipeline/load_snowflake.py   # load into Snowflake, run the views
 python pipeline/voices.py 16    # generate ElevenLabs clips for the longest waits
-python -m http.server 8931      # then open /web/index.html
+python -m http.server 8931      # then open /index.html
 ```
 
 Copy `.env.example` to `.env` and fill in credentials first. Only
@@ -55,7 +55,7 @@ without any keys, because Austin's data needs no authentication.
 Austin Socrata feeds ──▶ fetch.py ──▶ data/outcomes.csv   (99,905 completed stays)
    (no API key)                   └──▶ data/waiting.csv    (516 dogs, no outcome)
                                         │
-                                        ├──▶ analyze.py ──▶ data/stats.json ──▶ web/index.html
+                                        ├──▶ analyze.py ──▶ data/stats.json ──▶ index.html
                                         │
                                         └──▶ load_snowflake.py ──▶ Snowflake
                                                     │                 STILL_HERE.SHELTER
@@ -64,7 +64,7 @@ Austin Socrata feeds ──▶ fetch.py ──▶ data/outcomes.csv   (99,905 co
                                                     │                 BY_BREED, WAITING_RANKED
                                                     └──▶ data/snowflake_results.json
 
-data/stats.json ──▶ voices.py ──▶ ElevenLabs ──▶ web/audio/*.mp3
+data/stats.json ──▶ voices.py ──▶ ElevenLabs ──▶ audio/*.mp3
 ```
 
 ### Snowflake
@@ -117,7 +117,7 @@ waiting for a home.
 
 **Medians, not averages.** Length of stay is heavily right-skewed. The mean
 bully-type wait is 66 days against a median of 28. Every headline number is a
-median. Controlled colour cells need 250 adoptions on each side of the split to
+median. Controlled color cells need 250 adoptions on each side of the split to
 appear; at a lower floor a 35-dog cell was setting the reported spread.
 
 **Limits.** One municipal shelter, and Austin is a no-kill city with a high
@@ -130,6 +130,6 @@ found staff labelled 52% of a sample pit bull-type where DNA put it at 21%, so
 ## Credits
 
 Data: [Austin Animal Center](https://data.austintexas.gov) open data.
-Black dog syndrome prior work: Hoffman et al., summarised
+Black dog syndrome prior work: Hoffman et al., summarized
 [here](https://www.sciencedaily.com/releases/2016/02/160203185534.htm).
 Breed identification: Olson et al., *The Veterinary Journal* 206 (2015) 197-202.

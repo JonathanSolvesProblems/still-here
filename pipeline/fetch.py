@@ -13,7 +13,7 @@ silently attribute a repeat stray's whole history to one stay.
 The live feed ships days_in_shelter natively and is used as-is.
 
 Outputs (data/):
-  outcomes.csv   one row per completed stay, both eras, normalised
+  outcomes.csv   one row per completed stay, both eras, normalized
   waiting.csv    dogs with an intake and no recorded outcome
   meta.json      row counts and the exact fetch timestamp, for the writeup
 """

@@ -48,7 +48,7 @@ ones at the top have been there so long.
 *Chart splits into the controlled comparison. Two flat rows.*
 
 > Because the thing that actually decides is breed. Hold breed constant and
-> colour moves the wait by four days. Change the breed and it moves by twenty.
+> color moves the wait by four days. Change the breed and it moves by twenty.
 > A bully-type dog waits twenty-eight days. Every other dog waits eight. Black
 > only looked fast because black dogs are the least likely to be pit bulls.
 
