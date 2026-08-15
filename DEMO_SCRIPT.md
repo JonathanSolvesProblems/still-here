@@ -13,24 +13,24 @@ ones at the top have been there so long.
 
 ### 0:00-0:12 | Cold open on Pancho
 
-*Screen: the board loads. One card fills the frame. A live counter ticks.*
+*Screen: the sheet develops. One frame fills the screen, burning white.*
 
 > This is Pancho. He's a white Cairn Terrier in the Austin animal shelter, and
 > as of this morning he has been waiting four hundred and forty-eight days.
 
 ### 0:12-0:22 | He speaks
 
-*Click Listen. ElevenLabs audio plays over the card.*
+*Click Hear from Pancho. ElevenLabs audio plays over the frame.*
 
 > "I'm Pancho. I came in on the twenty-third of May last year. Nobody has
 > asked about me since."
 
 ### 0:22-0:35 | The board
 
-*Pull back. 516 cards. Scroll. Names, breeds, day counts, all descending.*
+*Pull back to the contact sheet. 516 frames, brightest first, dimming down the page.*
 
-> He isn't alone. Five hundred and sixteen dogs have an intake record at
-> this shelter and no outcome. Every card is a real animal, pulled live from
+> He isn't alone. Every frame here is a dog with an intake record at
+> this shelter and no outcome, five hundred and sixteen of them, pulled live from
 > Austin's open data an hour ago. Two hundred and eighteen of them are
 > bully-type dogs.
 
@@ -59,7 +59,7 @@ ones at the top have been there so long.
 
 ### 1:05-1:15 | Close on the serve
 
-*Back to the board. Pancho's card. Cursor over Listen.*
+*Back to the sheet. Pancho's frame, still the brightest thing on it.*
 
 > Snowflake does the counting. ElevenLabs gives them the voice. Every dog on
 > this board is still there right now, and every one of them can tell you how

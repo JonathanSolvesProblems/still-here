@@ -79,7 +79,11 @@ And it is not a historical curiosity. Of the 516 dogs sitting in that shelter to
 
 **[Still Here](https://jonathansolvesproblems.github.io/still-here/)** does two things.
 
-The board shows all 516 dogs with no recorded outcome, newest data pulled hourly from Austin's live feed. Each card carries the real record: name if the shelter wrote one down (138 of them arrived without a name), breed, coat, intake date, and a running day count. Against each dog it shows where its current wait falls in the distribution of 51,404 completed adoptions for its own breed group. Pancho's card reads *99.7% of similar dogs were home by now*.
+The board shows all 516 dogs with no recorded outcome, newest data pulled hourly from Austin's live feed. Each frame carries the real record: name if the shelter wrote one down (138 of them arrived without a name), breed, coat, intake date, and a running day count. Against each dog it shows where its current wait falls in the distribution of 51,404 completed adoptions for its own breed group. Pancho's frame reads *99.7% of similar dogs were home by now*.
+
+There was one design problem I could not get around, and it ended up deciding how the whole thing looks: **none of these dogs has a photograph in the public record.** Every adoption site on the internet is built around the photo, and I had nothing but a row in a spreadsheet.
+
+So the page is a long exposure instead. It is laid out as a photographic contact sheet, one frame per dog, and each frame's brightness is its wait: the longer a dog has been there, the more it has burned into the plate. Pancho at 448 days is the brightest thing on the page, and that is the entire argument made without a single word. The frames are numbered in exposure order and develop in sequence when the sheet loads. Only the seven longest waits breathe, on a nine second cycle, because the subject is duration and not urgency, and a flashing red alert would misstate what the data actually says.
 
 Then each of the longest-waiting dogs reads its own record aloud.
 
@@ -95,7 +99,9 @@ Name, coat, breed, intake reason, intake date, elapsed days, cohort percentile, 
 
 The piece that genuinely wants a warehouse is the per-dog percentile: for each of the 516 waiting dogs, rank its current wait against every completed stay in its breed group. That is 516 live values against 51,404 historical ones, and it is one view.
 
-**ElevenLabs** turns each script into speech. Sixteen clips, about 4,000 characters.
+I also kept the Python implementation and made the two argue. `verify.py` re-runs every headline question locally and diffs it against what Snowflake returned, across the medians, the counts, the colour table, the controlled split, the spreads, and the per-dog percentile for the top 25 dogs. **102 of 102 checks agree.** If they ever disagree, one of them is wrong and the number does not go in the writeup.
+
+**ElevenLabs** turns each script into speech. Sixteen clips, about 4,000 characters, read in a deliberately flat, neutral voice. A warm performed read would have sentimentalised a set of sentences whose whole point is that they are only the record.
 
 Everything else is deliberately plain: Python and the standard library for the pipeline, and a single static HTML page with no framework and no build step.
 
