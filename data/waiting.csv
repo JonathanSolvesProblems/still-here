@@ -1,0 +1,517 @@
+animal_id,name,breed,raw_breed,color,secondary_color,sex,is_puppy,intake_date,days_waiting,intake_reason,health,date_of_birth
+7950,Pancho,Cairn Terrier,Cairn Terrier,White,Black,Male,0,2025-05-23,448,Stray,,
+8438,Fritz,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Male,0,2025-05-28,443,ACO - Impound,,2024-06-30
+8711,Emmitt,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,White,Male,0,2025-06-01,439,ACO - Impound,,2023-06-01
+9035,Walter,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Male,0,2025-06-05,435,Stray,Sick,2020-06-06
+9472,Whitley,American Staffordshire Terrier,American Staffordshire Terrier,Black,White,Female,0,2025-06-10,430,Stray,,2023-12-10
+9673,Paxton,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Male,0,2025-06-12,428,ACO - Impound,,2017-06-12
+9712,Hank,American Staffordshire Terrier,American Staffordshire Terrier,Fawn,Fawn,Male,0,2025-06-12,428,Ambulance,,2023-06-12
+11056,Marshall,Boxer,Boxer,Black Brindle,White,Male,0,2025-06-27,413,Stray,,2018-07-01
+11399,,German Shepherd,German Shepherd,Brown,,Unknown,0,2025-07-02,408,ACO - Impound,,2025-04-02
+11400,Mariah,American Pit Bull Terrier,American Pit Bull Terrier,Brown,,Female,0,2025-07-02,408,ACO - Impound,,2024-01-03
+11454,Broccoli,German Shepherd,German Shepherd,Black,Brown,Male,0,2025-07-03,407,Stray,,2024-09-03
+11468,Xena,Boxer,Boxer,Black,Brown,Female,0,2025-07-03,407,ACO - Impound,,2023-07-04
+11791,Beef,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Male,0,2025-07-10,400,ACO - Impound,,2024-07-10
+8211,Sweet Pea,American Pit Bull Terrier,American Pit Bull Terrier,Blue,White,Female,0,2025-07-11,399,Stray,,2019-05-28
+12430,Mae,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,Black Brindle,Female,0,2025-07-21,389,ACO - Impound,,2023-07-21
+12660,Draco,American Pit Bull Terrier,American Pit Bull Terrier,White,,Male,0,2025-07-23,387,ACO - Impound,,
+12883,Rocko,American Pit Bull Terrier,American Pit Bull Terrier,Brindle,Brown Brindle,Male,0,2025-07-28,382,ACO - Impound,,2023-01-28
+13097,Cornelia,Siberian Husky,Siberian Husky,Black,White,Female,0,2025-08-01,378,Owner Surrender,Normal,2024-10-01
+14243,Brooklyn,German Shepherd,German Shepherd,Brown,Black,Female,0,2025-08-24,355,ACO - Impound,,2024-08-25
+13529,Tiger,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,White,Male,0,2025-08-27,352,Stray,,2024-08-08
+13892,Bear,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Male,0,2025-09-03,345,Stray,,2024-08-15
+13891,Teddy,American Pit Bull Terrier,American Pit Bull Terrier,Black Brindle,Brown,Male,0,2025-09-03,345,Stray,,2024-08-15
+15198,Ginger,American Pit Bull Terrier,American Pit Bull Terrier,Tan,,Female,0,2025-09-09,339,ACO - Impound,,2024-09-09
+15212,Loki,American Pit Bull Terrier,American Pit Bull Terrier,White,Brown,Male,0,2025-09-10,338,ACO - Impound,,2024-09-10
+15268,Abner,American Pit Bull Terrier,American Pit Bull Terrier,Black Brindle,White,Male,0,2025-09-11,337,Stray,,2024-09-11
+15483,Chewy,Catahoula Leopard Dog,Catahoula Leopard Dog,Blue Merle,White,Male,0,2025-09-16,332,ACO - Impound,,2023-09-16
+15507,Dom,German Shepherd,German Shepherd,Black Brown,Tan Points,Male,0,2025-09-16,332,Stray,,2023-09-16
+15685,Nova,German Shepherd,German Shepherd,Tan,,Female,0,2025-09-19,329,Owner Surrender,,2020-09-19
+15899,Hendrix,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Male,0,2025-09-24,324,ACO - Impound,,2023-09-25
+15979,Canela,Rottweiler,Rottweiler,Black,Brown,Female,0,2025-09-26,322,Agency,,2021-10-27
+16093,Candy Corn,German Shepherd,German Shepherd,Brown Brindle,White,Male,0,2025-09-29,319,Stray,,2021-09-29
+15234,Oscar,Great Pyrenees,Great Pyrenees,Brown,White,Male,0,2025-10-02,316,ACO - Impound,,2020-03-23
+16311,Marcelle,American Pit Bull Terrier,American Pit Bull Terrier,Blue,White,Male,0,2025-10-04,314,Stray,,2023-10-04
+16543,Ash,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,White,Male,0,2025-10-09,309,Stray,,2023-10-09
+16667,Ink,German Shepherd,German Shepherd,Black,,Male,0,2025-10-12,306,ACO - Impound,,2023-10-12
+16670,Chiquis,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Female,0,2025-10-12,306,ACO - Impound,,2024-10-15
+16850,Lil Baby Lou,American Staffordshire Terrier,American Staffordshire Terrier,Blue,White,Male,0,2025-10-15,303,ACO - Impound,,2024-05-28
+17389,Angel,American Pit Bull Terrier,American Pit Bull Terrier,Blue Brindle,,Female,0,2025-10-27,291,ACO - Impound,,2014-10-27
+15889,Mama Eden,Boxer,Boxer,White,Tan,Female,0,2025-10-28,290,Stray,,2023-10-28
+17532,Xanti,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,,Male,0,2025-10-30,288,Stray,,2023-10-30
+17617,Lady,Boxer,Boxer,Red,White,Female,0,2025-11-01,286,ACO - Impound,Sick,2025-01-01
+17715,Onyx,American Staffordshire Terrier,American Staffordshire Terrier,Black,White,Female,0,2025-11-04,283,Stray,Sick,2024-11-04
+14761,Sheba,Labrador Retriever,Labrador Retriever,Tan,,Female,0,2025-11-05,282,Stray,,2024-09-02
+17836,Cheddar,American Pit Bull Terrier,American Pit Bull Terrier,Brown,,Female,0,2025-11-06,281,Stray,,2024-11-04
+17890,Ramon,Shepherd,Shepherd,White,Cream,Male,0,2025-11-07,280,ACO - Impound,Normal,2025-01-08
+17891,Caleb,American Pit Bull Terrier,American Pit Bull Terrier,White,Brown,Male,0,2025-11-07,280,ACO - Impound,,2021-11-11
+18011,Nacho,Labrador Retriever,Labrador Retriever,Blue,,Male,0,2025-11-11,276,ACO - Impound,,2025-01-12
+18063,Oracle,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Male,0,2025-11-13,274,Owner Surrender,,2023-06-13
+18078,Casius,American Pit Bull Terrier,American Pit Bull Terrier,Black,,Male,0,2025-11-13,274,Owner Surrender,,2024-11-13
+18130,Legacy,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Female,0,2025-11-14,273,ACO - Impound,,2024-11-15
+18163,Kugel,Labrador Retriever,Labrador Retriever,Black,,Male,0,2025-11-16,271,ACO - Impound,Injured,2024-06-16
+18224,Princess Peach,Black Mouth Cur,Black Mouth Cur,Tan,Black,Female,0,2025-11-17,270,ACO - Impound,,2021-11-17
+18257,Puma,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Male,0,2025-11-18,269,ACO - Impound,,2024-11-18
+18333,Latke,American Pit Bull Terrier,American Pit Bull Terrier,White,Brown,Male,0,2025-11-20,267,Stray,,2022-11-21
+18365,Pooh,Pointer,Pointer,White,Brown,Male,0,2025-11-21,266,Owner Surrender,,2023-04-21
+18448,Muppet Baby,American Pit Bull Terrier,American Pit Bull Terrier,Black,,Male,0,2025-11-23,264,ACO - Impound,,2023-11-23
+18537,Elf,Mountain Cur,Mountain Cur,Brown Brindle,Black,Male,0,2025-11-24,263,Stray,,2024-11-24
+18571,Teepee,American Pit Bull Terrier,American Pit Bull Terrier,Black Brindle,White,Male,0,2025-11-25,262,Stray,,2025-01-25
+18600,Princess,American Pit Bull Terrier,American Pit Bull Terrier,White,Blue Merle,Female,0,2025-11-25,262,ACO - Impound,,2023-11-25
+18936,Lando,Labrador Retriever,Labrador Retriever,Brown Brindle,Black,Male,0,2025-12-05,252,Stray,,2024-12-05
+18985,Noelia,Australian Cattle Dog,Australian Cattle Dog,Brown Brindle,White,Female,0,2025-12-06,251,Stray,,2024-01-28
+19138,Aiden,American Staffordshire Terrier,American Staffordshire Terrier,Tan,White,Male,0,2025-12-10,247,Stray,,2024-12-10
+19370,Kitty,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Female,0,2025-12-15,242,ACO - Impound,,2024-06-15
+19780,Ottie Pop,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Male,0,2025-12-28,229,ACO - Impound,,2023-10-02
+19440,Lucius,American Pit Bull Terrier,American Pit Bull Terrier,Fawn,White,Male,0,2025-12-29,228,ACO - Impound,,2020-12-30
+19954,Darnell,Bull Terrier,Bull Terrier,Black Brindle,,Male,0,2026-01-03,223,ACO - Impound,,2024-01-03
+20002,Beau,American Staffordshire Terrier,American Staffordshire Terrier,Brown,,Male,0,2026-01-03,223,ACO - Impound,,2014-01-04
+20137,Mama Blythe,American Staffordshire Terrier,American Staffordshire Terrier,White,Brown,Female,0,2026-01-07,219,Owner Surrender,,2023-01-07
+20217,Toby,American Pit Bull Terrier,American Pit Bull Terrier,Red,Black,Male,0,2026-01-08,218,Owner Surrender,,2024-08-08
+20350,Rosco,Black Mouth Cur,Black Mouth Cur,Tan,Black,Male,0,2026-01-13,213,Owner Surrender,,2020-06-29
+20400,Nightwing,Labrador Retriever,Labrador Retriever,Black,White,Male,0,2026-01-14,212,Owner Surrender,,2022-03-14
+20424,Mr. Wendell,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Male,0,2026-01-15,211,ACO - Impound,Injured,2024-01-15
+20435,Bandit,American Bulldog,American Bulldog,White,Brown,Male,0,2026-01-15,211,Owner Surrender,,2019-01-15
+20473,Courage,Boxer,Boxer,Brown,White,Male,0,2026-01-16,210,Owner Surrender,,2022-01-19
+20514,Daisy,American Pit Bull Terrier,American Pit Bull Terrier,White,,Female,0,2026-01-17,209,ACO - Impound,,2025-01-20
+20535,Emmylou,Labrador Retriever,Labrador Retriever,White,Tan,Female,0,2026-01-18,208,ACO - Impound,Injured,2024-01-18
+18656,Daedae,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Male,0,2026-01-22,204,ACO - Impound,,2021-01-01
+20693,Ivy,Black Mouth Cur,Black Mouth Cur,Tan,Black,Female,0,2026-01-22,204,Owner Surrender,,2021-07-22
+20726,Vittorio,American Staffordshire Terrier,American Staffordshire Terrier,Brown,White,Male,0,2026-01-23,203,ACO - Impound,Normal,2024-01-23
+20746,Kya,Australian Shepherd,Australian Shepherd,Tri Color,,Female,0,2026-01-23,203,Owner Surrender,,2018-01-23
+20780,Cheyenne,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Female,0,2026-01-26,201,ACO - Impound,,2025-05-27
+20783,Babushka,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,Black,Female,0,2026-01-26,201,ACO - Impound,,2025-01-28
+20797,Baby Acorn,Labrador Retriever,Labrador Retriever,Tan,White,Female,0,2026-01-26,201,ACO - Impound,,2025-10-20
+20124,Ponyboy,German Shepherd,German Shepherd,Black,,Male,0,2026-01-26,200,ACO - Impound,,2013-08-15
+20833,Jagger,Australian Kelpie,Australian Kelpie,Black,,Male,0,2026-01-27,199,Stray,Normal,2025-01-27
+20955,Unknown,Chihuahua,Chihuahua - Long-hair,Red,Rust,Female,0,2026-01-31,196,ACO - Impound,,2024-01-31
+20951,Bolt,Labrador Retriever,Labrador Retriever,Black,,Male,0,2026-01-31,195,ACO - Impound,Injured,2022-01-31
+20967,Beefy,American Pit Bull Terrier,American Pit Bull Terrier,White,Black,Male,0,2026-01-31,195,ACO - Impound,Normal,2020-01-31
+20926,Dante,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,,Male,0,2026-01-31,195,ACO - Impound,,2025-01-31
+20963,Beast,American Pit Bull Terrier,American Pit Bull Terrier,Brindle,,Male,0,2026-01-31,195,ACO - Impound,,2022-02-01
+21064,Anri,American Pit Bull Terrier,American Pit Bull Terrier,White,,Female,0,2026-02-03,192,ACO - Impound,Normal,2022-02-03
+21088,Bentley,Labrador Retriever,Labrador Retriever,Tan,,Male,0,2026-02-03,192,ACO - Impound,,2020-08-17
+21086,Pistachio,Labrador Retriever,Labrador Retriever,White,,Male,0,2026-02-03,192,ACO - Impound,,2025-02-03
+21119,Gatsby,American Pit Bull Terrier,American Pit Bull Terrier,White,Red,Male,0,2026-02-04,191,ACO - Impound,,2024-02-04
+21169,Helios,American Bulldog,American Bulldog,White,Tan,Male,0,2026-02-05,190,Owner Surrender,,2019-08-05
+21291,Cicero,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Male,0,2026-02-08,187,Stray,,2021-02-08
+21344,Memphis,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Male,0,2026-02-10,185,ACO - Impound,,2024-02-10
+21356,Saul,English Staffordshire Bull Terrier,English Staffordshire Bull Terrier,Red,White,Male,0,2026-02-10,185,Stray,,2021-03-20
+20182,Gatito,Coonhound,Coonhound - Black and Tan,Tan,Black,Male,0,2026-02-12,183,Stray,,2024-01-08
+21487,Leo,American Pit Bull Terrier,American Pit Bull Terrier,Buff,,Male,0,2026-02-12,183,Stray,,2024-09-13
+21513,Beatrice,American Pit Bull Terrier,American Pit Bull Terrier,Black Brindle,Brown,Female,0,2026-02-13,182,ACO - Impound,,2024-02-13
+21528,Baby Girl,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,,Female,0,2026-02-13,182,ACO - Impound,,
+21607,Butters,Labrador Retriever,Labrador Retriever,Cream,White,Male,0,2026-02-17,178,Agency,,2017-09-20
+21723,Billie,Border Collie,Border Collie,White,Black,Female,0,2026-02-19,176,ACO - Impound,Normal,2024-02-19
+21263,Milo,Boxer,Boxer,Brown Brindle,,Male,0,2026-02-19,176,Stray,Normal,2017-02-07
+21753,Opie,American Staffordshire Terrier,American Staffordshire Terrier,Grey,Tan,Male,0,2026-02-20,175,Owner Surrender,,2024-02-20
+21783,Simba,American Pit Bull Terrier,American Pit Bull Terrier,Black,Tan,Male,0,2026-02-20,175,Owner Surrender,,2025-06-20
+18957,Molly,Anatolian Shepherd,Anatolian Shepherd,Tan,Tri Color,Female,0,2026-02-21,174,ACO - Impound,,2022-02-21
+21883,Nicholas,Australian Cattle Dog,Australian Cattle Dog,Black,White,Male,0,2026-02-23,172,Agency,,2025-02-23
+21884,Bobby,American Pit Bull Terrier,American Pit Bull Terrier,Tan,,Male,0,2026-02-23,172,ACO - Impound,,2024-02-23
+21906,Chyanne,American Pit Bull Terrier,American Pit Bull Terrier,Blue,,Female,0,2026-02-23,172,Stray,,2025-02-23
+21924,Bruce,American Pit Bull Terrier,American Pit Bull Terrier,Brindle,,Male,0,2026-02-24,171,Owner Surrender,,2020-10-25
+21928,Velveteen,American Pit Bull Terrier,American Pit Bull Terrier,Tan,,Female,0,2026-02-24,171,Stray,,2016-02-24
+21981,Woody,German Shepherd,German Shepherd,Brown,White,Male,0,2026-02-25,170,ACO - Impound,Sick,2024-09-15
+22017,Maxine,American Pit Bull Terrier,American Pit Bull Terrier,Bronze,White,Female,0,2026-02-26,169,ACO - Impound,,2024-02-26
+22038,Rascal,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Male,0,2026-02-26,169,ACO - Impound,,2022-09-26
+22064,Moose,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,White,Male,0,2026-02-26,169,ACO - Impound,,2024-02-26
+22165,Evan,Bullmastiff,Bullmastiff,Brown,,Male,0,2026-03-01,166,ACO - Impound,Normal,2024-03-01
+13544,Gypsy,American Pit Bull Terrier,American Pit Bull Terrier,White,Grey,Female,0,2026-03-03,164,ACO - Impound,,2024-08-08
+22228,Rosie,German Shepherd,German Shepherd,Brown,Black,Female,0,2026-03-05,162,Stray,,2024-03-05
+22229,Daisy,German Shepherd,German Shepherd,Brown,Black,Female,0,2026-03-05,162,Stray,,2024-03-05
+22368,Miss Pretty,Labrador Retriever,Labrador Retriever,Black,Brown,Female,0,2026-03-05,162,ACO - Impound,,2015-06-14
+22369,Carmelo,Shepherd,Shepherd,Tan,,Male,0,2026-03-05,162,ACO - Impound,,2024-03-05
+22388,Rufus,American Bulldog,American Bulldog,Blue,White,Male,0,2026-03-05,162,Stray,,2024-03-05
+22533,Creed,American Pit Bull Terrier,American Pit Bull Terrier,Blue,White,Male,0,2026-03-09,158,Owner Surrender,,2021-03-10
+22560,Louie,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Male,0,2026-03-10,157,Stray,,2022-03-10
+22561,Koso,Labrador Retriever,Labrador Retriever,Black,White,Male,0,2026-03-10,157,Owner Surrender,,2024-03-10
+22575,Jenny,Labrador Retriever,Labrador Retriever,Black,White,Female,0,2026-03-10,157,Stray,,2025-11-10
+22603,Fiona,Hound,Hound,Brown,White,Female,0,2026-03-11,156,ACO - Impound,,2024-03-11
+22702,Bunky,Labrador Retriever,Labrador Retriever,Red,White,Male,0,2026-03-13,154,Stray,Normal,2025-11-16
+22703,Brenda,Labrador Retriever,Labrador Retriever,Red,White,Female,0,2026-03-13,154,Stray,Normal,2025-11-30
+22733,Robin,American Pit Bull Terrier,American Pit Bull Terrier,Blue,,Male,0,2026-03-15,152,ACO - Impound,Normal,2024-10-15
+22734,Delilah,American Pit Bull Terrier,American Pit Bull Terrier,Brown,,Female,0,2026-03-15,152,ACO - Impound,Sick,2024-09-15
+22583,Rusty,Catahoula Leopard Dog,Catahoula Leopard Dog,Blue Merle,White,Male,0,2026-03-18,149,Stray,,2025-05-18
+22861,Felicia,Labrador Retriever,Labrador Retriever,Tan,Black,Female,0,2026-03-18,149,Stray,,2014-03-18
+22660,Blossom,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Female,0,2026-03-19,148,Stray,,2026-01-08
+22661,Cleo,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Female,0,2026-03-19,148,Stray,,2026-01-08
+22895,Phoebe,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Female,0,2026-03-19,148,Stray,,2026-01-08
+23128,Linda Lou,Australian Cattle Dog,Australian Cattle Dog,Cream,White,Female,0,2026-03-23,145,ACO - Impound,,2019-04-30
+23212,,Great Pyrenees,Great Pyrenees,White,,Male,0,2026-03-24,143,ACO - Impound,,2024-03-24
+22982,Gus,Boxer,Boxer,White,Brown,Male,0,2026-03-25,142,Stray,,2025-03-25
+23322,Schneider,Mastiff,Mastiff,White,Brown,Male,0,2026-03-25,142,ACO - Impound,,2025-03-26
+23375,Kash,American Staffordshire Terrier,American Staffordshire Terrier,Blue,White,Male,0,2026-03-26,141,Agency,,2023-08-19
+23489,Dodge,Cane Corso,Cane Corso,Black,,Male,0,2026-03-28,139,ACO - Impound,,2024-04-03
+23491,Ford,Cane Corso,Cane Corso,Black,,Male,0,2026-03-28,139,ACO - Impound,,2024-04-03
+23522,,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Male,0,2026-03-29,138,ACO - Impound,,
+23530,Charlie,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Male,0,2026-03-30,138,ACO - Impound,Normal,2022-03-30
+23532,Benny,American Pit Bull Terrier,American Pit Bull Terrier,Red,,Male,0,2026-03-30,138,ACO - Impound,Injured,2024-09-30
+23564,Hobbes,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Male,0,2026-03-30,137,Stray,,2022-03-30
+23422,Baloo,Australian Cattle Dog,Australian Cattle Dog,Black,,Male,0,2026-03-30,137,ACO - Impound,,2024-03-30
+23722,Maui,German Shepherd,German Shepherd,Brown,Black,Male,0,2026-04-02,134,Stray,,2021-04-02
+23856,Cookyz N Cream,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Male,0,2026-04-06,131,ACO - Impound,,2021-04-06
+22830,Princess,American Pit Bull Terrier,American Pit Bull Terrier,Blue,,Female,0,2026-04-06,130,Stray,,2021-03-17
+23887,Chicken Noodle,American Staffordshire Terrier,American Staffordshire Terrier,Black,White,Male,0,2026-04-06,130,Stray,,2023-04-06
+22830,Princess,American Pit Bull Terrier,American Pit Bull Terrier,Blue,,Female,0,2026-04-07,129,Stray,,2021-03-17
+24036,Layla,Boxer,Boxer,Red,White,Female,0,2026-04-09,127,Owner Surrender,Normal,2025-04-09
+24050,Toby,Coonhound,Coonhound,White,Black,Male,0,2026-04-09,127,Owner Surrender,,2023-04-10
+24084,Ingrid,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Female,0,2026-04-10,126,Owner Surrender,,2023-01-10
+24085,Dora,Catahoula Leopard Dog,Catahoula Leopard Dog,Blue Merle,White,Female,0,2026-04-10,126,Owner Surrender,,2022-12-21
+24110,Prissy,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Female,0,2026-04-11,125,ACO - Impound,Normal,2025-06-11
+24210,Palomo,Siberian Husky,Siberian Husky,White,,Male,0,2026-04-13,123,ACO - Impound,Injured,2024-04-13
+24251,Emma,Labrador Retriever,Labrador Retriever,White,Tan,Female,0,2026-04-13,123,Stray,,2026-01-26
+24145,Bailey,Labrador Retriever,Labrador Retriever,White,,Male,0,2026-04-13,123,ACO - Impound,,
+24263,Diego,Border Collie,Border Collie,Black,White,Male,0,2026-04-14,122,Stray,,2024-04-14
+24293,Ace,Australian Cattle Dog,Australian Cattle Dog,Brown Brindle,White,Male,0,2026-04-15,121,Stray,,2025-10-01
+24291,Rhonda,Hound,Hound,Tan,,Female,0,2026-04-15,121,Stray,,2024-04-15
+24406,Sunshine,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Female,0,2026-04-16,120,ACO - Impound,Normal,2023-04-16
+24468,Baby Girl,Labrador Retriever,Labrador Retriever,Blonde,,Female,0,2026-04-17,119,Stray,,2024-04-17
+18989,Lyric,American Pit Bull Terrier,American Pit Bull Terrier,Brown,,Female,0,2026-04-17,119,ACO - Impound,Sick,2023-12-06
+24593,Tangerine,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Female,0,2026-04-19,117,Stray,,2024-10-19
+24624,Charlotte,Bull Terrier,Bull Terrier,White,,Female,0,2026-04-19,117,Stray,,2024-04-19
+24659,Charlie,Labrador Retriever,Labrador Retriever,Tan,Cream,Male,0,2026-04-20,116,Stray,,2016-04-20
+24646,Fiesta,American Pit Bull Terrier,American Pit Bull Terrier,Blue,White,Male,0,2026-04-20,116,Stray,,2024-10-21
+24676,Mazda,Pointer,Pointer,Tri Color,,Female,0,2026-04-21,115,Returns,,2023-04-21
+24684,Annie,American Bulldog,American Bulldog,Blue,White,Female,0,2026-04-21,115,Stray,Sick,2019-04-21
+24744,Lulu,Labrador Retriever,Labrador Retriever,Brown,White,Female,0,2026-04-22,114,Stray,,2024-12-22
+24760,Fern,Anatolian Shepherd,Anatolian Shepherd,Rust,,Male,0,2026-04-22,114,ACO - Impound,,2024-10-22
+24810,Lil Luna,Dachshund,Dachshund,Brown Brindle,,Female,0,2026-04-23,113,Owner Surrender,,2021-04-23
+24854,Ava,American Bulldog,American Bulldog,Grey,White,Female,0,2026-04-23,113,ACO - Impound,,2018-04-23
+24868,Akira,German Shepherd,German Shepherd,Brown,Black,Female,0,2026-04-24,112,Stray,,2025-04-24
+24870,Tarragon,Labrador Retriever,Labrador Retriever,Tan,White,Male,0,2026-04-24,112,ACO - Impound,,2022-04-24
+24881,Bonnie,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Female,0,2026-04-24,112,Owner Surrender,,2023-01-24
+24977,,American Pit Bull Terrier,American Pit Bull Terrier,Blue,White,Male,0,2026-04-26,110,Stray,,2023-04-26
+25123,Duke,German Shepherd,German Shepherd,Tan,Black,Male,0,2026-04-29,107,Owner Surrender,,2020-11-16
+25147,Tyson,German Shepherd,German Shepherd,Brown,Black,Male,0,2026-04-29,107,Owner Surrender,,2019-05-02
+25176,Serena,Black Mouth Cur,Black Mouth Cur,Fawn,,Female,0,2026-04-30,106,ACO - Impound,,2025-04-30
+25177,Venus,Black Mouth Cur,Black Mouth Cur,Red,,Female,0,2026-04-30,106,ACO - Impound,,2025-04-30
+25203,Azuki,Labrador Retriever,Labrador Retriever,Black,White,Male,0,2026-04-30,106,Stray,,2022-05-01
+25207,Chancho,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Male,0,2026-04-30,106,ACO - Impound,,2023-05-01
+25267,,Unknown,Unknown - DISPATCH ONLY,unknown,,Unknown,0,2026-05-02,105,ACO - Impound,,
+25307,,Labrador Retriever,Labrador Retriever,White,,Unknown,1,2026-05-02,104,ACO - Impound,,
+25328,Jeeta,Terrier,Terrier,Brown,White,Female,0,2026-05-03,103,ACO - Impound,,2024-05-03
+25350,Gorgonzola,Siberian Husky,Siberian Husky,Tan,Brindle,Male,0,2026-05-04,102,ACO - Impound,Normal,2022-05-04
+25383,Lana,Anatolian Shepherd,Anatolian Shepherd,Brown,White,Female,0,2026-05-04,102,Stray,,2023-05-05
+25384,Rumi,Great Pyrenees,Great Pyrenees,White,Tan,Male,0,2026-05-04,102,Stray,,2023-05-04
+25410,Kilo,Labrador Retriever,Labrador Retriever,White,Brown,Male,0,2026-05-05,101,Owner Surrender,,2021-03-05
+25460,Tessa,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Female,0,2026-05-05,101,Stray,,2024-11-06
+25496,Mariposa,Labrador Retriever,Labrador Retriever,White,Black,Female,0,2026-05-06,100,ACO - Impound,Normal,2024-05-06
+25497,Murphy,Labrador Retriever,Labrador Retriever,Tan,White,Male,0,2026-05-06,100,ACO - Impound,Normal,2017-05-25
+25519,Layna,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Female,0,2026-05-06,100,ACO - Impound,,2023-05-06
+25600,Lena,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Female,0,2026-05-07,99,Owner Surrender,,2023-05-07
+25615,Shakira,Australian Kelpie,Australian Kelpie,Black,Tan,Female,0,2026-05-07,99,ACO - Impound,Normal,2024-05-07
+25677,Beauty,American Pit Bull Terrier,American Pit Bull Terrier,Blue,White,Female,0,2026-05-08,98,Owner Surrender,,2023-05-08
+25719,Stormie Rain,American Bulldog,American Bulldog,Brown Brindle,White,Female,0,2026-05-09,97,ACO - Impound,,2015-05-09
+25784,Web,Labrador Retriever,Labrador Retriever,Tan,White,Female,0,2026-05-11,95,ACO - Impound,Normal,2024-12-12
+25787,Butternut,American Pit Bull Terrier,American Pit Bull Terrier,Brown,,Male,0,2026-05-11,95,ACO - Impound,Sick,2021-05-11
+25790,Finch,German Shepherd,German Shepherd,Black,Brown,Male,0,2026-05-11,95,ACO - Impound,Sick,2023-05-12
+25802,Lil Prince,Labrador Retriever,Labrador Retriever,Black,White,Male,0,2026-05-11,95,Stray,,2025-09-11
+25846,Zinnia,Labrador Retriever,Labrador Retriever,Black,White,Female,0,2026-05-11,95,Stray,,2021-05-11
+25854,Rhiannon,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Female,0,2026-05-11,95,ACO - Impound,,2024-11-12
+25877,Kangaskhan,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Female,0,2026-05-12,94,Owner Surrender,,2022-05-12
+25163,Finley,Shiba Inu,Shiba Inu,Red,White,Male,0,2026-05-15,91,Stray,,2024-05-15
+26084,Bruce,American Staffordshire Terrier,American Staffordshire Terrier,Black,White,Male,0,2026-05-15,91,Owner Surrender,,2022-05-22
+26085,Poppi,American Pit Bull Terrier,American Pit Bull Terrier,Black,,Female,0,2026-05-15,91,Owner Surrender,,2022-05-16
+26101,Sofie,Belgian Shepherd Dog,Belgian Shepherd Dog,Brown,Black,Female,0,2026-05-16,90,Stray,,2025-12-17
+26162,Molly,Beagle,Beagle,Tri Color,,Female,0,2026-05-17,89,Stray,,2024-05-17
+26188,Hazel,Dogo Argentino,Dogo Argentino,White,,Female,0,2026-05-18,88,ACO - Impound,Normal,2017-05-19
+26289,Contexto,American Pit Bull Terrier,American Pit Bull Terrier,Brown,,Male,0,2026-05-19,87,Stray,,2023-05-20
+26344,Melos,German Shepherd,German Shepherd,Tan,Cream,Male,0,2026-05-20,86,Owner Surrender,,2021-05-20
+26383,Aries,American Pit Bull Terrier,American Pit Bull Terrier,Blue,White,Male,0,2026-05-20,86,Stray,Normal,2022-02-26
+23099,Precious,American Pit Bull Terrier,American Pit Bull Terrier,Brown,,Female,0,2026-05-21,85,Owner Surrender,,2023-03-22
+26411,Lupe Fiasco,Mastiff,Mastiff,Black,White,Male,0,2026-05-21,85,Agency,,2020-11-21
+26450,,American Bulldog,American Bulldog,Grey,,Female,0,2026-05-21,85,ACO - Impound,,
+26470,Blue,American Bulldog,American Bulldog,White,Brown,Male,0,2026-05-22,84,Owner Surrender,,2021-03-29
+26497,Haisai,Doberman Pinscher,Doberman Pinscher,Black,Brown,Male,0,2026-05-22,84,Owner Surrender,,2021-05-24
+26498,Guapo,Chihuahua,Chihuahua - Smooth,Black,White,Male,0,2026-05-22,84,ACO - Impound,Injured,2024-05-22
+26556,Bruno,Dutch Shepherd,Dutch Shepherd,Brindle,,Male,0,2026-05-23,83,Agency,,2023-12-24
+26581,Fuji,Rottweiler,Rottweiler,Black,Tri Color,Male,0,2026-05-24,82,ACO - Impound,,2022-11-25
+26624,Fusilli,American Pit Bull Terrier,American Pit Bull Terrier,White,Black,Female,0,2026-05-25,81,ACO - Impound,,2024-05-25
+26626,Honey Bee,Labrador Retriever,Labrador Retriever,White,,Female,0,2026-05-26,81,ACO - Impound,Normal,2024-05-26
+26632,Opal,Poodle,Poodle - Miniature,White,,Female,0,2026-05-26,80,Agency,,2011-05-26
+25182,Shadow,Siberian Husky,Siberian Husky,White,Black,Female,0,2026-05-26,80,ACO - Impound,,2020-04-30
+26857,Lalita,American Pit Bull Terrier,American Pit Bull Terrier,Cream,White,Female,0,2026-05-28,78,Stray,Injured,2023-06-21
+26862,Bunuelo,Mastiff,Mastiff,Brown,White,Male,0,2026-05-28,78,ACO - Impound,,2024-05-30
+26914,Artie,American Pit Bull Terrier,American Pit Bull Terrier,Grey,White,Male,0,2026-05-29,77,ACO - Impound,,2024-05-29
+26951,Tyson,American Staffordshire Terrier,American Staffordshire Terrier,Tan,White,Male,0,2026-05-29,77,Owner Surrender,,2025-01-29
+26971,Zayda,Australian Shepherd,Australian Shepherd,Brown,Black,Male,0,2026-05-30,76,Stray,,2024-05-30
+26990,Piggy,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Male,0,2026-05-31,75,Stray,,2022-05-31
+27063,Furby,American Pit Bull Terrier,American Pit Bull Terrier,Blue,,Female,0,2026-06-01,74,ACO - Impound,,2021-06-01
+27152,Princesa,Hound,Hound,Black,Tan,Female,0,2026-06-02,73,Owner Surrender,,2013-07-31
+27188,Janice,German Shepherd,German Shepherd,White,,Female,0,2026-06-03,72,Stray,,2025-06-04
+27222,Damon,American Pit Bull Terrier,American Pit Bull Terrier,Fawn,,Male,0,2026-06-03,72,Stray,,2022-06-03
+27246,Amor,Anatolian Shepherd,Anatolian Shepherd,Tan,,Female,0,2026-06-03,72,Stray,Normal,2020-06-05
+27247,Bergamot,American Pit Bull Terrier,American Pit Bull Terrier,Blue Brindle,White,Male,0,2026-06-03,72,Stray,Normal,2025-10-04
+27291,Diamond,American Pit Bull Terrier,American Pit Bull Terrier,Blue Brindle,,Female,0,2026-06-04,71,Owner Surrender,Normal,2022-12-04
+27315,Baxter,Pointer,Pointer,White,Tan,Male,0,2026-06-04,71,Stray,,2023-06-05
+27325,Rumble,Labrador Retriever,Labrador Retriever,Black,White,Male,0,2026-06-04,71,Stray,,2021-06-05
+26419,Bodi,Boxer,Boxer,Brindle,White,Male,0,2026-06-04,71,Stray,Normal,2020-06-05
+27353,Zaire,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Male,0,2026-06-05,70,ACO - Impound,,2025-06-05
+26915,Taz,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,White,Male,0,2026-06-05,70,Owner Surrender,,2025-05-04
+27458,Oakley,American Staffordshire Terrier,American Staffordshire Terrier,White,Brown,Male,0,2026-06-06,69,Stray,,2020-06-06
+27463,Max,Australian Cattle Dog,Australian Cattle Dog,Tan,,Male,0,2026-06-07,69,ACO - Impound,Normal,
+27477,Seguin,Anatolian Shepherd,Anatolian Shepherd,Tri Color,,Male,0,2026-06-07,68,Stray,,2025-12-24
+27483,Zera,Beauceron,Beauceron,Black,Brown,Female,0,2026-06-07,68,ACO - Impound,,2015-06-07
+27484,Kayda,Hungarian Vizsla,Hungarian Vizsla - Smooth,Brown,White,Female,0,2026-06-07,68,ACO - Impound,,2023-06-08
+27485,Melvin,Beauceron,Beauceron,Black,Brown,Male,0,2026-06-07,68,ACO - Impound,,2024-06-07
+27490,Banana Cream,Black Mouth Cur,Black Mouth Cur,Brown,Black,Female,0,2026-06-07,68,ACO - Impound,,2025-06-08
+27539,Bella,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Female,0,2026-06-08,67,Stray,,2021-06-08
+27557,Pepper,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,White,Female,0,2026-06-09,66,Owner Surrender,,2020-06-10
+27571,Tuxedo,American Bulldog,American Bulldog,Black,White,Male,0,2026-06-09,66,ACO - Impound,Injured,2018-06-09
+27576,Knox,Labrador Retriever,Labrador Retriever,Black,White,Male,0,2026-06-09,66,Stray,,2017-04-09
+27593,Gumbo,American Pit Bull Terrier,American Pit Bull Terrier,Chocolate,White,Male,0,2026-06-09,66,Owner Surrender,,2019-06-09
+27600,Kees,Plott Hound,Plott Hound,Brown Brindle,,Male,0,2026-06-09,66,Stray,,2026-02-09
+27603,Portia,American Pit Bull Terrier,American Pit Bull Terrier,Brindle,Black,Female,0,2026-06-09,66,ACO - Impound,,2024-06-10
+24338,Benito,American Pit Bull Terrier,American Pit Bull Terrier,White,Brown,Male,0,2026-06-10,65,ACO - Impound,Normal,2019-04-15
+27973,Oliver,Entlebucher Mountain Dog,Entlebucher Mountain Dog,Chocolate,White,Male,0,2026-06-11,64,Owner Surrender,,2023-12-11
+28001,Bubbles,German Shepherd,German Shepherd,Black,Brown,Female,1,2026-06-11,64,Stray,,2026-05-15
+28006,Buttercup,German Shepherd,German Shepherd,Black,Brown,Female,1,2026-06-11,64,Stray,,2026-05-15
+28021,Ray,Golden Retriever,Golden Retriever,Tan,White,Male,0,2026-06-11,64,Stray,,
+28022,,Labrador Retriever,Labrador Retriever,Tan,,Male,0,2026-06-11,64,ACO - Impound,,
+28023,Botanicus,American Pit Bull Terrier,American Pit Bull Terrier,Blue,Blue,Male,0,2026-06-11,64,Stray,,2025-06-13
+28050,Mabel,Dachshund,Dachshund,Black,White,Female,0,2026-06-12,63,Owner Surrender,,2013-09-12
+28277,,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,,Male,0,2026-06-16,59,ACO - Impound,,2025-06-16
+27471,Rosie,American Bulldog,American Bulldog,White,Black,Female,0,2026-06-17,58,Stray,,2025-06-07
+28434,Josh,American Pit Bull Terrier,American Pit Bull Terrier,Grey,,Male,0,2026-06-18,58,ACO - Impound,,2020-06-18
+28461,Maluke,Boxer,Boxer,Tan,White,Male,0,2026-06-18,57,Owner Surrender,,2016-03-28
+28604,,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Male,0,2026-06-21,54,ACO - Impound,Normal,2025-06-22
+28605,Java,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Female,0,2026-06-21,54,ACO - Impound,Normal,2025-12-22
+28606,Guava,American Pit Bull Terrier,American Pit Bull Terrier,Brindle,White,Male,0,2026-06-21,54,ACO - Impound,Normal,2025-06-22
+28620,Rollo,Pointer,Pointer,White,Black,Male,0,2026-06-21,54,Agency,,2025-06-22
+28648,Hinata,German Shepherd,German Shepherd,Tan,Black,Female,0,2026-06-22,53,Owner Surrender,,2021-06-22
+28712,Zoink,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Male,0,2026-06-22,53,ACO - Impound,,2024-06-24
+28717,Willy,German Shepherd,German Shepherd,White,,Male,0,2026-06-23,52,ACO - Impound,,2025-12-23
+28762,Brandy,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Female,0,2026-06-23,52,Stray,,2020-11-23
+28761,Gotham,ALASKAN HUSKY,ALASKAN HUSKY,Black,,Male,0,2026-06-23,52,Stray,,2025-03-23
+28763,,Doberman Pinscher,Doberman Pinscher,Chocolate,,Male,0,2026-06-23,52,Stray,,2025-11-23
+28772,,Chihuahua,Chihuahua - Smooth,Tri Color,White,Unknown,1,2026-06-23,52,Stray,,
+28065,Ellie,Australian Cattle Dog,Australian Cattle Dog,Black,White,Female,0,2026-06-23,52,Stray,,2018-06-24
+28813,Chico,American Pit Bull Terrier,American Pit Bull Terrier,White,Brown,Male,0,2026-06-24,51,Owner Surrender,,2022-10-24
+28897,Asher,Australian Cattle Dog,Australian Cattle Dog,Blue,Brown,Male,0,2026-06-25,50,Owner Surrender,,2021-06-25
+28900,,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Unknown,0,2026-06-25,50,Stray,,2024-06-25
+28964,Winslow,Foxhound,Foxhound,Brown Brindle,White,Male,0,2026-06-26,49,Stray,,2025-10-26
+28983,Darla,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Female,0,2026-06-26,49,Stray,,2025-06-27
+29048,Charming,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Male,0,2026-06-27,48,Stray,,2024-06-27
+29186,Spot,Border Collie,Border Collie,Black,White,Male,0,2026-06-30,45,Owner Surrender,,2025-06-30
+29187,Boss,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,White,Male,0,2026-06-30,45,Owner Surrender,,2025-06-30
+29188,Spot,Border Collie,Border Collie,Brown Brindle,White,Male,0,2026-06-30,45,Owner Surrender,,2025-06-30
+29189,Spot,Border Collie,Border Collie,Brown Brindle,White,Male,0,2026-06-30,45,Owner Surrender,,2025-06-30
+29200,Zeek,American Pit Bull Terrier,American Pit Bull Terrier,Grey,White,Male,0,2026-06-30,45,ACO - Impound,,2024-06-30
+29213,,Rottweiler,Rottweiler,Black,Tan,Male,0,2026-07-01,44,ACO - Impound,Injured,2019-07-01
+29217,Simon,Labrador Retriever,Labrador Retriever,Brown,White,Male,0,2026-07-01,44,ACO - Impound,,2023-07-01
+29220,Eva,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Female,0,2026-07-01,44,Abandoned,,2025-07-01
+10197,Rufus,Labrador Retriever,Labrador Retriever,White,,Male,0,2026-07-01,44,Stray,,2024-01-15
+29241,Theodore,American Pit Bull Terrier,American Pit Bull Terrier,Red,Tan,Male,0,2026-07-01,44,ACO - Impound,,2024-07-02
+29110,Max,Labrador Retriever,Labrador Retriever,Tan,,Male,0,2026-07-01,44,Stray,,2025-03-01
+29280,Tia,American Pit Bull Terrier,American Pit Bull Terrier,Chocolate,,Female,0,2026-07-02,43,ACO - Impound,Sick,2025-07-02
+29281,Tamara,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,White,Female,0,2026-07-02,43,ACO - Impound,Sick,
+29282,,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,White,Female,0,2026-07-02,43,ACO - Impound,Sick,
+29336,Gunner,Border Collie,Border Collie,Black,Brown,Male,0,2026-07-03,43,ACO - Impound,,2024-07-04
+29369,Rhea,Carolina Dog,Carolina Dog,Yellow,,Male,0,2026-07-03,42,Stray,,
+29393,Junie,American Staffordshire Terrier,American Staffordshire Terrier,Blue,White,Female,0,2026-07-04,41,ACO - Impound,Normal,2024-04-29
+29529,Heidi,Chihuahua,Chihuahua - Smooth,Gold,,Female,0,2026-07-06,39,Stray,,2026-01-06
+29569,,American Pit Bull Terrier,American Pit Bull Terrier,White,Brown,Unknown,0,2026-07-07,38,ACO - Impound,,
+29623,,Maltese Terrier,Maltese Terrier,White,,Female,0,2026-07-07,38,ACO - Impound,Normal,2013-07-07
+29624,,American Pit Bull Terrier,American Pit Bull Terrier,Black,,Unknown,0,2026-07-07,38,ACO - Impound,Normal,
+29631,Bandido,Chihuahua,Chihuahua - Smooth,Brown,White,Male,0,2026-07-07,38,Owner Surrender,,2023-05-07
+29640,Romeo,Labrador Retriever,Labrador Retriever,Black,White,Male,0,2026-07-07,38,Stray,,2025-12-07
+29193,Baby,Shih Tzu,Shih Tzu,White,Black,Female,0,2026-07-07,38,Owner Surrender,,2012-06-30
+29706,,Border Collie,Border Collie,Black,White,Female,0,2026-07-08,37,Agency,,2024-07-08
+29726,Grayson,Great Pyrenees,Great Pyrenees,White,,Male,0,2026-07-08,37,ACO - Impound,Injured,2024-07-10
+29727,Wednesday,Bull Terrier,Bull Terrier,Black,,Female,0,2026-07-08,37,ACO - Impound,,2024-07-10
+29745,,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Male,0,2026-07-09,36,ACO - Impound,,
+29752,Rex,Plott Hound,Plott Hound,Brown Brindle,,Male,0,2026-07-09,36,Stray,,2024-03-08
+29315,Dodge,Mastiff,Mastiff,Brown,White,Male,0,2026-07-09,36,Stray,,2021-07-09
+29768,Alfonso,Chow Chow,Chow Chow,Sable,,Male,0,2026-07-09,36,ACO - Impound,,2023-07-09
+29794,Nina,English Bulldog,English Bulldog,Swiss Tri Color,Black,Female,0,2026-07-10,35,Owner Surrender,,2023-09-10
+29803,Prissy,Labrador Retriever,Labrador Retriever,White,White,Female,0,2026-07-10,35,Owner Surrender,,2016-09-28
+29815,Pepita,Mountain Cur,Mountain Cur,Black,White,Female,0,2026-07-10,35,Stray,,2025-07-12
+29826,Misty,Siberian Husky,Siberian Husky,Cream,White,Female,0,2026-07-11,34,ACO - Impound,Normal,2025-11-18
+29828,,Rat Terrier,Rat Terrier,White,Black,Male,0,2026-07-11,34,ACO - Impound,Normal,2023-07-11
+29829,,German Shepherd,German Shepherd,Brown,Black,Male,0,2026-07-11,34,ACO - Impound,Normal,2024-07-11
+29835,,Black Mouth Cur,Black Mouth Cur,Brown,Black,Female,0,2026-07-11,34,ACO - Impound,Normal,2025-08-12
+29836,,Great Pyrenees,Great Pyrenees,White,Black,Female,0,2026-07-11,34,ACO - Impound,Normal,2025-08-12
+29880,Boudreaux,Labrador Retriever,Labrador Retriever,Brown Brindle,Brown Brindle,Male,0,2026-07-13,32,ACO - Impound,,2025-12-14
+29882,,American Pit Bull Terrier,American Pit Bull Terrier,Grey,White,Female,0,2026-07-13,32,Ambulance,Injured,2026-01-13
+29895,Marty,American Pit Bull Terrier,American Pit Bull Terrier,Black,,Male,0,2026-07-13,32,Owner Surrender,,2020-07-13
+29864,Bruno,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Male,0,2026-07-14,31,Stray,,2024-07-14
+29936,Sabo,German Shepherd,German Shepherd,Tan,White,Male,0,2026-07-14,31,Owner Surrender,,2017-02-15
+29978,Murphy Lee,American Pit Bull Terrier,American Pit Bull Terrier,Brown,,Male,0,2026-07-14,31,ACO - Impound,Sick,2023-07-15
+29999,Unknown,Mastiff,Mastiff,Brown Brindle,Brown,Male,0,2026-07-15,30,ACO - Impound,Normal,2024-07-15
+30001,Unknow,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Female,0,2026-07-15,30,ACO - Impound,Normal,2024-01-16
+30030,Eria,American Pit Bull Terrier,American Pit Bull Terrier,Blue,White,Female,0,2026-07-15,30,ACO - Impound,,2025-09-15
+30041,Hedgehog,American Pit Bull Terrier,American Pit Bull Terrier,Black Brindle,,Male,0,2026-07-15,30,Stray,,2021-07-17
+30049,Haven,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,White,Female,0,2026-07-15,30,ACO - Impound,,2025-12-17
+30050,Twin,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,White,Male,0,2026-07-15,30,ACO - Impound,,2025-10-17
+30078,Jefferson,Great Pyrenees,Great Pyrenees,Cream,White,Male,0,2026-07-16,29,Stray,,2023-07-16
+30085,Bottomless Breadsticks,Shepherd,Shepherd,Tan,,Male,0,2026-07-16,29,ACO - Owner Surrender,,2025-11-16
+30095,Bradi,Labrador Retriever,Labrador Retriever,Black,Tan,Female,0,2026-07-16,29,ACO - Impound,,2023-10-09
+30097,,Unknown,Unknown,Unknown,,Unknown,0,2026-07-16,29,ACO - Impound,,
+30098,,Unknown,Unknown,Unknown,,Unknown,0,2026-07-16,29,ACO - Impound,,
+30142,Bamboo,Australian Shepherd,Australian Shepherd,Tri Color,White,Male,0,2026-07-17,28,Owner Surrender,,2021-07-17
+30143,Panda,Australian Shepherd,Australian Shepherd,Tri Color,White,Female,0,2026-07-17,28,Owner Surrender,,2016-07-17
+30177,Chikis,Shih Tzu,Shih Tzu,White,Tan,Female,0,2026-07-18,27,ACO - Impound,Injured,2021-07-18
+30178,Charlie,Shih Tzu,Shih Tzu,White,Tan,Male,0,2026-07-18,27,ACO - Impound,Injured,2020-07-18
+30184,,Shiba Inu,Shiba Inu,Gold,,Male,0,2026-07-18,27,ACO - Impound,,
+30200,Cynthia,Labrador Retriever,Labrador Retriever,Black,White Merle,Female,0,2026-07-19,26,Agency,,2021-07-19
+30246,Pepper Jack,American Staffordshire Terrier,American Staffordshire Terrier,Black,,Male,0,2026-07-20,25,Stray,Injured,2023-07-20
+30259,Odin,Shepherd,Shepherd,Black,White,Male,0,2026-07-21,25,ACO - Impound,Normal,2024-07-21
+30265,Erwin,Mastiff,Mastiff,Black,,Male,0,2026-07-21,24,ACO - Impound,,2024-07-21
+30271,Ginger Crisp,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Male,0,2026-07-21,24,ACO - Impound,,
+30292,Ferrell,Labrador Retriever,Labrador Retriever,White,,Male,0,2026-07-21,24,Stray,,2025-07-21
+30307,Axe,Border Collie,Border Collie,Black,White,Male,0,2026-07-21,24,ACO - Impound,,2025-08-21
+30341,,Labrador Retriever,Labrador Retriever,White,Tan,Unknown,1,2026-07-22,23,Stray,,
+30359,Bella,Chihuahua,Chihuahua - Smooth,White,Black,Female,0,2026-07-22,23,Stray,Normal,2015-03-22
+30365,,Labrador Retriever,Labrador Retriever,Black,Black,Male,0,2026-07-22,23,ACO - Impound,Normal,
+30375,,American Pit Bull Terrier,American Pit Bull Terrier,Black,,Female,0,2026-07-23,23,ACO - Impound,,
+30417,,American Staffordshire Terrier,American Staffordshire Terrier,White,,Male,0,2026-07-23,22,Stray,,2023-07-23
+30454,Ivy*,Belgian Shepherd Dog,Belgian Shepherd Dog - Malinois,Black,Brown,Female,0,2026-07-24,21,Owner Surrender,,2024-07-24
+30464,,American Pit Bull Terrier,American Pit Bull Terrier,White,Brown,Unknown,0,2026-07-24,21,ACO - Impound,Injured,2024-07-24
+30491,,Shepherd,Shepherd,Gold,White,Male,0,2026-07-25,20,ACO - Impound,,
+30527,,American Pit Bull Terrier,American Pit Bull Terrier,Unknown,,Unknown,0,2026-07-26,20,ACO - Impound,Normal,
+30540,Buddy,Unknown,Unknown - DISPATCH ONLY,Brown,,Male,0,2026-07-27,18,ACO - Impound,,
+30553,,Labrador Retriever,Labrador Retriever,White,Tan,Unknown,0,2026-07-27,18,Stray,,2024-07-27
+30556,Buck,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Male,0,2026-07-27,18,Owner Surrender,,2023-07-27
+30555,Snow,American Pit Bull Terrier,American Pit Bull Terrier,White,,Female,0,2026-07-27,18,Owner Surrender,,2023-07-27
+30568,,American Pit Bull Terrier,American Pit Bull Terrier,Red Brown,White,Male,0,2026-07-27,18,Humane Officer Surrendered,,2024-07-27
+30599,George,American Pit Bull Terrier,American Pit Bull Terrier,White,Black,Male,0,2026-07-28,17,ACO - Impound,,2024-07-28
+30600,,Labrador Retriever,Labrador Retriever,Yellow,White,Male,0,2026-07-28,17,ACO - Impound,,2024-07-28
+30608,Beaux,Carolina Dog,Carolina Dog,Red,White,Male,0,2026-07-28,17,Owner Surrender,,
+30628,,Australian Cattle Dog,Australian Cattle Dog,Grey,White,Female,0,2026-07-28,17,ACO - Impound,Normal,2024-07-28
+30629,,Australian Cattle Dog,Australian Cattle Dog,Grey,White,Female,0,2026-07-28,17,ACO - Impound,Normal,2024-07-28
+29784,Moo,Australian Cattle Dog,Australian Cattle Dog,Grey,Black,Male,0,2026-07-28,17,ACO - Impound,,2024-07-10
+30663,Unknown,Terrier,Terrier,Tan,White,Female,0,2026-07-29,16,ACO - Impound,,2024-07-29
+30673,,Labrador Retriever,Labrador Retriever,Black,White,Unknown,0,2026-07-29,16,Stray,,2025-07-29
+30694,,American Pit Bull Terrier,American Pit Bull Terrier,White,,Unknown,1,2026-07-30,16,ACO - Impound,,
+30697,,American Bulldog,American Bulldog,Blue,White,Female,0,2026-07-30,15,ACO - Impound,,
+30708,,Catahoula Leopard Dog,Catahoula Leopard Dog,Fawn Brindle,White,Female,0,2026-07-30,15,Stray,Normal,
+30726,,American Pit Bull Terrier,American Pit Bull Terrier,Brown,,Unknown,0,2026-07-30,15,Stray,,
+30750,,Shepherd,Shepherd,White,,Unknown,0,2026-07-31,14,ACO - Impound,Injured,2024-07-31
+30763,Boyaa,Australian Kelpie,Australian Kelpie,White,Brown,Male,0,2026-07-31,14,Stray,,2024-07-31
+30765,Boomerang,Dalmatian,Dalmatian,White,Black,Male,0,2026-07-31,14,ACO - Owner Surrender,,2024-07-31
+30773,Ella*,Border Collie,Border Collie,Blue,White,Female,0,2026-07-31,14,Owner Surrender,,
+30781,,German Shepherd,German Shepherd,Red,Black,Unknown,0,2026-07-31,14,Stray,,
+30793,,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Unknown,0,2026-07-31,14,ACO - Impound,,
+30794,,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Unknown,0,2026-07-31,14,ACO - Impound,,
+30796,,American Pit Bull Terrier,American Pit Bull Terrier,Blue,White,Male,0,2026-07-31,14,Stray,,2025-07-31
+30887,,American Bulldog,American Bulldog,White,Brown Brindle,Unknown,0,2026-08-03,11,Stray,,2025-08-03
+30894,,Labrador Retriever,Labrador Retriever,White,Grey,Unknown,0,2026-08-03,11,Stray,,2025-08-03
+30911,,American Pit Bull Terrier,American Pit Bull Terrier,Black,,Female,0,2026-08-03,11,ACO - Impound,,2024-08-03
+30944,,Jack Russell Terrier,Jack Russell Terrier - Wire-haired,Black,,Unknown,1,2026-08-03,11,Stray,,2026-04-03
+30954,Fat Boy,Labrador Retriever,Labrador Retriever,Blue Brindle,Tan,Male,0,2026-08-03,11,ACO - Impound,,2024-08-03
+30955,Sarge,Boxer,Boxer,Red,White,Male,0,2026-08-03,11,ACO - Impound,,2023-08-03
+30956,,American Pit Bull Terrier,American Pit Bull Terrier,Grey,White,Female,0,2026-08-03,11,ACO - Impound,,
+30968,,Shar Pei,Shar Pei,Brown,,Male,0,2026-08-04,10,ACO - Impound,,2023-08-04
+30971,,American Pit Bull Terrier,American Pit Bull Terrier,Tri Color,Brown,Female,0,2026-08-04,10,ACO - Impound,,
+31004,,American Staffordshire Terrier,American Staffordshire Terrier,Brown,White,Unknown,1,2026-08-04,10,Stray,,2026-06-09
+31005,,American Staffordshire Terrier,American Staffordshire Terrier,Brown,White,Unknown,1,2026-08-04,10,Stray,,2026-06-09
+31007,,American Staffordshire Terrier,American Staffordshire Terrier,Brown,White,Unknown,1,2026-08-04,10,Stray,,2026-06-09
+31008,,American Staffordshire Terrier,American Staffordshire Terrier,Brown,White,Unknown,1,2026-08-04,10,Stray,,2026-06-09
+31009,,American Staffordshire Terrier,American Staffordshire Terrier,White,Brown,Unknown,1,2026-08-04,10,Stray,,2026-06-09
+31010,,American Staffordshire Terrier,American Staffordshire Terrier,White,Brown,Unknown,1,2026-08-04,10,Stray,,2026-06-09
+30853,,American Pit Bull Terrier,American Pit Bull Terrier,Brindle,,Male,0,2026-08-04,10,Stray,,2025-08-02
+31019,Jade,Maltese Terrier,Maltese Terrier,Apricot,,Female,0,2026-08-04,10,ACO - Impound,,
+31051,,American Pit Bull Terrier,American Pit Bull Terrier,Red,White,Unknown,0,2026-08-04,10,Stray,,
+31060,,Chihuahua,Chihuahua - Smooth,Black,Tan Points,Unknown,0,2026-08-04,10,Stray,,
+31072,,German Shepherd,German Shepherd,Tan,Sable,Unknown,1,2026-08-04,10,Stray,,
+31073,,German Shepherd,German Shepherd,Tan,Sable,Unknown,1,2026-08-04,10,Stray,,
+31074,,German Shepherd,German Shepherd,Tan,Sable,Unknown,1,2026-08-04,10,Stray,,
+31075,,German Shepherd,German Shepherd,Tan,Sable,Unknown,1,2026-08-04,10,Stray,,
+31076,,German Shepherd,German Shepherd,Tan,Sable,Unknown,1,2026-08-04,10,Stray,,
+31077,,German Shepherd,German Shepherd,Tan,Sable,Unknown,1,2026-08-04,10,Stray,,
+31078,,German Shepherd,German Shepherd,Tan,Sable,Unknown,1,2026-08-04,10,Stray,,
+31081,,Australian Cattle Dog,Australian Cattle Dog,Merle,White,Unknown,0,2026-08-04,10,Stray,,
+31094,Bella,Labrador Retriever,Labrador Retriever,Red,Blonde,Female,0,2026-08-05,9,ACO - Impound,,2024-08-05
+31097,Princess,American Pit Bull Terrier,American Pit Bull Terrier,Blue,White,Female,0,2026-08-05,9,Owner Surrender,,2021-08-05
+31107,Bridgette,Labrador Retriever,Labrador Retriever,Black,White,Female,1,2026-08-05,9,Owner Surrender,,2026-05-05
+31106,Hershey,Labrador Retriever,Labrador Retriever,Black,,Female,1,2026-08-05,9,Owner Surrender,,2026-05-05
+30902,,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Male,1,2026-08-05,9,Stray,,
+30903,,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Female,1,2026-08-05,9,Stray,,
+31129,,Dutch Shepherd,Dutch Shepherd,Tan,White,Female,0,2026-08-05,9,ACO - Impound,,
+31133,,German Shepherd,German Shepherd,Black,Brown,Male,0,2026-08-05,9,Stray,,2024-08-05
+31146,,German Shepherd,German Shepherd,Brown,Black,Unknown,0,2026-08-05,9,Stray,,2024-08-05
+31149,,Shepherd,Shepherd,Yellow,,Male,0,2026-08-05,9,ACO - Impound,,
+31150,,American Pit Bull Terrier,American Pit Bull Terrier,Brown,,Female,0,2026-08-05,9,ACO - Impound,,2024-08-05
+31151,Simba,American Pit Bull Terrier,American Pit Bull Terrier,Red,White,Male,0,2026-08-05,9,ACO - Impound,,2013-10-23
+31178,,Golden Retriever,Golden Retriever,Apricot,,Unknown,0,2026-08-06,8,Agency,,
+31188,,Cairn Terrier,Cairn Terrier,Black,,Female,0,2026-08-06,8,Stray,,2024-08-06
+31128,,American Pit Bull Terrier,American Pit Bull Terrier,Tri Color,,Male,0,2026-08-06,8,ACO - Impound,,2021-08-06
+31203,,American Pit Bull Terrier,American Pit Bull Terrier,Black,Brown,Unknown,0,2026-08-06,8,Stray,,2026-03-06
+31202,Diesel,American Staffordshire Terrier,American Staffordshire Terrier,White,Tan,Unknown,0,2026-08-06,8,Owner Surrender,,2018-06-06
+31215,,Siberian Husky,Siberian Husky,White,Black,Unknown,1,2026-08-07,7,Agency,,2026-04-07
+31220,Soji*,Australian Cattle Dog,Australian Cattle Dog,White,Black,Male,0,2026-08-07,7,Owner Surrender,,2022-08-07
+31225,,American Pit Bull Terrier,American Pit Bull Terrier,Blue,White,Male,0,2026-08-07,7,Stray,,
+31230,Daisy,American Staffordshire Terrier,American Staffordshire Terrier,Tri Color,,Female,0,2026-08-07,7,Stray,Normal,
+31237,,English Bulldog,English Bulldog,Red Brown,White,Male,0,2026-08-07,7,Stray,Normal,
+31240,,Flat Coated Retriever,Flat Coated Retriever,Black,White,Female,0,2026-08-07,7,Stray,Normal,
+31241,,Australian Kelpie,Australian Kelpie,Black,Tan,Female,0,2026-08-07,7,Stray,,2026-02-07
+31247,,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,,Unknown,1,2026-08-07,7,Stray,,2026-04-07
+31248,Royce,Labrador Retriever,Labrador Retriever,Black,,Male,0,2026-08-07,7,Owner Surrender,Normal,2018-08-07
+31300,Unknown,Terrier,Terrier,Tan,Tan,Male,0,2026-08-08,6,ACO - Impound,Sick,2024-08-08
+31306,,Golden Retriever,Golden Retriever,Chestnut,,Female,0,2026-08-08,6,Stray,Normal,2025-12-08
+31318,,Great Pyrenees,Great Pyrenees,White,Black,Male,0,2026-08-09,5,ACO - Impound,,
+31329,,Chihuahua,Chihuahua - Smooth,Black,Brown,Unknown,1,2026-08-10,5,ACO - Impound,,
+31339,,Great Pyrenees,Great Pyrenees,White,,Female,0,2026-08-10,4,ACO - Impound,,2024-08-10
+31340,,Great Pyrenees,Great Pyrenees,White,,Male,0,2026-08-10,4,ACO - Impound,,2024-08-10
+31346,,Basset Hound,Basset Hound,Tan,White,Male,0,2026-08-10,4,Stray,,2024-08-10
+31349,Papucho,American Staffordshire Terrier,American Staffordshire Terrier,Blonde,,Unknown,0,2026-08-10,4,Owner Surrender,,2022-08-10
+31348,Perlay,ALASKAN HUSKY,ALASKAN HUSKY,White,,Unknown,0,2026-08-10,4,Owner Surrender,,2022-08-10
+31362,Cooper,Siberian Husky,Siberian Husky,White,Tan,Male,0,2026-08-10,4,Owner Surrender,,2021-08-10
+31363,,French Bulldog,French Bulldog,Black,,Unknown,1,2026-08-10,4,ACO - Impound,,2026-06-10
+31368,,Dachshund,Dachshund,White,Brown,Unknown,1,2026-08-10,4,Stray,,
+31369,,Dachshund,Dachshund,White,Brown,Unknown,1,2026-08-10,4,Stray,,
+31370,,Dachshund,Dachshund,White,Brown,Unknown,1,2026-08-10,4,Stray,,
+31371,,Dachshund,Dachshund,White,Brown,Unknown,1,2026-08-10,4,Stray,,
+31387,Anderson,Australian Cattle Dog,Australian Cattle Dog,Black,White,Unknown,0,2026-08-10,4,Stray,,2024-08-10
+31396,,Cairn Terrier,Cairn Terrier,Black,Black,Male,0,2026-08-11,3,ACO - Impound,Sick,2024-08-11
+31397,Widow,Siberian Husky,Siberian Husky,White,Tan,Female,0,2026-08-11,3,ACO - Impound,Normal,
+31400,,Chihuahua,Chihuahua - Smooth,Blonde,White,Unknown,0,2026-08-11,3,Stray,,2025-08-11
+31207,,American Pit Bull Terrier,American Pit Bull Terrier,Black Brindle,Black Brindle,Male,1,2026-08-11,3,Stray,,
+31422,Hugs,Dachshund,Dachshund,Black,White,Unknown,0,2026-08-11,3,Owner Surrender,,2015-08-11
+31436,,Chihuahua,Chihuahua - Smooth,Tan,Black,Male,0,2026-08-11,3,Stray,,
+31438,Mona,Labrador Retriever,Labrador Retriever,Black,White,Unknown,0,2026-08-11,3,Owner Surrender,,2018-08-11
+31440,,American Pit Bull Terrier,American Pit Bull Terrier,Black,,Unknown,0,2026-08-11,3,Stray,,
+31452,,Labrador Retriever,Labrador Retriever,Red Merle,White,Female,0,2026-08-11,3,ACO - Impound,,2024-02-11
+31453,,Belgian Shepherd Dog,Belgian Shepherd Dog - Malinois,Black,Tan,Female,0,2026-08-11,3,ACO - Impound,,2026-03-11
+31454,,Labrador Retriever,Labrador Retriever,Red,Black,Female,0,2026-08-11,3,ACO - Impound,,2026-03-11
+31458,,American Pit Bull Terrier,American Pit Bull Terrier,Brown,,Unknown,0,2026-08-12,2,Agency,,
+31461,,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Unknown,0,2026-08-12,2,Stray,,
+31482,,Chihuahua,Chihuahua - Smooth,Tan,White,Male,0,2026-08-12,2,Stray,,
+31496,,American Pit Bull Terrier,American Pit Bull Terrier,Grey,White,Female,0,2026-08-12,2,ACO - Impound,,
+31498,,Border Collie,Border Collie,Black,White,Male,0,2026-08-12,2,ACO - Impound,,
+31502,,Chihuahua,Chihuahua - Smooth,Yellow,,Unknown,0,2026-08-13,1,ACO - Impound,,2024-08-13
+31505,Ishtar,American Pit Bull Terrier,American Pit Bull Terrier,Red Brown,Brown,Male,0,2026-08-13,1,ACO - Impound,,
+31506,Ivan,American Pit Bull Terrier,American Pit Bull Terrier,Red,Black,Male,0,2026-08-13,1,ACO - Impound,,
+31504,Sassy,American Pit Bull Terrier,American Pit Bull Terrier,Brown Brindle,,Female,0,2026-08-13,1,ACO - Impound,,
+31508,Hurteye,Hound,Hound,Tan,White,Male,0,2026-08-13,1,ACO - Impound,,
+31507,Nips,Hound,Hound,Red,White,Male,0,2026-08-13,1,ACO - Impound,,
+31516,Rhea,American Pit Bull Terrier,American Pit Bull Terrier,Red,White,Female,0,2026-08-13,1,ACO - Impound,,
+31523,,Chihuahua,Chihuahua - Smooth,Tan,,Male,1,2026-08-13,1,Stray,,2026-04-13
+31534,,Mastiff,Mastiff,Brown,,Unknown,1,2026-08-13,1,ACO - Owner Surrender,,2026-06-18
+31535,,Mastiff,Mastiff,Brown,,Unknown,1,2026-08-13,1,ACO - Owner Surrender,,2026-06-18
+31536,,Mastiff,Mastiff,Brown,,Unknown,1,2026-08-13,1,ACO - Owner Surrender,,2026-06-18
+31537,,Mastiff,Mastiff,Brown,,Unknown,1,2026-08-13,1,ACO - Owner Surrender,,2026-06-18
+31538,,Mastiff,Mastiff,Brown,,Unknown,1,2026-08-13,1,ACO - Owner Surrender,,2026-06-18
+31539,,Mastiff,Mastiff,Brown,,Unknown,1,2026-08-13,1,ACO - Owner Surrender,,2026-06-18
+31540,,Mastiff,Mastiff,Brown,,Unknown,1,2026-08-13,1,ACO - Owner Surrender,,2026-06-18
+31541,,Mastiff,Mastiff,Brown,,Unknown,1,2026-08-13,1,ACO - Owner Surrender,,2026-06-18
+31542,,Mastiff,Mastiff,Brown,,Unknown,1,2026-08-13,1,ACO - Owner Surrender,,2026-06-18
+31543,,Mastiff,Mastiff,Brown,,Unknown,1,2026-08-13,1,ACO - Owner Surrender,,2026-06-18
+31544,,Mastiff,Mastiff,Brown,,Unknown,1,2026-08-13,1,ACO - Owner Surrender,,2026-06-18
+31545,Trey,Mastiff,Mastiff,Brown,,Male,0,2026-08-13,1,ACO - Owner Surrender,,2025-08-13
+31546,,English Bulldog,English Bulldog,Brown,White,Unknown,0,2026-08-13,1,Stray,,2024-08-13
+31548,Cleo,Mastiff,Mastiff,Fawn,Black,Female,0,2026-08-13,1,Owner Surrender,,2025-11-15
+31554,,German Shepherd,German Shepherd,Black,Brown,Unknown,0,2026-08-13,1,Stray,,
+31557,,Jack Russell Terrier,Jack Russell Terrier,Black,Tri Color,Female,0,2026-08-13,1,Stray,,2026-01-13
+31560,,Boxer,Boxer,Red,Black,Unknown,0,2026-08-13,1,Agency,,
+31475,Zeus,Great Pyrenees,Great Pyrenees,White,White,Male,0,2026-08-13,1,ACO - Impound,,
+31567,,Siberian Husky,Siberian Husky,Red,White,Unknown,0,2026-08-13,1,Stray,,
+31579,,American Pit Bull Terrier,American Pit Bull Terrier,Tan,White,Female,1,2026-08-14,0,Stray,,2026-08-13
+31580,,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Male,1,2026-08-14,0,Stray,,2026-08-13
+31591,Little Bit,Chihuahua,Chihuahua - Smooth,White,,Female,0,2026-08-14,0,Agency,,
+31592,Peanut,Chihuahua,Chihuahua - Smooth,Tan,White,Male,0,2026-08-14,0,Agency,,
+31594,,Anatolian Shepherd,Anatolian Shepherd,Tan,Black,Unknown,0,2026-08-14,0,ACO - Impound,Normal,2024-08-14
+31595,,Border Collie,Border Collie,Black,White,Unknown,1,2026-08-14,0,Stray,,2026-05-22
+31612,,Chihuahua,Chihuahua - Smooth,Black,Tri Color,Unknown,1,2026-08-14,0,ACO - Impound,,
+31614,Charlie,American Pit Bull Terrier,American Pit Bull Terrier,Charcoal,White,Male,0,2026-08-15,0,ACO - Impound,,

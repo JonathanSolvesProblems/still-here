@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Still Here: the dogs Austin hasn't placed yet</title>
+<meta name="description" content="Every dog with an intake record and no outcome at the Austin animal shelter, and the 99,905-stay reason the ones at the top have been there so long.">
+<style>
+/* ---------------------------------------------------------------------------
+   These dogs have no photograph in the public record. All any of them has is a
+   row in a spreadsheet. So the page is built as the thing that row becomes at
+   the shelter: a kennel card. Paper, stamped numerals, typed fields, one red
+   ink pad reserved for the dogs who have been there too long.
+   --------------------------------------------------------------------------- */
+:root{
+  --paper:#e7e2d6; --paper-2:#f2eee5; --card:#fbf9f4;
+  --ink:#1b1815; --ink-2:#4a443c; --ink-3:#8b8073;
+  --rule:#c9c1b1; --rule-2:#ded7c8;
+  --stamp:#b03a20; --stamp-soft:#e4c3b8;
+  --ok:#4f6b46;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  --disp:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#17150f; --paper-2:#1e1b14; --card:#232019;
+    --ink:#ece5d6; --ink-2:#b8ae9b; --ink-3:#7d7466;
+    --rule:#38332a; --rule-2:#2a261f;
+    --stamp:#e0674a; --stamp-soft:#5c2c20; --ok:#8fae7f;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#17150f; --paper-2:#1e1b14; --card:#232019;
+  --ink:#ece5d6; --ink-2:#b8ae9b; --ink-3:#7d7466;
+  --rule:#38332a; --rule-2:#2a261f;
+  --stamp:#e0674a; --stamp-soft:#5c2c20; --ok:#8fae7f;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--mono); font-size:15px; line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--disp);font-weight:600;letter-spacing:-.01em;margin:0}
+a{color:inherit}
+.label{
+  font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-3);font-family:var(--mono);
+}
+.num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
+
+/* ---- masthead ---- */
+header.top{border-bottom:2px solid var(--ink);background:var(--paper-2)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:baseline;
+  padding-top:14px;padding-bottom:14px;gap:16px;flex-wrap:wrap}
+.brand{font-family:var(--disp);font-size:20px;letter-spacing:-.02em}
+.brand b{font-weight:700}
+.masthead-meta{font-size:11px;color:var(--ink-3);letter-spacing:.04em}
+
+/* ---- hero kennel card ---- */
+.hero{padding:56px 0 40px;border-bottom:1px solid var(--rule)}
+.kennel{
+  background:var(--card);border:1px solid var(--rule);
+  box-shadow:0 1px 0 var(--rule-2),0 18px 40px -28px rgba(0,0,0,.5);
+  position:relative;overflow:hidden;
+}
+.kennel::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:6px;
+  background:repeating-linear-gradient(180deg,var(--stamp) 0 14px,transparent 14px 26px);
+  opacity:.85;
+}
+.kennel-in{padding:30px 32px 26px 40px}
+.kennel-head{display:flex;justify-content:space-between;gap:16px;
+  border-bottom:1px dashed var(--rule);padding-bottom:12px;margin-bottom:22px;flex-wrap:wrap}
+.kennel-grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end}
+@media(max-width:720px){.kennel-grid{grid-template-columns:1fr;gap:22px}}
+.dogname{font-size:clamp(38px,7vw,66px);line-height:.95;letter-spacing:-.03em;margin:0 0 6px}
+.dogsub{color:var(--ink-2);font-size:13.5px;margin-bottom:20px}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:14px 22px;
+  border-top:1px solid var(--rule-2);padding-top:16px}
+.field .label{display:block;margin-bottom:3px}
+.field .v{font-size:13.5px;color:var(--ink)}
+.daybox{text-align:right;min-width:190px}
+.daybox .n{
+  font-family:var(--disp);font-size:clamp(76px,14vw,132px);line-height:.82;
+  letter-spacing:-.05em;color:var(--stamp);display:block;
+}
+.daybox .u{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);
+  display:block;margin-top:8px}
+.verdict{
+  margin-top:22px;padding:14px 18px;background:var(--stamp-soft);
+  border-left:3px solid var(--stamp);font-size:14px;color:var(--ink);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .verdict{color:var(--ink)}}
+.lede{font-family:var(--disp);font-size:clamp(19px,2.4vw,25px);line-height:1.4;
+  max-width:46ch;margin:0 0 30px;letter-spacing:-.01em}
+.lede em{font-style:normal;border-bottom:2px solid var(--stamp);padding-bottom:1px}
+
+/* ---- buttons ---- */
+.btn{
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  background:transparent;color:var(--ink);border:1px solid var(--ink);
+  padding:9px 16px;cursor:pointer;transition:.15s;display:inline-flex;gap:8px;align-items:center;
+}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn[disabled]{opacity:.32;cursor:default}
+.btn[disabled]:hover{background:transparent;color:var(--ink)}
+.btn.play{border-color:var(--stamp);color:var(--stamp)}
+.btn.play:hover{background:var(--stamp);color:var(--card)}
+
+/* ---- stat strip ---- */
+.strip{border-bottom:1px solid var(--rule);background:var(--paper-2)}
+.strip .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:1px;padding:0;background:var(--rule)}
+.stat{background:var(--paper-2);padding:22px 20px}
+.stat .n{font-family:var(--disp);font-size:34px;line-height:1;letter-spacing:-.03em;display:block}
+.stat .l{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);
+  margin-top:8px;display:block;line-height:1.4}
+
+/* ---- sections ---- */
+section{padding:64px 0;border-bottom:1px solid var(--rule)}
+.sec-head{margin-bottom:32px;max-width:62ch}
+.sec-head h2{font-size:clamp(26px,3.6vw,38px);letter-spacing:-.025em;margin-bottom:12px}
+.sec-head p{color:var(--ink-2);font-size:14.5px;margin:0}
+.kicker{display:block;margin-bottom:14px}
+
+/* ---- board ---- */
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+.controls .btn.on{background:var(--ink);color:var(--paper)}
+.count-note{font-size:12px;color:var(--ink-3);margin-left:auto}
+.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:14px}
+.dog{
+  background:var(--card);border:1px solid var(--rule);padding:15px 16px 13px;
+  display:flex;flex-direction:column;gap:9px;position:relative;
+}
+.dog.long{border-color:var(--stamp)}
+.dog.long::after{
+  content:"";position:absolute;top:0;right:0;border-width:0 16px 16px 0;
+  border-style:solid;border-color:transparent var(--stamp) transparent transparent;
+}
+.dog .row1{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.dog .nm{font-family:var(--disp);font-size:19px;letter-spacing:-.015em;line-height:1.15}
+.dog .nm.anon{color:var(--ink-3);font-style:italic;font-size:16px}
+.dog .d{font-family:var(--disp);font-size:26px;line-height:1;letter-spacing:-.03em;white-space:nowrap}
+.dog.long .d{color:var(--stamp)}
+.dog .d small{font-size:10px;letter-spacing:.1em;color:var(--ink-3);margin-left:3px}
+.dog .meta{font-size:11.5px;color:var(--ink-2);line-height:1.5}
+.dog .tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:1px}
+.tag{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;padding:2.5px 6px;
+  border:1px solid var(--rule);color:var(--ink-3)}
+.tag.bully{border-color:var(--stamp);color:var(--stamp)}
+.dog .foot{margin-top:auto;padding-top:9px;border-top:1px dashed var(--rule-2);
+  display:flex;justify-content:space-between;align-items:center;gap:8px}
+.dog .pctl{font-size:10.5px;color:var(--ink-3);line-height:1.35}
+.mini{font-size:10px;letter-spacing:.1em;text-transform:uppercase;background:none;
+  border:1px solid var(--rule);color:var(--ink-2);padding:5px 9px;cursor:pointer;white-space:nowrap}
+.mini:hover{border-color:var(--stamp);color:var(--stamp)}
+.mini[disabled]{opacity:.3;cursor:default}
+.mini[disabled]:hover{border-color:var(--rule);color:var(--ink-2)}
+.more{text-align:center;margin-top:28px}
+
+/* ---- charts ---- */
+.chart{margin-top:8px}
+.bar{display:grid;grid-template-columns:132px 1fr 52px;gap:14px;align-items:center;
+  padding:5px 0;border-bottom:1px solid var(--rule-2);font-size:12.5px}
+.bar .cl{color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .tr{display:block;background:var(--rule-2);height:17px;position:relative}
+/* .tr is a grid item so it blockifies for free; .fi is not, and an inline span
+   silently ignores width and height. Without this the bars never draw. */
+.bar .fi{display:block;height:100%;background:var(--ink-3);transition:width .6s cubic-bezier(.2,.7,.3,1)}
+.bar.hl .fi{background:var(--stamp)}
+.bar.hl .cl{color:var(--ink);font-weight:600}
+.bar .vv{text-align:right;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:8px}
+@media(max-width:780px){.split{grid-template-columns:1fr;gap:28px}}
+.split h3{font-size:16px;margin-bottom:4px}
+.split .sh{font-size:11.5px;color:var(--ink-3);margin-bottom:14px}
+.bar.sm{grid-template-columns:106px 1fr 40px;gap:10px;font-size:11.5px}
+.bar.sm .tr{height:14px}
+.callout{
+  margin-top:34px;padding:26px 28px;border:1px solid var(--ink);background:var(--card);
+}
+.callout p{margin:0;font-family:var(--disp);font-size:clamp(17px,2.2vw,21px);line-height:1.45;
+  letter-spacing:-.01em}
+.callout .big{color:var(--stamp)}
+
+/* ---- method ---- */
+.method{font-size:13.5px;color:var(--ink-2);max-width:70ch}
+.method h3{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink);margin:26px 0 8px}
+.method p{margin:0 0 12px}
+.method code{background:var(--paper-2);border:1px solid var(--rule-2);padding:1px 5px;font-size:12px}
+.method a{color:var(--stamp)}
+footer{padding:40px 0 60px;font-size:12px;color:var(--ink-3)}
+.pulse{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--stamp);
+  margin-right:7px;vertical-align:middle;animation:p 2.4s ease-in-out infinite}
+@keyframes p{0%,100%{opacity:1}50%{opacity:.25}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><b>Still Here</b></div>
+    <div class="masthead-meta" id="masthead">loading Austin Animal Center open data…</div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="lede">Every one of these dogs has an intake record at the Austin
+      animal shelter and <em>no outcome record</em>. Nobody has come for them yet.</p>
+    <div class="kennel" id="hero-card">
+      <div class="kennel-in">
+        <div class="kennel-head">
+          <span class="label">Austin Animal Center · Kennel Card</span>
+          <span class="label" id="hero-id">—</span>
+        </div>
+        <div class="kennel-grid">
+          <div>
+            <h1 class="dogname" id="hero-name">—</h1>
+            <div class="dogsub" id="hero-sub">—</div>
+            <div class="fields" id="hero-fields"></div>
+          </div>
+          <div class="daybox">
+            <span class="n num" id="hero-days">—</span>
+            <span class="u">days waiting</span>
+            <div style="margin-top:16px">
+              <button class="btn play" id="hero-play" disabled>▶ Hear from him</button>
+            </div>
+          </div>
+        </div>
+        <div class="verdict" id="hero-verdict">—</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="wrap" id="strip"></div>
+</div>
+
+<section id="board">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label kicker">The board</span>
+      <h2>Everyone still in the building</h2>
+      <p>Sorted by how long they have been waiting. Cards outlined in red have
+         been there longer than a hundred days. Names are the ones the shelter
+         wrote down at intake. The ones in italics arrived without one.</p>
+    </div>
+    <div class="controls" id="controls">
+      <button class="btn on" data-f="all">All</button>
+      <button class="btn" data-f="bully">Bully-type</button>
+      <button class="btn" data-f="other">Everyone else</button>
+      <button class="btn" data-f="year">Over a year</button>
+      <button class="btn" data-f="anon">Unnamed</button>
+      <span class="count-note" id="count-note"></span>
+    </div>
+    <div class="board" id="grid"></div>
+    <div class="more"><button class="btn" id="more">Show more</button></div>
+  </div>
+</section>
+
+<section id="finding">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label kicker">The finding</span>
+      <h2>You have heard that black dogs get left behind</h2>
+      <p>It is the most repeated claim in animal sheltering. I checked it against
+         every completed dog stay Austin has published since 2013: <span id="n-stays">—</span>
+         of them, <span id="n-adopted">—</span> ending in adoption. Here is the median
+         wait by coat colour.</p>
+    </div>
+    <div class="chart" id="chart-color"></div>
+
+    <div class="sec-head" style="margin-top:56px">
+      <h2>It is not true. And the reason is hiding in the same table.</h2>
+      <p>Black dogs leave faster than white, brown or chocolate. But look what
+         happens when you split each colour by whether the dog is a bully-type
+         breed (pit bull, Staffordshire, American bulldog).</p>
+    </div>
+    <div class="split">
+      <div>
+        <h3>Bully-type dogs</h3>
+        <div class="sh">median days to adoption, by coat</div>
+        <div class="chart" id="chart-bully"></div>
+      </div>
+      <div>
+        <h3>Every other dog</h3>
+        <div class="sh">median days to adoption, by coat</div>
+        <div class="chart" id="chart-other"></div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p>Hold the breed still and coat colour moves the wait by
+        <span class="big" id="sp-in">—</span>.
+        Change the breed and it moves by <span class="big" id="sp-bt">—</span>.
+        Black only looked fast because black dogs are the least likely to be
+        pit bulls: <span class="big" id="pct-black">—</span> of them, against
+        <span class="big" id="pct-blue">—</span> of the blue ones.</p>
+    </div>
+
+    <div class="sec-head" style="margin-top:56px">
+      <h2>The dogs actually being left behind</h2>
+      <p>Median days to adoption by breed, for every breed with at least 400
+         adoptions on record.</p>
+    </div>
+    <div class="chart" id="chart-breed"></div>
+  </div>
+</section>
+
+<section id="method">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label kicker">Method</span>
+      <h2>How this was counted</h2>
+    </div>
+    <div class="method">
+      <h3>Where the data comes from</h3>
+      <p>Austin Animal Center publishes intakes and outcomes as open data on
+        Socrata, no API key required. There are two eras with two different
+        schemas: an archive frozen at 2025-05-05
+        (<code>wter-evkm</code>, <code>9t4d-g238</code>) and the current feeds
+        that replaced it (<code>pyqf-r2dc</code>, <code>gsvs-ypi7</code>), which
+        refresh hourly. This page uses both.</p>
+
+      <h3>Reconstructing length of stay</h3>
+      <p>The live outcome feed ships a <code>days_in_shelter</code> column. The
+        archive does not, so each archived outcome is paired with the most recent
+        intake for that animal that <em>precedes</em> it. Dogs cycle through the
+        shelter more than once, and matching on animal ID alone would charge a
+        repeat stray's entire history to a single stay. <span id="m-dropped">—</span>
+        outcomes could not be paired to a prior intake and were dropped rather
+        than guessed at.</p>
+
+      <h3>Who counts as still waiting</h3>
+      <p>A dog with an intake row and no outcome row. That is not quite the same
+        as being in the building: some are in foster care, and the outcome feed
+        lags. Animals recorded dead on arrival never receive an outcome row
+        either, so <span id="m-dead">—</span> of them were excluded, because without that
+        filter they sit on this board looking like they are waiting for a home.</p>
+
+      <h3>Medians, not averages</h3>
+      <p>Length of stay is heavily right-skewed: a small number of dogs stay for
+        years and drag every average upward. Every headline number here is a
+        median. Colour cells in the controlled comparison need at least 250
+        adoptions on each side of the split to appear, because at a lower floor a
+        35-dog cell was setting the reported spread.</p>
+
+      <h3>What this is not</h3>
+      <p>This is one municipal shelter, and Austin is a no-kill city with an
+        unusually high live-release rate, so these waits are likely shorter than
+        the national picture rather than longer. Nothing here is causal. It shows
+        which dogs wait, not why any individual adopter chose as they did.</p>
+
+      <h3>Sources</h3>
+      <p>
+        <a href="https://data.austintexas.gov/resource/pyqf-r2dc.json" target="_blank" rel="noopener">Live intakes</a> ·
+        <a href="https://data.austintexas.gov/resource/gsvs-ypi7.json" target="_blank" rel="noopener">Live outcomes</a> ·
+        <a href="https://data.austintexas.gov/Health-and-Community-Services/Austin-Animal-Center-Outcomes-10-01-2013-to-05-05-/9t4d-g238" target="_blank" rel="noopener">Archived outcomes</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div id="foot">—</div>
+    <p style="margin-top:10px">Built for the DEV Weekend Challenge: Dog Days Edition.
+      Counts are computed from Austin's published records, not from any estimate of mine.</p>
+  </div>
+</footer>
+
+<script>
+const $ = s => document.querySelector(s);
+const fmt = n => n.toLocaleString('en-US');
+let S = null, shown = 60, filter = 'all', audio = null;
+
+function titleCase(s){
+  return (s||'').toLowerCase().replace(/\b[a-z]/g, c => c.toUpperCase());
+}
+function dogLine(d){
+  const bits = [d.raw_breed || d.breed];
+  const col = [d.color, d.secondary_color].filter(Boolean).join('/');
+  if (col) bits.push(col);
+  if (d.sex && d.sex !== 'Unknown') bits.push(d.sex);
+  return bits.join(' · ');
+}
+
+/* ---- hero ---------------------------------------------------------------- */
+function renderHero(){
+  const d = S.waiting_summary.longest;
+  $('#hero-id').textContent = 'ID ' + d.animal_id;
+  $('#hero-name').textContent = d.name || 'Unnamed';
+  $('#hero-sub').textContent = dogLine(d);
+  $('#hero-days').textContent = fmt(d.days_waiting);
+
+  const f = [
+    ['Intake date', d.intake_date],
+    ['Came in as', titleCase(d.intake_reason) || '—'],
+    ['Breed group', d.bully ? 'Bully-type' : 'Everyone else'],
+    ['Cohort median', d.cohort_median + ' days']
+  ];
+  $('#hero-fields').innerHTML = f.map(([l,v]) =>
+    `<div class="field"><span class="label">${l}</span><span class="v">${v}</span></div>`).join('');
+
+  $('#hero-verdict').innerHTML =
+    `<strong>${d.pct_of_cohort_home_by_now}%</strong> of the dogs like ${d.name || 'him'} in this
+     dataset (same breed group) were adopted in less time than ${d.name || 'he'} has
+     already been waiting.`;
+  wireAudio($('#hero-play'), d, '▶ Hear from ' + (d.name || 'this dog'));
+}
+
+/* ---- audio (ElevenLabs clips, generated per dog) ------------------------- */
+/* A manifest lists which dogs have a clip. Probing each card with a HEAD
+   request instead would fire sixty requests per render and log sixty 404s. */
+let CLIPS = new Set();
+function wireAudio(btn, d, label){
+  if (!CLIPS.has(String(d.animal_id))) { btn.disabled = true; return; }
+  const src = 'audio/' + d.animal_id + '.mp3';
+  btn.disabled = false;
+  if (label) btn.textContent = label;
+  btn.onclick = () => {
+    if (audio) audio.pause();
+    audio = new Audio(src);
+    btn.textContent = label === '▶' ? '❚❚' : '❚❚ Playing';
+    audio.onended = () => btn.textContent = label || '▶ Listen';
+    audio.play();
+  };
+}
+
+/* ---- strip --------------------------------------------------------------- */
+function renderStrip(){
+  const w = S.waiting_summary, h = S.headline;
+  const items = [
+    [fmt(w.count), 'dogs with no outcome on record'],
+    [w.bully_pct + '%', 'of them are bully-type'],
+    [w.median_days_waiting, 'median days already waited'],
+    [w.over_year, 'have been there over a year'],
+    [fmt(S.corpus.stays_total), 'completed stays analysed']
+  ];
+  $('#strip').innerHTML = items.map(([n,l]) =>
+    `<div class="stat"><span class="n num">${n}</span><span class="l">${l}</span></div>`).join('');
+}
+
+/* ---- board --------------------------------------------------------------- */
+function pass(d){
+  if (filter === 'bully') return d.bully;
+  if (filter === 'other') return !d.bully;
+  if (filter === 'year')  return d.days_waiting >= 365;
+  if (filter === 'anon')  return !d.name;
+  return true;
+}
+function renderBoard(){
+  const list = S.waiting.filter(pass);
+  const slice = list.slice(0, shown);
+  $('#grid').innerHTML = slice.map(d => {
+    const long = d.days_waiting >= 100;
+    const nm = d.name
+      ? `<span class="nm">${d.name}</span>`
+      : `<span class="nm anon">unnamed</span>`;
+    const tags = [];
+    if (d.bully) tags.push('<span class="tag bully">bully-type</span>');
+    if (d.is_puppy) tags.push('<span class="tag">puppy</span>');
+    if (d.health && d.health !== 'Normal') tags.push(`<span class="tag">${d.health.toLowerCase()}</span>`);
+    return `<article class="dog ${long?'long':''}">
+      <div class="row1">${nm}<span class="d num">${d.days_waiting}<small>D</small></span></div>
+      <div class="meta">${dogLine(d)}<br>in since ${d.intake_date}</div>
+      ${tags.length?`<div class="tags">${tags.join('')}</div>`:''}
+      <div class="foot">
+        <span class="pctl">${d.pct_of_cohort_home_by_now}% of similar dogs<br>were home by now</span>
+        <button class="mini" data-id="${d.animal_id}" disabled>▶</button>
+      </div>
+    </article>`;
+  }).join('');
+
+  $('#count-note').textContent = `showing ${fmt(slice.length)} of ${fmt(list.length)}`;
+  $('#more').style.display = slice.length < list.length ? '' : 'none';
+
+  // Only some dogs have a generated clip; enable the ones that do.
+  slice.forEach(d => {
+    const b = $(`.mini[data-id="${d.animal_id}"]`);
+    if (b) wireAudio(b, d, '▶');
+  });
+}
+
+/* ---- charts -------------------------------------------------------------- */
+function bars(el, rows, opt = {}){
+  // opt.max lets two charts share one scale. Without it, side-by-side panels
+  // each normalise to their own maximum and a 32-day bar renders exactly as
+  // long as a 9-day one, which is the opposite of what the comparison says.
+  const max = opt.max || Math.max(...rows.map(r => r.v));
+  $(el).innerHTML = rows.map(r =>
+    `<div class="bar ${opt.sm?'sm':''} ${r.hl?'hl':''}">
+       <span class="cl">${r.k}</span>
+       <span class="tr"><span class="fi" style="width:${Math.max(1.5, r.v/max*100).toFixed(1)}%"></span></span>
+       <span class="vv">${r.v}${opt.unit||'d'}</span>
+     </div>`).join('');
+}
+function renderCharts(){
+  bars('#chart-color', S.by_color.map(c => ({
+    k: c.color, v: c.median, hl: c.color === 'Black'
+  })));
+
+  // One shared ceiling across both panels, so the gap is visible and not just
+  // readable in the numbers.
+  const cs = S.controlled;
+  const shared = Math.max(...cs.map(c => c.bully.median));
+  bars('#chart-bully', cs.map(c => ({k:c.color, v:c.bully.median, hl:c.color==='Black'})), {sm:1, max:shared});
+  bars('#chart-other', cs.map(c => ({k:c.color, v:c.other.median, hl:c.color==='Black'})), {sm:1, max:shared});
+
+  bars('#chart-breed', S.by_breed.slice(0, 14).map(b => ({
+    k: b.breed, v: b.median, hl: b.bully
+  })));
+
+  const sp = S.spread;
+  $('#sp-in').textContent = sp.within_other_days + ' days';
+  $('#sp-bt').textContent = sp.between_groups_days + ' days';
+  const black = S.by_color.find(c => c.color === 'Black');
+  const blue  = S.by_color.find(c => c.color === 'Blue');
+  $('#pct-black').textContent = (black ? black.pct_bully : 0) + '%';
+  $('#pct-blue').textContent  = (blue ? blue.pct_bully : 0) + '%';
+}
+
+/* ---- boot ---------------------------------------------------------------- */
+fetch('audio/manifest.json')
+  .then(r => r.ok ? r.json() : [])
+  .catch(() => [])
+  .then(ids => { CLIPS = new Set((ids || []).map(String)); })
+  .then(() => fetch('../data/stats.json').then(r => r.ok ? r : fetch('data/stats.json')))
+  .then(r => r.json()).then(s => {
+  S = s;
+  const when = new Date(s.generated_from.fetched_at_utc);
+  $('#masthead').innerHTML = `<span class="pulse"></span>live data pulled ` +
+    when.toUTCString().replace('GMT','UTC');
+  $('#n-stays').textContent   = fmt(s.corpus.stays_total);
+  $('#n-adopted').textContent = fmt(s.corpus.stays_adopted);
+  $('#m-dropped').textContent = fmt(s.generated_from.outcomes_archive_dropped);
+  $('#m-dead').textContent    = s.generated_from.excluded_dead_on_intake;
+  $('#foot').textContent =
+    `${fmt(s.corpus.stays_total)} completed stays, ${s.corpus.earliest} to ${s.corpus.latest}. ` +
+    `${fmt(s.waiting_summary.count)} dogs still without an outcome.`;
+  renderHero(); renderStrip(); renderBoard(); renderCharts();
+}).catch(e => {
+  $('#masthead').textContent = 'could not load data/stats.json: run pipeline/fetch.py';
+  console.error(e);
+});
+
+$('#more').onclick = () => { shown += 120; renderBoard(); };
+$('#controls').onclick = e => {
+  const b = e.target.closest('button[data-f]');
+  if (!b) return;
+  filter = b.dataset.f; shown = 60;
+  [...$('#controls').querySelectorAll('button')].forEach(x => x.classList.toggle('on', x === b));
+  renderBoard();
+};
+</script>
+</body>
+</html>
