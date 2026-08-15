@@ -77,7 +77,7 @@ And it is not a historical curiosity. Of the 516 dogs sitting in that shelter to
 
 ## What I actually built
 
-**[Still Here](https://jonathansolvesproblems.github.io/still-here/)** does two things.
+**[Still Here](https://stillhere.jonathanandrei.com/)** does two things.
 
 The board shows all 516 dogs with no recorded outcome, newest data pulled hourly from Austin's live feed. Each frame carries the real record: name if the shelter wrote one down (138 of them arrived without a name), breed, coat, intake date, and a running day count. Against each dog it shows where its current wait falls in the distribution of 51,404 completed adoptions for its own breed group. Pancho's frame reads *99.7% of similar dogs were home by now*.
 
@@ -137,7 +137,7 @@ When my mom brought that second dog home, one dog stopped waiting. I did not thi
 
 ---
 
-**Live board:** https://jonathansolvesproblems.github.io/still-here/
+**Live board:** https://stillhere.jonathanandrei.com/
 **Code:** https://github.com/JonathanSolvesProblems/still-here
 **Data:** Austin Animal Center open data, [live intakes](https://data.austintexas.gov/resource/pyqf-r2dc.json) and [live outcomes](https://data.austintexas.gov/resource/gsvs-ypi7.json). No API key needed, so every number here is checkable.
 

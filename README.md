@@ -4,7 +4,7 @@
 
 Built for the [DEV Weekend Challenge: Dog Days Edition](https://dev.to/challenges/weekend-2026-08-13), August 2026.
 
-**Live board: https://jonathansolvesproblems.github.io/still-here/**
+**Live board: https://stillhere.jonathanandrei.com/**
 
 The longest wait on the board belongs to Pancho, a white Cairn Terrier who was
 picked up as a stray on May 23, 2025. As of the last data pull he had been there
