@@ -345,6 +345,7 @@ footer{padding:44px 0 64px;font-size:12.5px;color:var(--light-3)}
           <div class="fields" id="hero-fields"></div>
         </div>
         <div class="expbox">
+          <span class="label" id="hero-why" style="display:block;margin-bottom:10px"></span>
           <span class="n num" id="hero-days">—</span>
           <span class="u">days waiting</span>
           <div style="margin-top:18px">
@@ -541,6 +542,7 @@ footer{padding:44px 0 64px;font-size:12.5px;color:var(--light-3)}
 const $ = s => document.querySelector(s);
 const fmt = n => n.toLocaleString('en-US');
 let S = null, shown = 60, filter = 'all', audio = null, CLIPS = new Set(), MAXD = 1;
+let playingBtn = null, playingId = null, playingLabel = null;
 
 /* ---- the exposure ramp -----------------------------------------------------
    Blackbody stops, unexposed to white hot. Two things the curve has to do at
@@ -615,6 +617,14 @@ function renderHero(){
     ['Cohort median', d.cohort_median + ' days']
   ].map(([l,v]) => `<div class="field"><span class="label">${l}</span><span class="v">${v}</span></div>`).join('');
 
+  const why = $('#hero-why');
+  if (why) {
+    const top = S.waiting[0];
+    why.textContent = String(d.animal_id) === String(top.animal_id)
+      ? 'Longest wait on the board'
+      : 'Pinned. Longest is ' + (top.name || 'an unnamed dog') + ', ' + top.days_waiting + ' days';
+  }
+
   const ad = $('#hero-adopt');
   if (ad) ad.innerHTML = d.adopt_url
     ? `<a class="btn play" style="display:inline-block;text-decoration:none"
@@ -629,17 +639,34 @@ function renderHero(){
   wireAudio($('#hero-play'), d, '▶ Hear from ' + (d.name || 'this dog'));
 }
 
-/* ---- audio ---- */
+/* ---- audio ----------------------------------------------------------------
+   One clip at a time. Starting a second used to pause the first but leave its
+   button still reading as playing, so the sheet showed three dogs paused at
+   once. Track the button that owns the sound and hand it back when it loses it.
+   Clicking the same button again stops it rather than restarting.            */
+function stopPlaying(){
+  if (audio) { audio.pause(); audio = null; }
+  if (playingBtn) { playingBtn.textContent = playingLabel; }
+  playingBtn = null; playingId = null; playingLabel = null;
+}
 function wireAudio(btn, d, label){
-  if(!CLIPS.has(String(d.animal_id))){ btn.disabled = true; return; }
-  const src='audio/'+d.animal_id+'.mp3';
-  btn.disabled=false;
-  if(label) btn.textContent=label;
-  btn.onclick=()=>{
-    if(audio) audio.pause();
-    audio=new Audio(src);
-    btn.textContent = label==='▶' ? '❚❚' : '❚❚ Playing';
-    audio.onended=()=>btn.textContent=label||'▶ Listen';
+  if (!CLIPS.has(String(d.animal_id))) { btn.disabled = true; return; }
+  const idle = label || '▶ Listen';
+  btn.disabled = false;
+  btn.textContent = idle;
+  // if this dog is the one currently sounding, show that after a re-render
+  if (playingId === String(d.animal_id)) {
+    playingBtn = btn; playingLabel = idle;
+    btn.textContent = idle === '▶' ? '❚❚' : '❚❚ Playing';
+  }
+  btn.onclick = () => {
+    if (playingId === String(d.animal_id)) { stopPlaying(); return; }
+    stopPlaying();
+    audio = new Audio('audio/' + d.animal_id + '.mp3');
+    playingBtn = btn; playingId = String(d.animal_id); playingLabel = idle;
+    btn.textContent = idle === '▶' ? '❚❚' : '❚❚ Playing';
+    audio.onended = stopPlaying;
+    audio.onerror = stopPlaying;
     audio.play();
   };
 }
