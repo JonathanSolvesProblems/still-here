@@ -6,3 +6,6 @@ narration*.mp3
 narration*.json
 captions*.ass
 demo*.mp4
+*.edit-plan.json
+_videos/
+*.webm
