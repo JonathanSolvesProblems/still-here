@@ -105,6 +105,7 @@ Every frame links to that dog's real adoption page, so clicking one takes you so
 
 Things worth trying:
 
+- **Search a breed.** Type `labrador`, `husky` or `brindle`. Multiple words narrow rather than widen, so `black lab` finds 23 dogs. Austin's own site lets you filter by breed but never tells you how long any of them has waited; this does both.
 - **Press play on any dog.** Each one reads its own record aloud, and each breed group opens with its own sound: a howl for the hounds, a husky's howl for the spitz breeds, a yip for the toy dogs.
 - **Filter to "Over a year"** for the 18 dogs who have been there more than 365 days.
 - **Filter to "Unnamed"** for the ones who arrived without a name.

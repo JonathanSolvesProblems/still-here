@@ -180,6 +180,19 @@ section{padding:70px 0;border-bottom:1px solid var(--edge-2)}
 .kicker{display:block;margin-bottom:15px}
 
 /* ---- contact sheet ---- */
+.searchbar{margin-bottom:18px;max-width:560px}
+.searchbar .label{display:block;margin-bottom:8px}
+.qwrap{display:flex;gap:8px}
+#q{flex:1;min-width:0;font-family:var(--ui);font-size:14.5px;color:var(--light);
+  background:var(--frame);border:1px solid var(--edge);padding:11px 14px;
+  -webkit-appearance:none;appearance:none;border-radius:0}
+#q::placeholder{color:var(--light-3)}
+#q:focus{outline:none;border-color:var(--e3)}
+#q:focus-visible{outline:2px solid var(--e3);outline-offset:2px}
+.qclear{font-family:var(--ui);font-size:11px;letter-spacing:.13em;text-transform:uppercase;
+  background:none;border:1px solid var(--edge);color:var(--light-2);padding:0 14px;cursor:pointer}
+.qclear:hover{color:var(--light);border-color:var(--light-3)}
+.qhint{display:block;margin-top:8px;font-size:12px;color:var(--light-3);min-height:1.2em}
 .controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:26px}
 .controls .btn.on{color:var(--ground);background:var(--light);border-color:var(--light)}
 .count-note{font-size:12px;color:var(--light-3);margin-left:auto}
@@ -277,6 +290,7 @@ button.pin:focus-visible{outline:2px solid var(--e3);outline-offset:3px}
 }
 @keyframes hold{0%,100%{border-color:var(--edge-2)}50%{border-color:var(--e1)}}
 .more{text-align:center;margin-top:30px}
+.noresult{grid-column:1/-1;color:var(--light-2);font-size:14.5px;padding:26px 0;margin:0}
 
 /* ---- charts ---- */
 .bar{display:grid;grid-template-columns:136px 1fr 54px;gap:15px;align-items:center;
@@ -380,6 +394,16 @@ footer{padding:44px 0 64px;font-size:12.5px;color:var(--light-3)}
          that the dog they are looking at arrived last spring. The city publishes
          that number in its open data and prints it nowhere near the place people
          adopt. This page is the two halves put back together.</p>
+    </div>
+    <div class="searchbar">
+      <label class="label" for="q">Search by breed, name or coat</label>
+      <div class="qwrap">
+        <input id="q" type="search" autocomplete="off" spellcheck="false"
+               placeholder="labrador, husky, brindle, Pancho…"
+               aria-describedby="qcount">
+        <button class="qclear" id="qclear" type="button" aria-label="Clear search" hidden>Clear</button>
+      </div>
+      <span class="qhint" id="qcount" role="status" aria-live="polite"></span>
     </div>
     <div class="controls" id="controls">
       <button class="btn on" data-f="all">All</button>
@@ -543,6 +567,7 @@ const $ = s => document.querySelector(s);
 const fmt = n => n.toLocaleString('en-US');
 let S = null, shown = 60, filter = 'all', audio = null, CLIPS = new Set(), MAXD = 1;
 let playingBtn = null, playingId = null, playingLabel = null;
+let query = '';
 
 /* ---- the exposure ramp -----------------------------------------------------
    Blackbody stops, unexposed to white hot. Two things the curve has to do at
@@ -683,7 +708,17 @@ function renderStrip(){
 }
 
 /* ---- contact sheet ---- */
+/* Search runs across the fields a person actually knows a dog by: what it is,
+   what it is called, and what colour it is. Multiple words must all match, so
+   "black lab" narrows rather than widening. */
+function matches(d){
+  if(!query) return true;
+  const hay=[d.name,d.given_name,d.raw_breed,d.breed,d.color,d.secondary_color,d.sil]
+    .filter(Boolean).join(' ').toLowerCase();
+  return query.split(/\s+/).every(w=>hay.includes(w));
+}
 function pass(d){
+  if(!matches(d)) return false;
   if(filter==='bully') return d.bully;
   if(filter==='other') return !d.bully;
   if(filter==='year')  return d.days_waiting>=365;
@@ -729,7 +764,17 @@ function renderBoard(){
       </div>
     </article>`;
   }).join('');
+  if(!list.length){
+    $('#grid').innerHTML=`<p class="noresult">No dog on the board matches
+      “${query.replace(/</g,'&lt;')}”. Try a breed like labrador or husky,
+      a coat like brindle, or a name.</p>`;
+  }
   $('#count-note').textContent=`showing ${fmt(slice.length)} of ${fmt(list.length)}`;
+  const qc=$('#qcount');
+  if(qc) qc.textContent = query
+    ? `${fmt(list.length)} of ${fmt(S.waiting.length)} dogs match`
+    : `${fmt(S.waiting.length)} dogs on the board`;
+  const qx=$('#qclear'); if(qx) qx.hidden = !query;
   $('#more').style.display=slice.length<list.length?'':'none';
   slice.forEach(d=>{ const b=$(`.mini[data-id="${d.animal_id}"]`); if(b) wireAudio(b,d,'▶'); });
 }
@@ -818,6 +863,13 @@ function shareHero(){
 }
 
 $('#more').onclick=()=>{ shown+=120; renderBoard(); };
+let qTimer=null;
+$('#q').addEventListener('input',e=>{
+  clearTimeout(qTimer);
+  // debounce: 515 cards re-render on every keystroke otherwise
+  qTimer=setTimeout(()=>{ query=e.target.value.trim().toLowerCase(); shown=60; renderBoard(); },140);
+});
+$('#qclear').onclick=()=>{ $('#q').value=''; query=''; shown=60; renderBoard(); $('#q').focus(); };
 document.addEventListener('click',e=>{
   const p=e.target.closest('[data-pin]');
   if(!p) return;
