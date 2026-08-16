@@ -6,8 +6,6 @@ tags: weekendchallenge, snowflake, elevenlabs, showdev
 cover_image: https://raw.githubusercontent.com/JonathanSolvesProblems/still-here/main/assets/shots/1-hero.jpg
 ---
 
-*This is my entry for the [DEV Weekend Challenge: Dog Days Edition](https://dev.to/challenges/weekend-2026-08-13).*
-
 My family's dog died recently. He lived with my mom, I met him the day he was born, and I knew him almost his whole life. It was hard on all of us in the way that is difficult to explain to anyone who has not had it happen.
 
 A little while later my mom brought home another dog. He does not replace the first one, and nobody in my family pretends otherwise. But a house with a dog in it is a different house, and hers is whole again.
@@ -216,6 +214,7 @@ When my mom brought that second dog home, one dog stopped waiting. I did not thi
 **Live board:** https://jonathansolvesproblems.github.io/still-here/
 **Code:** https://github.com/JonathanSolvesProblems/still-here
 **Blog Post:** https://jonathanandrei.com/blog/still-here-austin-shelter-black-dog-syndrome-99916-stays/
+**Challenge:** [DEV Weekend Challenge: Dog Days Edition](https://dev.to/challenges/weekend-2026-08-13)
 **Data:** Austin Animal Center open data, [live intakes](https://data.austintexas.gov/resource/pyqf-r2dc.json) and [live outcomes](https://data.austintexas.gov/resource/gsvs-ypi7.json). No API key needed, so every number here is checkable.
 
 *If you are anywhere near Austin, the board is real and so are the dogs on it.*
