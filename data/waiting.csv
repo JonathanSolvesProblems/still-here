@@ -145,8 +145,8 @@ animal_id,name,breed,raw_breed,color,secondary_color,sex,is_puppy,intake_date,da
 23489,Dodge,Cane Corso,Cane Corso,Black,,Male,0,2026-03-28,140,ACO - Impound,,2024-04-03
 23491,Ford,Cane Corso,Cane Corso,Black,,Male,0,2026-03-28,140,ACO - Impound,,2024-04-03
 23530,Charlie,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Male,0,2026-03-30,139,ACO - Impound,Normal,2022-03-30
+23532,Benny,American Pit Bull Terrier,American Pit Bull Terrier,Red,,Male,0,2026-03-30,139,ACO - Impound,Injured,2024-09-30
 23522,,American Pit Bull Terrier,American Pit Bull Terrier,Black,White,Male,0,2026-03-29,139,ACO - Impound,,
-23532,Benny,American Pit Bull Terrier,American Pit Bull Terrier,Red,,Male,0,2026-03-30,138,ACO - Impound,Injured,2024-09-30
 23564,Hobbes,American Pit Bull Terrier,American Pit Bull Terrier,Brown,White,Male,0,2026-03-30,138,Stray,,2022-03-30
 23422,Baloo,Australian Cattle Dog,Australian Cattle Dog,Black,,Male,0,2026-03-30,138,ACO - Impound,,2024-03-30
 23722,Maui,German Shepherd,German Shepherd,Brown,Black,Male,0,2026-04-02,135,Stray,,2021-04-02
