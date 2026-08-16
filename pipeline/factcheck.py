@@ -111,10 +111,21 @@ def main():
     # Strip those sections before looking for stale numbers, or the check
     # punishes the writeup for being honest about its own mistakes.
     def strip_corrections(md):
-        out, skipping = [], False
+        """Skip the section that narrates corrections, at any heading level.
+
+        Matching only "## " missed the section once it was demoted to "###" and
+        the checker then flagged the honest history as staleness. A heading of
+        the same or shallower depth ends the section.
+        """
+        out, skipping, depth = [], False, 0
         for line in md.splitlines():
-            if line.startswith("## "):
-                skipping = "got wrong" in line.lower() or "correction" in line.lower()
+            m = re.match(r"^(#{2,6})\s+(.*)$", line)
+            if m:
+                level, text = len(m.group(1)), m.group(2).lower()
+                if skipping and level <= depth:
+                    skipping = False
+                if "got wrong" in text or "correction" in text:
+                    skipping, depth = True, level
             if not skipping:
                 out.append(line)
         return "\n".join(out)
