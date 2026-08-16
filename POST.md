@@ -1,7 +1,7 @@
 ---
 title: "Everyone Believes Black Dogs Get Left Behind. I Checked 99,905 Shelter Records. They Don't."
 published: false
-description: "A live board of the 515 dogs Austin hasn't placed yet, ordered by how long they have waited, and the 99,905-record reason the ones at the top are still there."
+description: "A live board of the 510 dogs Austin hasn't placed yet, ordered by how long they have waited, and the 99,905-record reason the ones at the top are still there."
 tags: weekendchallenge, snowflake, datascience, showdev
 cover_image: https://raw.githubusercontent.com/JonathanSolvesProblems/still-here/main/assets/shots/1-hero.jpg
 ---
@@ -16,13 +16,15 @@ That exchange happens hundreds of thousands of times a year. What I had not thou
 
 ## What I Built
 
-**[Still Here](https://stillhere.jonathanandrei.com/)** is a live board of every dog Austin Animal Center has an intake record for and no outcome record. As I write this there are **515** of them.
+**[Still Here](https://stillhere.jonathanandrei.com/)** is a live board of every dog Austin Animal Center has an intake record for and no outcome record. As I write this there are **510** of them.
 
 ![The board opens on Pancho, a white Cairn Terrier who has been waiting 448 days and has no photograph anywhere public](https://raw.githubusercontent.com/JonathanSolvesProblems/still-here/main/assets/shots/1-hero.jpg)
 
-The one at the top is called Pancho. He is a white Cairn Terrier, he was picked up as a stray on May 23, 2025, and he has been there **448 days**. 99.7% of the dogs in his breed group were adopted in less time than he has already been waiting.
+The one at the top is called Pancho. He is a white Cairn Terrier, he was picked up as a stray on May 23, 2025, and he has been there **449 days**. 99.7% of the dogs in his breed group were adopted in less time than he has already been waiting.
 
 Then I went looking for the reason the dogs at the top of that board are the ones at the top.
+
+The board moves. Between two runs of the pipeline a day apart, nine dogs came off it: **seven were adopted**, one was reclaimed by an owner who came looking, and one was transferred to a partner rescue. Four new dogs arrived. Baxter had been waiting 71 days and went home on the fifteenth.
 
 ### The claim I set out to check
 
@@ -30,21 +32,21 @@ If you have spent any time around animal shelters you have heard of **black dog 
 
 It is a genuinely checkable claim, and Austin has published enough records to check it.
 
-I pulled every completed dog stay the city has released since October 2013 and reconstructed how long each one lasted: **99,905 stays**, of which **51,404** ended in adoption. Then I took the median wait for each coat color.
+I pulled every completed dog stay the city has released since October 2013 and reconstructed how long each one lasted: **99,916 stays**, of which **51,413** ended in adoption. Then I took the median wait for each coat color.
 
 | coat | median days to adoption | n |
 |---|---|---|
 | Blue | 22 | 2,064 |
-| Brown Brindle | 16 | 2,520 |
+| Brown Brindle | 16 | 2,521 |
 | Fawn | 16 | 617 |
 | Brown | 10 | 7,085 |
-| White | 10 | 8,796 |
+| White | 10 | 8,797 |
 | Chocolate | 10 | 1,163 |
-| **Black** | **9** | **13,919** |
+| **Black** | **9** | **13,922** |
 | Tan | 8 | 6,236 |
 | Cream | 7 | 770 |
 
-Black dogs are in the fast half. Thirteen thousand nine hundred and nineteen of them, leaving in a median of nine days, quicker than white, brown or chocolate.
+Black dogs are in the fast half. Thirteen thousand nine hundred and twenty-two of them, leaving in a median of nine days, quicker than white, brown or chocolate.
 
 So the myth does not survive its first contact with the data. That much matches the published research: a [2015 study by Christy Hoffman and colleagues](https://www.sciencedaily.com/releases/2016/02/160203185534.htm) found no evidence for black dog syndrome across two shelters either.
 
@@ -75,9 +77,9 @@ The two columns do not overlap anywhere. Every bully-type cell is between 25 and
 
 Black only looked fast in the first table because black dogs are the *least* likely to be bully-type: 12% of them, against 81% of the blue ones. The color signal was a breed signal the whole time. A black dog that is not a bully breed waits 8 days. A black pit bull waits 31.
 
-Across the whole corpus: **bully-type dogs wait a median of 28 days, and every other dog waits 8.** That is 3.5 times, on 9,657 bully-type adoptions against 41,747 others.
+Across the whole corpus: **bully-type dogs wait a median of 28 days, and every other dog waits 8.** That is 3.5 times, on 9,658 bully-type adoptions against 41,755 others.
 
-And it is not a historical curiosity. Of the 515 dogs sitting in that shelter today, **217 are bully-type**. Four of the five longest waits on the board right now are pit bulls.
+And it is not a historical curiosity. Of the 510 dogs sitting in that shelter today, **216 are bully-type**. Four of the five longest waits on the board right now are pit bulls.
 
 ### The thing the adoption site does not tell you
 
@@ -95,7 +97,7 @@ Both halves of that are public. They are just never printed next to each other. 
 
 The board is a photographic contact sheet, one frame per dog, ordered by how long each has waited. The day count and the glow are that wait: the longer a dog has been there, the more it has burned into the plate.
 
-![The contact sheet, 515 frames of real dogs with real photographs from Austin's adoption listings](https://raw.githubusercontent.com/JonathanSolvesProblems/still-here/main/assets/shots/2-sheet.jpg)
+![The contact sheet, 510 frames of real dogs with real photographs from Austin's adoption listings](https://raw.githubusercontent.com/JonathanSolvesProblems/still-here/main/assets/shots/2-sheet.jpg)
 
 Every frame links to that dog's real adoption page, so clicking one takes you somewhere you could actually adopt it.
 
@@ -124,9 +126,9 @@ This project reads both. The live outcome feed ships a `days_in_shelter` column;
 
 ### Snowflake does the counting
 
-All 99,905 stays and the 515 current dogs load through an internal stage, and every number quoted above comes out of a view rather than out of application code. The bully-type definition lives in a single SQL function, `IS_BULLY()`, so the one judgement call in the whole analysis is auditable in one place instead of scattered through Python.
+All 99,916 stays and the 510 current dogs load through an internal stage, and every number quoted above comes out of a view rather than out of application code. The bully-type definition lives in a single SQL function, `IS_BULLY()`, so the one judgement call in the whole analysis is auditable in one place instead of scattered through Python.
 
-The piece that genuinely wants a warehouse is the per-dog percentile: for each of the 515 waiting dogs, rank its current wait against every completed stay in its breed group. That is 515 live values against 51,404 historical ones, and it is one view.
+The piece that genuinely wants a warehouse is the per-dog percentile: for each of the 510 waiting dogs, rank its current wait against every completed stay in its breed group. That is 510 live values against 51,413 historical ones, and it is one view.
 
 I also kept the Python implementation and made the two argue. `verify.py` re-runs every headline question locally and diffs it against what Snowflake returned, across the medians, the counts, the color table, the controlled split, the spreads, and the per-dog percentile for the top 25 dogs. **102 of 102 checks agree.** If they ever disagree, one of them is wrong and the number does not go in the writeup.
 
@@ -136,11 +138,11 @@ The open data has no photographs in it. But Austin's adoption listings run on a 
 
 I checked the join rather than trusting it: of the matched dogs that have a name on both sides, **97% agree**, and the handful that disagree are the shelter renaming a dog after intake. `Unknown` becomes `Tinkerbelle`. `Fat Boy` becomes `Big Boy`. The importer refuses to write the mapping at all if agreement drops below 90%, because a wrong face on a real animal is worse than no face.
 
-**380 of the 515 have a real photograph**, embedded from the shelter's own platform rather than copied.
+**377 of the 510 have a real photograph**, embedded from the shelter's own platform rather than copied.
 
-135 have none. I nearly wrote that up as dogs being overlooked, which would have been wrong: most are recent arrivals still inside a mandatory stray hold, and their median wait is 20 days against 84 for the listed ones. But the unlisted share never drops below about a sixth at any length of stay, and **32 dogs have passed 100 days without appearing publicly at all**. Pancho is one of them, which is why the biggest frame on the page is empty.
+133 have none. I nearly wrote that up as dogs being overlooked, which would have been wrong: most are recent arrivals still inside a mandatory stray hold, and their median wait is 20 days against 84 for the listed ones. But the unlisted share never drops below about a sixth at any length of stay, and **33 dogs have passed 100 days without appearing publicly at all**. Pancho is one of them, which is why the biggest frame on the page is empty.
 
-For those 135 I generated one illustration per breed group and used it as a CSS mask, so the alpha channel carries the drawing while the fill comes from the coat the shelter recorded. A black pit bull and a white Great Pyrenees stay visibly different animals. They illustrate a breed *type*, never an individual: generating a portrait of a specific dog nobody has photographed would be inventing evidence about a real animal, and the "no photograph on file" caption stays on every one.
+For those 133 I generated one illustration per breed group and used it as a CSS mask, so the alpha channel carries the drawing while the fill comes from the coat the shelter recorded. A black pit bull and a white Great Pyrenees stay visibly different animals. They illustrate a breed *type*, never an individual: generating a portrait of a specific dog nobody has photographed would be inventing evidence about a real animal, and the "no photograph on file" caption stays on every one.
 
 ### Giving them a voice
 
@@ -150,9 +152,11 @@ Each of the longest-waiting dogs reads its own record aloud, and every clip open
 
 > They called me Pancho. I'm a white Cairn Terrier. I was picked up as a stray on May 23, 2025. That was 448 days ago, more than a year. 99.7 percent of dogs like me were already home by now. The usual wait is 8 days. Nobody has come for me yet.
 
+The clips are recordings made on 2026-08-15, so a day count spoken aloud can sit a day behind the board, which recomputes on every load.
+
 Name, coat, breed, intake reason, intake date, elapsed days, cohort percentile, cohort median. Eight fields, no biography, no "loves long walks". The phrasing varies between dogs but is selected by a hash of the animal ID rather than randomly, so re-running produces byte-identical scripts.
 
-The pit bulls deliberately got the warmest, deepest voice available, because 51 of the dogs without photographs are pit bulls and a growling read would reinforce the exact prejudice the other 99,905 records spend this whole page dismantling.
+The pit bulls deliberately got the warmest, deepest voice available, because 51 of the dogs without photographs are pit bulls and a growling read would reinforce the exact prejudice the other 99,916 records spend this whole page dismantling.
 
 A straight top-16 by wait length turned out to be thirteen pit bulls, which meant no howl or yip would ever have played anywhere, so the generator tops up with the longest waiter from every breed group the top-16 missed. Twenty-three clips, all ten groups.
 
@@ -192,11 +196,11 @@ Breed labels deserve a warning too. They are assigned by staff from appearance, 
 
 The interesting thing about the black dog myth is not that it is wrong. It is that it is a *kinder* thing to believe. If dogs are passed over for their color, that is a superstition, and superstitions can be argued away with a good photo and a hashtag.
 
-The real pattern is not a superstition. People are avoiding a breed. 217 of the dogs in that shelter tonight are that breed, and the ones at the top of the board have been waiting since before last summer.
+The real pattern is not a superstition. People are avoiding a breed. 216 of the dogs in that shelter tonight are that breed, and the ones at the top of the board have been waiting since before last summer.
 
 Pancho is not one of them. He is a small white terrier and he has been there 448 days, which is the part I cannot explain and did not try to.
 
-When my mom brought that second dog home, one dog stopped waiting. I did not think about it in those terms at the time and I doubt she did either. This weekend I built the list of everyone still waiting, and it turns out to be 515 names long.
+When my mom brought that second dog home, one dog stopped waiting. I did not think about it in those terms at the time and I doubt she did either. This weekend I built the list of everyone still waiting, and it turns out to be 510 names long.
 
 ---
 

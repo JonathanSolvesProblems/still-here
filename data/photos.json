@@ -1,4 +1,76 @@
 {
+  "29828": {
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026715_232454_1786836294927.jpeg",
+    "adopt_url": "https://adopt.adopets.com/pet/8bb0f9fe-12fe-4c36-93cf-f7a32d55f555",
+    "listed_name": "29828",
+    "listed_breed": "Rat Terrier",
+    "kennel": "B13",
+    "status": "AVAILABLE",
+    "in_foster": false
+  },
+  "31440": {
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260815_225304_1786834384798.jpeg",
+    "adopt_url": "https://adopt.adopets.com/pet/5ddf462a-e091-41cc-a714-0121dbe90aff",
+    "listed_name": "Devon",
+    "listed_breed": "American Pit Bull Terrier",
+    "kennel": "",
+    "status": "AVAILABLE",
+    "in_foster": false
+  },
+  "31397": {
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260816_080203_17868673231784.jpeg",
+    "adopt_url": "https://adopt.adopets.com/pet/80ca2d06-0ec2-404a-8674-ea878c4fe6c8",
+    "listed_name": "Willow",
+    "listed_breed": "Siberian Husky",
+    "kennel": "",
+    "status": "AVAILABLE",
+    "in_foster": false
+  },
+  "31453": {
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260815_225455_17868344955329.jpeg",
+    "adopt_url": "https://adopt.adopets.com/pet/ebe29ddb-eb14-4914-90b9-fff4de76b233",
+    "listed_name": "Yara",
+    "listed_breed": "Belgian Malinois",
+    "kennel": "011",
+    "status": "AVAILABLE",
+    "in_foster": false
+  },
+  "31454": {
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260815_225620_17868345807203.jpeg",
+    "adopt_url": "https://adopt.adopets.com/pet/6f695f66-5c4b-40ed-9aaa-31e7e4d1a54f",
+    "listed_name": "Hannah",
+    "listed_breed": "German Shepherd",
+    "kennel": "011",
+    "status": "AVAILABLE",
+    "in_foster": false
+  },
+  "31436": {
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026715_154114_1786808474981.jpeg",
+    "adopt_url": "https://adopt.adopets.com/pet/ad1f4607-13bc-4acb-a51e-6a489159a840",
+    "listed_name": "Dolce",
+    "listed_breed": "Chihuahua",
+    "kennel": "D14",
+    "status": "AVAILABLE",
+    "in_foster": false
+  },
+  "31452": {
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260815_225737_17868346570519.jpeg",
+    "adopt_url": "https://adopt.adopets.com/pet/ce891dba-35c6-4b6f-b08f-ba7199d40c5a",
+    "listed_name": "Boots",
+    "listed_breed": "Australian Cattle Dog",
+    "kennel": "Q5",
+    "status": "AVAILABLE",
+    "in_foster": false
+  },
+  "31207": {
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026715_151438_1786806878090.jpeg",
+    "adopt_url": "https://adopt.adopets.com/pet/7ed99ad5-7561-43c0-9bff-8d7e7234de58",
+    "listed_name": "31207",
+    "listed_breed": "American Pit Bull Terrier",
+    "kennel": "",
+    "status": "AVAILABLE",
+    "in_foster": true
+  },
   "31370": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026714_233641_1786750601027.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/7d5e611e-20e0-4be9-9ab6-6c3f42c40312",
@@ -9,22 +81,22 @@
     "in_foster": false
   },
   "31371": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026714_233641_1786750601060.jpeg",
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026715_19714_1786820834981.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/988eb5bf-ee70-4e25-b1f5-e79b37671597",
     "listed_name": "31371",
     "listed_breed": "Dachshund",
-    "kennel": "B21",
+    "kennel": "",
     "status": "AVAILABLE",
-    "in_foster": false
+    "in_foster": true
   },
   "31369": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026714_233641_1786750601040.jpeg",
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026715_185545_1786820145073.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/448181ef-0ae1-498c-9f1a-abd6f4f71909",
     "listed_name": "31369",
     "listed_breed": "Dachshund",
-    "kennel": "B21",
+    "kennel": "",
     "status": "AVAILABLE",
-    "in_foster": false
+    "in_foster": true
   },
   "31346": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026714_22462_1786747562293.jpeg",
@@ -53,15 +125,6 @@
     "status": "AVAILABLE",
     "in_foster": false
   },
-  "31339": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026714_19820_1786734500607.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/0fabe08e-ee99-4726-8d79-aa49502bbf86",
-    "listed_name": "Juliet",
-    "listed_breed": "Great Pyrenees",
-    "kennel": "203",
-    "status": "AVAILABLE",
-    "in_foster": false
-  },
   "31387": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026714_182541_1786731941932.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/6b1f9704-d73a-41cd-9e6c-e3e270506246",
@@ -72,18 +135,18 @@
     "in_foster": false
   },
   "29836": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026713_211858_1786655938866.jpeg",
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260815_225952_17868347925077.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/dc322773-051f-4e3b-8e3e-815a111e0498",
-    "listed_name": "29836",
+    "listed_name": "Harvey",
     "listed_breed": "Great Pyrenees",
-    "kennel": "618",
+    "kennel": "001",
     "status": "AVAILABLE",
     "in_foster": false
   },
   "29829": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026713_21173_1786655823673.jpeg",
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260815_230034_17868348343272.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/8413dbae-5448-405e-b308-2d39e47436e0",
-    "listed_name": "29829",
+    "listed_name": "Ranger",
     "listed_breed": "German Shepherd",
     "kennel": "602",
     "status": "AVAILABLE",
@@ -92,9 +155,9 @@
   "29835": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026713_21173_1786655823437.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/fa82e928-18a9-4de7-828a-42aea53bd766",
-    "listed_name": "29835",
+    "listed_name": "Ruby",
     "listed_breed": "Black Mouth Cur",
-    "kennel": "626",
+    "kennel": "001",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -121,16 +184,7 @@
     "adopt_url": "https://adopt.adopets.com/pet/04eff6ed-c674-45d3-850b-9918c0f64622",
     "listed_name": "31538",
     "listed_breed": "Mastiff",
-    "kennel": "D7",
-    "status": "AVAILABLE",
-    "in_foster": false
-  },
-  "31540": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026713_175633_1786643793309.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/f74cf82b-9737-4214-bac9-035628881c1b",
-    "listed_name": "31540",
-    "listed_breed": "Mastiff",
-    "kennel": "D7",
+    "kennel": "D9",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -139,7 +193,7 @@
     "adopt_url": "https://adopt.adopets.com/pet/0104e488-c2e4-4477-b631-3a2d687792d2",
     "listed_name": "31544",
     "listed_breed": "Mastiff",
-    "kennel": "D9",
+    "kennel": "D10",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -184,7 +238,7 @@
     "adopt_url": "https://adopt.adopets.com/pet/fcb8f34d-d3fd-4525-830f-70e010c99bb0",
     "listed_name": "31534",
     "listed_breed": "Mastiff",
-    "kennel": "D9",
+    "kennel": "D10",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -193,12 +247,12 @@
     "adopt_url": "https://adopt.adopets.com/pet/d4b94a4c-5912-4559-9c00-b09f8fd0c871",
     "listed_name": "31543",
     "listed_breed": "Mastiff",
-    "kennel": "D9",
+    "kennel": "D10",
     "status": "AVAILABLE",
     "in_foster": false
   },
   "31545": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026713_18745_1786644465568.jpeg",
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260815_230258_17868349789997.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/e554223f-0e2c-4850-86a5-0176bb824087",
     "listed_name": "Trey",
     "listed_breed": "Mastiff",
@@ -207,7 +261,7 @@
     "in_foster": false
   },
   "31318": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026713_15127_1786633927651.jpeg",
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260815_230350_17868350303641.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/9019cce5-4f73-4130-8c2b-8902ecbc4297",
     "listed_name": "31318",
     "listed_breed": "Great Pyrenees",
@@ -257,15 +311,6 @@
     "listed_name": "Finkelstein",
     "listed_breed": "Bulldog",
     "kennel": "109",
-    "status": "AVAILABLE",
-    "in_foster": false
-  },
-  "31151": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260813_044026_17865960261472.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/7b7fd206-26a2-4ea0-9975-b499ade2b5b8",
-    "listed_name": "Simba",
-    "listed_breed": "Carolina Dog",
-    "kennel": "",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -326,27 +371,18 @@
   "30794": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026711_144140_1786459300740.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/b21e337b-9e12-4a29-89f2-1229046c45fe",
-    "listed_name": "30794",
+    "listed_name": "Ben",
     "listed_breed": "American Pit Bull Terrier",
-    "kennel": "622",
+    "kennel": "004",
     "status": "AVAILABLE",
     "in_foster": false
   },
   "30793": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260811_224127_17864880877652.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/62c40636-c8d9-46cb-82c9-9cd66084f6af",
-    "listed_name": "30793",
+    "listed_name": "Jerry",
     "listed_breed": "American Pit Bull Terrier",
-    "kennel": "622",
-    "status": "AVAILABLE",
-    "in_foster": false
-  },
-  "31178": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260810_192332_17863898125522.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/1e534429-5e31-4946-8db9-8ba3fef13c2b",
-    "listed_name": "Nattie",
-    "listed_breed": "Chesapeake Bay Retriever",
-    "kennel": "107",
+    "kennel": "004",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -391,7 +427,7 @@
     "adopt_url": "https://adopt.adopets.com/pet/56ee6c02-46b4-44a2-bacb-6abff760abb9",
     "listed_name": "Bambi",
     "listed_breed": "Dutch Shepherd Dog",
-    "kennel": "208",
+    "kennel": "031",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -517,7 +553,7 @@
     "adopt_url": "https://adopt.adopets.com/pet/4134c56a-5cca-42e1-bd17-d2b2802f55e0",
     "listed_name": "Hammer Time",
     "listed_breed": "Shar-Pei",
-    "kennel": "031",
+    "kennel": "216",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -584,39 +620,12 @@
     "status": "AVAILABLE",
     "in_foster": false
   },
-  "31106": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260805_220437_17859674770448.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/a98d3038-266a-4799-aefd-ea5c9cf062e9",
-    "listed_name": "Hershey",
-    "listed_breed": "Labrador Retriever",
-    "kennel": "B9",
-    "status": "AVAILABLE",
-    "in_foster": false
-  },
-  "31107": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260805_220518_17859675184781.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/e7f98dcc-16ce-4132-9f76-feb26ac73c15",
-    "listed_name": "Bridgette",
-    "listed_breed": "Labrador Retriever",
-    "kennel": "B8",
-    "status": "AVAILABLE",
-    "in_foster": false
-  },
   "31097": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260809_211021_17863098215889.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/03b90dfa-dcd8-46a4-92bb-a1a2574b5c2e",
     "listed_name": "Princess",
     "listed_breed": "American Pit Bull Terrier",
     "kennel": "101",
-    "status": "AVAILABLE",
-    "in_foster": false
-  },
-  "30781": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260809_190600_17863023608353.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/05a26569-99dc-475c-8733-428073827280",
-    "listed_name": "Yogi",
-    "listed_breed": "Basset Hound",
-    "kennel": "",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -679,7 +688,7 @@
     "adopt_url": "https://adopt.adopets.com/pet/38b1e87e-73b8-4201-b9db-c5ef9e75ad9f",
     "listed_name": "Snuggles",
     "listed_breed": "Catahoula Leopard Dog",
-    "kennel": "004",
+    "kennel": "026",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -706,7 +715,7 @@
     "adopt_url": "https://adopt.adopets.com/pet/143467ea-7b30-4288-b7c1-760f857888b1",
     "listed_name": "Petunia",
     "listed_breed": "Labrador Retriever",
-    "kennel": "004",
+    "kennel": "017",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -754,6 +763,15 @@
     "kennel": "209",
     "status": "AVAILABLE",
     "in_foster": false
+  },
+  "30359": {
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260801_055302_17855635820503.jpeg",
+    "adopt_url": "https://adopt.adopets.com/pet/c180b81e-2d55-4e6a-b515-8d8c60e829d0",
+    "listed_name": "Bella",
+    "listed_breed": "Jack Russell Terrier",
+    "kennel": "",
+    "status": "AVAILABLE",
+    "in_foster": true
   },
   "30701": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260801_220938_17856221789231.jpeg",
@@ -872,15 +890,6 @@
     "status": "AVAILABLE",
     "in_foster": false
   },
-  "29999": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260801_204612_1785617172528.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/dad65de6-2981-4ce0-8f1b-983d9dc725d0",
-    "listed_name": "Tomas",
-    "listed_breed": "Mastiff",
-    "kennel": "425",
-    "status": "AVAILABLE",
-    "in_foster": false
-  },
   "30452": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260726_195631_17850957912779.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/34762fca-99c3-4e38-8de0-6f8958b18446",
@@ -916,24 +925,6 @@
     "kennel": "434",
     "status": "AVAILABLE",
     "in_foster": false
-  },
-  "30183": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260811_161513_17864649136183.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/1fef0fa5-c004-49e7-acda-719f6aa08e35",
-    "listed_name": "Mew",
-    "listed_breed": "Shiba Inu",
-    "kennel": "",
-    "status": "AVAILABLE",
-    "in_foster": true
-  },
-  "30185": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026622_17131_1784739691550.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/71bc207b-1fcd-41ce-926c-0c2403c3efd4",
-    "listed_name": "Sable",
-    "listed_breed": "Shiba Inu",
-    "kennel": "",
-    "status": "AVAILABLE",
-    "in_foster": true
   },
   "30243": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260723_203122_17848386820647.jpeg",
@@ -1012,9 +1003,9 @@
     "adopt_url": "https://adopt.adopets.com/pet/4ef8dd4c-127f-4030-b9a7-8936d4b56943",
     "listed_name": "Misty",
     "listed_breed": "Siberian Husky",
-    "kennel": "201",
+    "kennel": "",
     "status": "AVAILABLE",
-    "in_foster": false
+    "in_foster": true
   },
   "30049": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260717_225633_17843289935008.jpeg",
@@ -1048,7 +1039,7 @@
     "adopt_url": "https://adopt.adopets.com/pet/62328936-34a1-4168-a2f5-79e35866c3f4",
     "listed_name": "Banana Cream",
     "listed_breed": "Black Mouth Cur",
-    "kennel": "208",
+    "kennel": "031",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -1093,15 +1084,6 @@
     "adopt_url": "https://adopt.adopets.com/pet/98dba856-be0d-4e03-a695-56a517638c53",
     "listed_name": "Dodge",
     "listed_breed": "Mastiff",
-    "kennel": "",
-    "status": "AVAILABLE",
-    "in_foster": true
-  },
-  "29768": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260802_223046_17857098465372.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/b70c29a8-0c94-45d4-bb52-ef75efa77235",
-    "listed_name": "Alfonso",
-    "listed_breed": "Chow Chow",
     "kennel": "",
     "status": "AVAILABLE",
     "in_foster": true
@@ -1165,7 +1147,7 @@
     "adopt_url": "https://adopt.adopets.com/pet/3bc5a8d2-b415-460c-8f60-1ecf3f93eede",
     "listed_name": "Rhea",
     "listed_breed": "German Shepherd",
-    "kennel": "634",
+    "kennel": "321",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -1282,9 +1264,9 @@
     "adopt_url": "https://adopt.adopets.com/pet/c97630c9-a8f2-410f-b91b-ed0f36a03f53",
     "listed_name": "Iris",
     "listed_breed": "German Shepherd",
-    "kennel": "D6",
+    "kennel": "",
     "status": "AVAILABLE",
-    "in_foster": false
+    "in_foster": true
   },
   "27325": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260717_230759_17843296797944.jpeg",
@@ -1420,15 +1402,6 @@
     "kennel": "",
     "status": "AVAILABLE",
     "in_foster": true
-  },
-  "28712": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260722_163726_17847382464023.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/02b38e8d-a9bf-4271-ba54-5779b311afb0",
-    "listed_name": "Zoink",
-    "listed_breed": "American Pit Bull Terrier",
-    "kennel": "215",
-    "status": "AVAILABLE",
-    "in_foster": false
   },
   "28620": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260718_194634_17844039946854.jpeg",
@@ -1682,15 +1655,6 @@
     "status": "AVAILABLE",
     "in_foster": false
   },
-  "27315": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/202658_145059_1780930259337.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/412caf27-c7eb-447d-9751-521673c19907",
-    "listed_name": "Baxter",
-    "listed_breed": "Pointer",
-    "kennel": "",
-    "status": "AVAILABLE",
-    "in_foster": true
-  },
   "27246": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260810_051343_17863388230881.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/1b75ddd0-0c30-4e9b-9419-de4bcfe0a2ac",
@@ -1912,7 +1876,7 @@
     "adopt_url": "https://adopt.adopets.com/pet/d23ce7e6-91ea-41ed-bd06-fa6c2c56e106",
     "listed_name": "Hazel",
     "listed_breed": "Dogo Argentino",
-    "kennel": "001",
+    "kennel": "425",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -2151,7 +2115,7 @@
     "in_foster": false
   },
   "25177": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260810_152446_17863754869478.jpeg",
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260816_070029_17868636294634.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/b8fc4a21-3f7d-4570-bfb0-fd9b05cbc899",
     "listed_name": "Venus",
     "listed_breed": "Black Mouth Cur",
@@ -2165,6 +2129,15 @@
     "listed_name": "Chancho",
     "listed_breed": "American Pit Bull Terrier",
     "kennel": "017",
+    "status": "AVAILABLE",
+    "in_foster": false
+  },
+  "25196": {
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260517_204000_17790504005746.jpeg",
+    "adopt_url": "https://adopt.adopets.com/pet/c783db75-4f29-4135-a685-ef46267b2f07",
+    "listed_name": "Sven",
+    "listed_breed": "Vizsla",
+    "kennel": "217",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -2240,15 +2213,6 @@
     "status": "AVAILABLE",
     "in_foster": true
   },
-  "24983": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260726_200630_17850963901834.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/3598e7bd-83a6-41e6-9ade-57c1d572e226",
-    "listed_name": "Zoom",
-    "listed_breed": "American Pit Bull Terrier",
-    "kennel": "110",
-    "status": "AVAILABLE",
-    "in_foster": false
-  },
   "24744": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260510_183619_17784381790121.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/938010bc-ed9f-4012-9f37-4afc63e66bda",
@@ -2283,7 +2247,7 @@
     "listed_breed": "American Pit Bull Terrier",
     "kennel": "",
     "status": "AVAILABLE",
-    "in_foster": true
+    "in_foster": false
   },
   "24291": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260705_174404_17832734448959.jpeg",
@@ -2835,7 +2799,7 @@
     "in_foster": false
   },
   "22066": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/2026328_165510_1777395310880.jpeg",
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260816_030457_17868494977624.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/47765baa-1b74-4fee-9ee0-d98e3444d27d",
     "listed_name": "Pixie",
     "listed_breed": "Labrador Retriever",
@@ -3087,7 +3051,7 @@
     "in_foster": false
   },
   "21197": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260813_192108_17866488686747.jpeg",
+    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260815_212201_17868289211697.jpeg",
     "adopt_url": "https://adopt.adopets.com/pet/030c8892-d70d-4d38-9e0e-0580e655a09c",
     "listed_name": "Cleo",
     "listed_breed": "Mastiff",
@@ -3181,7 +3145,7 @@
     "adopt_url": "https://adopt.adopets.com/pet/e7170392-0622-4c47-afb9-097faad4d04c",
     "listed_name": "Vittorio",
     "listed_breed": "American Staffordshire Terrier",
-    "kennel": "321",
+    "kennel": "216",
     "status": "AVAILABLE",
     "in_foster": false
   },
@@ -3301,15 +3265,6 @@
     "kennel": "",
     "status": "AVAILABLE",
     "in_foster": true
-  },
-  "18936": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260523_113859_17795363391122.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/aae19b78-4ab1-46fe-90f0-4d33e230a720",
-    "listed_name": "Lando",
-    "listed_breed": "Labrador Retriever",
-    "kennel": "216",
-    "status": "AVAILABLE",
-    "in_foster": false
   },
   "18754": {
     "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260103_065112_17674230720686.jpeg",
@@ -3812,15 +3767,6 @@
     "listed_name": "Marshall",
     "listed_breed": "Boxer",
     "kennel": "503",
-    "status": "AVAILABLE",
-    "in_foster": false
-  },
-  "9909": {
-    "picture": "https://img.prd.adopets.app/ado-resize-image-prd?path=organization/pet/picture/AUTOx800/20260209_124153_17706409132052.jpeg",
-    "adopt_url": "https://adopt.adopets.com/pet/cd98c8ae-7277-46e1-914a-e596dfd27846",
-    "listed_name": "Barry",
-    "listed_breed": "American Pit Bull Terrier",
-    "kennel": "216",
     "status": "AVAILABLE",
     "in_foster": false
   },

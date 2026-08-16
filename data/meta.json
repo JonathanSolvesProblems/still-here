@@ -1,12 +1,12 @@
 {
-  "fetched_at_utc": "2026-08-15T12:40:55.287179+00:00",
-  "outcomes_total": 99905,
+  "fetched_at_utc": "2026-08-16T09:08:01.306743+00:00",
+  "outcomes_total": 99916,
   "outcomes_archive": 93853,
   "outcomes_archive_dropped": 652,
-  "outcomes_live": 6052,
-  "waiting_now": 515,
+  "outcomes_live": 6063,
+  "waiting_now": 510,
   "excluded_dead_on_intake": 15,
-  "longest_wait_days": 448,
+  "longest_wait_days": 449,
   "longest_wait_name": "Pancho",
   "sources": {
     "archive_intakes": "https://data.austintexas.gov/resource/wter-evkm.json",

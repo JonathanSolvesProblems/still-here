@@ -1,6 +1,6 @@
 # Still Here
 
-**515 dogs have an intake record at the Austin animal shelter and no outcome record. This is the board.**
+**510 dogs have an intake record at the Austin animal shelter and no outcome record. This is the board.**
 
 Built for the [DEV Weekend Challenge: Dog Days Edition](https://dev.to/challenges/weekend-2026-08-13), August 2026.
 
@@ -8,13 +8,13 @@ Built for the [DEV Weekend Challenge: Dog Days Edition](https://dev.to/challenge
 
 The longest wait on the board belongs to Pancho, a white Cairn Terrier who was
 picked up as a stray on May 23, 2025. As of the last data pull he had been there
-**448 days**. 99.7% of dogs in his breed group were adopted in less time than he
+**449 days**. 99.7% of dogs in his breed group were adopted in less time than he
 has already been waiting.
 
 ## The finding
 
 Black dog syndrome, the belief that black dogs are passed over for their color,
-does not appear in Austin's records. Across **99,905 completed dog stays** since
+does not appear in Austin's records. Across **99,916 completed dog stays** since
 2013, black dogs leave in a median of **9 days**, faster than white, brown or
 chocolate.
 
@@ -35,7 +35,7 @@ The two columns never overlap. Hold breed constant and coat color moves the
 median wait by about 4 days; change the breed and it moves by 20. Overall,
 bully-type dogs wait a median of **28 days** against **8** for every other dog.
 
-217 of the 515 dogs waiting right now are bully-type.
+216 of the 510 dogs waiting right now are bully-type.
 
 ## Running it
 
@@ -64,8 +64,8 @@ without any keys, because Austin's data needs no authentication.
 ## How it fits together
 
 ```
-Austin Socrata feeds ──▶ fetch.py ──▶ data/outcomes.csv   (99,905 completed stays)
-   (no API key)                   └──▶ data/waiting.csv    (515 dogs, no outcome)
+Austin Socrata feeds ──▶ fetch.py ──▶ data/outcomes.csv   (99,916 completed stays)
+   (no API key)                   └──▶ data/waiting.csv    (510 dogs, no outcome)
                                         │
                                         ├──▶ analyze.py ──▶ data/stats.json ──▶ index.html
                                         │
@@ -88,7 +88,7 @@ a view. Two things live there deliberately:
 - **`IS_BULLY()`** is a SQL function, so the single judgement call in the whole
   analysis sits in one auditable place instead of being scattered through
   application code.
-- **`WAITING_RANKED`** ranks each of the 515 live waits against all 51,404
+- **`WAITING_RANKED`** ranks each of the 510 live waits against all 51,413
   completed adoptions in that dog's breed group. That is the number on every
   card, and it is the part that actually wants a warehouse.
 
@@ -99,7 +99,7 @@ warehouse and the local pipeline have to agree before anything ships.
 
 The open data has no images in it. Austin's adoption listings run on Adopets,
 and that platform's `code` field is the same animal id the Socrata feeds use, so
-the two join directly: **380 of the 515 dogs on the board have a real photo**.
+the two join directly: **377 of the 510 dogs on the board have a real photo**.
 They are embedded from the shelter's platform rather than copied, and every
 frame links back to that dog's real adoption page.
 
@@ -108,7 +108,7 @@ agree on the name, because a wrong face on a real animal is worse than no face.
 It currently sits at 97%; the disagreements are all the shelter renaming a dog
 after intake (`Unknown` becomes `Tinkerbelle`, `Fat Boy` becomes `Big Boy`).
 
-The 135 without a photo are mostly not being overlooked. They are recent
+The 133 without a photo are mostly not being overlooked. They are recent
 arrivals still inside a mandatory stray hold, and their median wait is 20 days
 against 84 for the listed ones. A few are not recent at all: Pancho, the longest
 wait on the board, is one of them.
