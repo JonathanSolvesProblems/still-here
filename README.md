@@ -153,9 +153,16 @@ appear; at a lower floor a 35-dog cell was setting the reported spread.
 **Limits.** One municipal shelter, and Austin is a no-kill city with a high
 live-release rate, so these waits are likely shorter than the national picture.
 Nothing here is causal. Breed labels are staff visual assessments, and
-[Olson et al. (2015)](https://www.sciencedirect.com/science/article/pii/S109002331500310X)
+[Olson et al. (2015)](https://nationalcanineresearchcouncil.com/research_library/summary-analysis-inconsistent-identification-of-pit-bull-type-dogs-by-shelter-staff/)
 found staff labelled 52% of a sample pit bull-type where DNA put it at 21%, so
 "bully-type" means *what Austin wrote down*, which is also what an adopter reads.
+
+## Build window
+
+Started and finished inside the DEV Weekend Challenge window (opens 2026-08-14
+02:00 UTC, closes 2026-08-17 06:59 UTC). The repository was created on
+2026-08-15 and every commit in its history falls inside that window; `git log`
+is the record. Nothing here was carried over from an earlier project.
 
 ## Credits
 

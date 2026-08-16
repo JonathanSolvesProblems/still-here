@@ -184,7 +184,7 @@ This is one municipal shelter, and Austin is a no-kill city with an unusually hi
 
 Nothing here is causal. It shows which dogs wait, not why any individual adopter chose as they did.
 
-Breed labels deserve a warning too. They are assigned by staff from appearance, and [Olson et al. (2015)](https://www.sciencedirect.com/science/article/pii/S109002331500310X) found that shelter staff called 52% of a sample of dogs pit bull-type while DNA put the figure at 21%. So "bully-type" here does not mean *a dog with pit bull ancestry*. It means *a dog Austin wrote down as a pit bull*. For a question about who gets adopted that is arguably the better variable anyway, because the label on the kennel card is what an adopter actually reads.
+Breed labels deserve a warning too. They are assigned by staff from appearance, and [Olson et al. (2015)](https://nationalcanineresearchcouncil.com/research_library/summary-analysis-inconsistent-identification-of-pit-bull-type-dogs-by-shelter-staff/) found that shelter staff called 52% of a sample of dogs pit bull-type while DNA put the figure at 21% (*The Veterinary Journal* 206: 197-202). So "bully-type" here does not mean *a dog with pit bull ancestry*. It means *a dog Austin wrote down as a pit bull*. For a question about who gets adopted that is arguably the better variable anyway, because the label on the kennel card is what an adopter actually reads.
 
 "No outcome record" is also not identical to "in the building". Some of these dogs are in foster care, and the outcome feed lags.
 
