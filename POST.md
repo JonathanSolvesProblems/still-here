@@ -22,6 +22,8 @@ That exchange happened about [two million times last year in the United States a
 
 The one at the top is called Pancho. He is a white Cairn Terrier, he was picked up as a stray on May 23, 2025, and he has been there **449 days**. 99.7% of the dogs in his breed group were adopted in less time than he has already been waiting.
 
+*Every figure in this post is from the board on 16 August 2026. The site recomputes on every load, so by the time you read this the day counts will have moved and some of these dogs will have gone home.*
+
 Then I went looking for the reason the dogs at the top of that board are the ones at the top.
 
 The board moves. Between two runs of the pipeline a day apart, nine dogs came off it: **seven were adopted**, one was reclaimed by an owner who came looking, and one was transferred to a partner rescue. Four new dogs arrived. Baxter had been waiting 71 days and went home on the fifteenth.
