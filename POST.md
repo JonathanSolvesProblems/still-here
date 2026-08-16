@@ -215,6 +215,7 @@ When my mom brought that second dog home, one dog stopped waiting. I did not thi
 
 **Live board:** https://jonathansolvesproblems.github.io/still-here/
 **Code:** https://github.com/JonathanSolvesProblems/still-here
+**Blog Post:** https://jonathanandrei.com/blog/still-here-austin-shelter-black-dog-syndrome-99916-stays/
 **Data:** Austin Animal Center open data, [live intakes](https://data.austintexas.gov/resource/pyqf-r2dc.json) and [live outcomes](https://data.austintexas.gov/resource/gsvs-ypi7.json). No API key needed, so every number here is checkable.
 
 *If you are anywhere near Austin, the board is real and so are the dogs on it.*
