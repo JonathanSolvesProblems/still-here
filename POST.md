@@ -16,7 +16,7 @@ That exchange happens hundreds of thousands of times a year. What I had not thou
 
 ## What I Built
 
-**[Still Here](https://stillhere.jonathanandrei.com/)** is a live board of every dog Austin Animal Center has an intake record for and no outcome record. As I write this there are **510** of them.
+**[Still Here](https://jonathansolvesproblems.github.io/still-here/)** is a live board of every dog Austin Animal Center has an intake record for and no outcome record. As I write this there are **510** of them.
 
 ![The board opens on Pancho, a white Cairn Terrier who has been waiting 448 days and has no photograph anywhere public](https://raw.githubusercontent.com/JonathanSolvesProblems/still-here/main/assets/shots/1-hero.jpg)
 
@@ -93,7 +93,7 @@ Both halves of that are public. They are just never printed next to each other. 
 
 ## Demo
 
-**Live board: [stillhere.jonathanandrei.com](https://stillhere.jonathanandrei.com/)**
+**Live board: [jonathansolvesproblems.github.io/still-here](https://jonathansolvesproblems.github.io/still-here/)**
 
 The board is a photographic contact sheet, one frame per dog, ordered by how long each has waited. The day count and the glow are that wait: the longer a dog has been there, the more it has burned into the plate.
 
@@ -204,7 +204,7 @@ When my mom brought that second dog home, one dog stopped waiting. I did not thi
 
 ---
 
-**Live board:** https://stillhere.jonathanandrei.com/
+**Live board:** https://jonathansolvesproblems.github.io/still-here/
 **Code:** https://github.com/JonathanSolvesProblems/still-here
 **Data:** Austin Animal Center open data, [live intakes](https://data.austintexas.gov/resource/pyqf-r2dc.json) and [live outcomes](https://data.austintexas.gov/resource/gsvs-ypi7.json). No API key needed, so every number here is checkable.
 
