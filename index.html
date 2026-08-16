@@ -284,6 +284,10 @@ button.pin:focus-visible{outline:2px solid var(--e3);outline-offset:3px}
 .mini:hover{border-color:var(--e3);color:var(--e3)}
 .mini[disabled]{opacity:.28;cursor:default}
 .mini[disabled]:hover{border-color:var(--edge);color:var(--light-3)}
+/* 487 of the 510 have no clip. A greyed-out button just looks broken, so say
+   what is actually true instead. */
+.norec{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--light-3);
+  opacity:.65;white-space:nowrap;align-self:center}
 /* only the longest exposures breathe, and only if motion is welcome */
 @media (prefers-reduced-motion:no-preference){
   .fr.hot{animation:develop .7s ease-out both,hold 9s ease-in-out 1s infinite}
@@ -364,7 +368,8 @@ footer{padding:44px 0 64px;font-size:12.5px;color:var(--light-3)}
           <span class="u">days waiting</span>
           <div style="margin-top:18px">
             <button class="btn play" id="hero-play" disabled>▶ Hear from him</button>
-            <button class="btn" id="hero-share" style="margin-top:9px">Copy link</button>
+            <button class="btn" id="hero-share" style="margin-top:9px"
+                    title="Copies a link that opens this page with this dog at the top">Share this dog</button>
           </div>
         </div>
       </div>
@@ -387,7 +392,8 @@ footer{padding:44px 0 64px;font-size:12.5px;color:var(--light-3)}
          count carries that wait: the longer a dog has been here, the more it
          has burned into the plate. Photographs come
          from Austin's own adoption listings, so clicking a dog opens the page
-         where you could actually adopt it. <span id="nophoto-note"></span></p>
+         where you could actually adopt it. <span id="nophoto-note"></span>
+         <span id="audio-note"></span></p>
       <p style="margin-top:14px">Austin's adoption site does not show any of
          this. Its listings carry a dog's age but no intake date, no length of
          stay, and no way to sort by either, so a person browsing it cannot tell
@@ -760,7 +766,10 @@ function renderBoard(){
       ${tags.length?`<div class="tags">${tags.join('')}</div>`:''}
       <div class="foot">
         <span class="pctl">${d.pct_of_cohort_home_by_now}% of similar dogs<br>were home by now</span>
-        <button class="mini" data-id="${d.animal_id}" aria-label="Hear from ${d.name||'this dog'}" disabled>▶</button>
+        ${CLIPS.has(String(d.animal_id))
+          ? `<button class="mini" data-id="${d.animal_id}"
+               aria-label="Hear ${d.name||'this dog'} read its record">▶ Hear</button>`
+          : `<span class="norec" title="Only the longest-waiting dogs have a recording">no recording</span>`}
       </div>
     </article>`;
   }).join('');
@@ -831,6 +840,9 @@ fetch('audio/manifest.json').then(r=>r.ok?r.json():[]).catch(()=>[])
     $('#m-long-unlisted').textContent=ph.unlisted_over_100d;
     $('#nophoto-note').textContent=
       `${ph.without_photo} have no listing and no photograph.`;
+    $('#audio-note').textContent=
+      ` ${CLIPS.size} of them read their own record aloud, marked with a Hear button;`
+      + ` the rest were never recorded.`;
     $('#foot').textContent=
       `${fmt(s.corpus.stays_total)} completed stays, ${s.corpus.earliest} to ${s.corpus.latest}. `+
       `${fmt(s.waiting_summary.count)} dogs still without an outcome.`;
@@ -856,7 +868,7 @@ function shareHero(){
   const d = S.waiting_summary.longest;
   const url = location.origin + location.pathname + '?dog=' + d.animal_id;
   const done = () => { const b=$('#hero-share'); b.textContent='Link copied';
-                       setTimeout(()=>b.textContent='Copy link to '+(d.name||'this dog'),2200); };
+                       setTimeout(()=>b.textContent='Share this dog',2200); };
   if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, done);
   else done();
   history.replaceState(null,'',url);

@@ -39,8 +39,9 @@ dimming as they go down the page.*
 
 ### 0:26 – 0:36 · Play a clip
 
-*Click play on Pancho. Let the bark land, then a few seconds of the voice. Do
-not talk over it.*
+*Click* **Hear from Pancho** *. Let the bark land, then a few seconds of the
+voice. Do not talk over it. Only 23 dogs have a recording; the rest of the
+cards say "no recording" instead of showing a dead button.*
 
 *(audio: a bark, then "They called me Pancho. I'm a white Cairn Terrier…")*
 
@@ -102,6 +103,16 @@ dog; its real adoption page opens.*
 
 ---
 
+## Recording setup
+
+Record the window at about **1400px wide**, not maximised on a 1920 monitor.
+The layout caps its content at 1140px, so a full-width 1080p window leaves
+roughly 40% of the frame as empty background and the type ends up small in the
+final video. A narrower window, or 125% browser zoom, fills the frame properly.
+
+Everything else from the first take was right: fullscreen with chrome hidden,
+dark theme, 60fps.
+
 ## Shot list
 
 Capture into `broll/`, which is gitignored. Screen recording at 1280x720 or
@@ -112,7 +123,7 @@ better, dark theme, browser chrome hidden if you can.
 | 1 | Pancho hero, static | let the 449 sit, no cursor movement |
 | 2 | Scroll from hero into the sheet | slow, one smooth pass |
 | 3 | Sheet mid-scroll, faces visible | the brightness gradient should read |
-| 4 | Click play on Pancho | catch the button changing state |
+| 4 | Click **Hear from Pancho** | catch the button changing state |
 | 5 | Coat colour chart | whole chart in frame |
 | 6 | The two-panel split | the money shot, hold it longest |
 | 7 | Breed chart, pit bull at the top | brief |
