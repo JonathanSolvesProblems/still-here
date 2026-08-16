@@ -6,6 +6,10 @@ Built for the [DEV Weekend Challenge: Dog Days Edition](https://dev.to/challenge
 
 **Live board: https://jonathansolvesproblems.github.io/still-here/**
 
+Write-up: [on DEV](https://dev.to/jonathansolvesstuff/everyone-believes-black-dogs-get-left-behind-i-checked-99916-shelter-records-they-dont-2ff5)
+and [on my site](https://jonathanandrei.com/blog/still-here-austin-shelter-black-dog-syndrome-99916-stays/).
+Demo video: [YouTube](https://www.youtube.com/watch?v=RNa5V26TXzI).
+
 The longest wait on the board belongs to Pancho, a white Cairn Terrier who was
 picked up as a stray on May 23, 2025. As of the last data pull he had been there
 **449 days**. 99.7% of dogs in his breed group were adopted in less time than he
