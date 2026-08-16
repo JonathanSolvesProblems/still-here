@@ -1,3 +1,8 @@
 .env
 __pycache__/
 *.pyc
+broll/
+narration*.mp3
+narration*.json
+captions*.ass
+demo*.mp4
