@@ -93,6 +93,10 @@ Both halves of that are public. They are just never printed next to each other. 
 
 ## Demo
 
+{% embed YOUTUBE_URL_HERE %}
+
+*105-second walkthrough. Narrated over the live site, with the research citations on screen where the claims are made.*
+
 **Live board: [jonathansolvesproblems.github.io/still-here](https://jonathansolvesproblems.github.io/still-here/)**
 
 The board is a photographic contact sheet, one frame per dog, ordered by how long each has waited. The day count and the glow are that wait: the longer a dog has been there, the more it has burned into the plate.

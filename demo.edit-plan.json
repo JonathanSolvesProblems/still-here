@@ -1,0 +1,1615 @@
+{
+ "project_name": "Still Here",
+ "add_intro_card": false,
+ "add_outro_card": true,
+ "width": 1920,
+ "height": 1080,
+ "theme": {
+  "palette": {
+   "bg": "#0E1210",
+   "accent": "#E8B44A",
+   "text": "#F4EFE4",
+   "text2": "#868E88"
+  },
+  "captions": {
+   "word_pop": false,
+   "margin_v": 110
+  }
+ },
+ "segments": [
+  {
+   "clip_id": "01-hero",
+   "start_time": 0.0,
+   "end_time": 8.42,
+   "lower_third": "",
+   "effect": "slow_push"
+  },
+  {
+   "clip_id": "02-hero-plate",
+   "start_time": 8.42,
+   "end_time": 11.7,
+   "lower_third": "No photograph on file",
+   "effect": "none"
+  },
+  {
+   "clip_id": "03-sheet-top",
+   "start_time": 11.7,
+   "end_time": 18.32,
+   "lower_third": "",
+   "effect": "slow_push"
+  },
+  {
+   "clip_id": "04-sheet-faces",
+   "start_time": 18.32,
+   "end_time": 22.72,
+   "lower_third": "Austin Animal Center open data",
+   "effect": "slow_push"
+  },
+  {
+   "clip_id": "05-sheet-gradient",
+   "start_time": 22.72,
+   "end_time": 25.74,
+   "lower_third": "",
+   "effect": "slow_push"
+  },
+  {
+   "clip_id": "13-hear",
+   "start_time": 25.74,
+   "end_time": 30.94,
+   "lower_third": "Read from the record, nothing invented",
+   "effect": "none",
+   "in_point": 3.0
+  },
+  {
+   "clip_id": "06-chart-color",
+   "start_time": 30.94,
+   "end_time": 38.78,
+   "lower_third": "Hoffman et al. \u00b7 no evidence for black dog syndrome",
+   "effect": "slow_push"
+  },
+  {
+   "clip_id": "07-chart-color-black",
+   "start_time": 38.78,
+   "end_time": 47.14,
+   "lower_third": "99,916 completed stays since 2013",
+   "effect": "slow_push"
+  },
+  {
+   "clip_id": "06-chart-color",
+   "start_time": 47.14,
+   "end_time": 54.16,
+   "lower_third": "",
+   "effect": "none"
+  },
+  {
+   "clip_id": "07-chart-color-black",
+   "start_time": 54.16,
+   "end_time": 61.92,
+   "lower_third": "",
+   "effect": "none"
+  },
+  {
+   "clip_id": "08-split",
+   "start_time": 61.92,
+   "end_time": 72.64,
+   "lower_third": "Bully-type 28 days \u00b7 everyone else 8",
+   "effect": "slow_push"
+  },
+  {
+   "clip_id": "10-chart-breed",
+   "start_time": 72.64,
+   "end_time": 77.36,
+   "lower_third": "Olson et al. 2015 \u00b7 staff say 52%, DNA says 21%",
+   "effect": "slow_push"
+  },
+  {
+   "clip_id": "12-search",
+   "start_time": 77.36,
+   "end_time": 84.32,
+   "lower_third": "Search by breed",
+   "effect": "none",
+   "in_point": 5.0
+  },
+  {
+   "clip_id": "11-adopt",
+   "start_time": 84.32,
+   "end_time": 90.1,
+   "lower_third": "Every dog links to its adoption page",
+   "effect": "slow_push"
+  },
+  {
+   "clip_id": "14-adopets",
+   "start_time": 90.1,
+   "end_time": 93.9,
+   "lower_third": "Austin Animal Center listing",
+   "effect": "slow_push"
+  },
+  {
+   "clip_id": "09-split-callout",
+   "start_time": 93.9,
+   "end_time": 99.46,
+   "lower_third": "216 of the 510 waiting are bully-type",
+   "effect": "slow_push"
+  },
+  {
+   "clip_id": "01-hero",
+   "start_time": 99.46,
+   "end_time": 105.53,
+   "lower_third": "",
+   "effect": "slow_push"
+  }
+ ],
+ "_transcript": {
+  "segments": [
+   {
+    "text": "This is Pancho, he's a terrier at the Austin Animal Shelter and he's been waiting",
+    "start": 0.0,
+    "end": 5.76,
+    "words": [
+     {
+      "word": " This",
+      "start": 0.0,
+      "end": 0.3
+     },
+     {
+      "word": " is",
+      "start": 0.3,
+      "end": 0.62
+     },
+     {
+      "word": " Pancho,",
+      "start": 0.62,
+      "end": 1.22
+     },
+     {
+      "word": " he's",
+      "start": 1.6,
+      "end": 1.86
+     },
+     {
+      "word": " a",
+      "start": 1.86,
+      "end": 2.04
+     },
+     {
+      "word": " terrier",
+      "start": 2.04,
+      "end": 2.62
+     },
+     {
+      "word": " at",
+      "start": 2.62,
+      "end": 2.94
+     },
+     {
+      "word": " the",
+      "start": 2.94,
+      "end": 3.12
+     },
+     {
+      "word": " Austin",
+      "start": 3.12,
+      "end": 3.62
+     },
+     {
+      "word": " Animal",
+      "start": 3.62,
+      "end": 4.26
+     },
+     {
+      "word": " Shelter",
+      "start": 4.26,
+      "end": 4.94
+     },
+     {
+      "word": " and",
+      "start": 4.94,
+      "end": 5.24
+     },
+     {
+      "word": " he's",
+      "start": 5.24,
+      "end": 5.38
+     },
+     {
+      "word": " been",
+      "start": 5.38,
+      "end": 5.5
+     },
+     {
+      "word": " waiting",
+      "start": 5.5,
+      "end": 5.76
+     }
+    ]
+   },
+   {
+    "text": "449 days.",
+    "start": 6.74,
+    "end": 7.88,
+    "words": [
+     {
+      "word": " 449",
+      "start": 6.74,
+      "end": 7.34
+     },
+     {
+      "word": " days.",
+      "start": 7.34,
+      "end": 7.88
+     }
+    ]
+   },
+   {
+    "text": "He doesn't have a photo, nobody ever took one.",
+    "start": 8.42,
+    "end": 11.3,
+    "words": [
+     {
+      "word": " He",
+      "start": 8.42,
+      "end": 8.56
+     },
+     {
+      "word": " doesn't",
+      "start": 8.56,
+      "end": 8.9
+     },
+     {
+      "word": " have",
+      "start": 8.9,
+      "end": 9.06
+     },
+     {
+      "word": " a",
+      "start": 9.06,
+      "end": 9.18
+     },
+     {
+      "word": " photo,",
+      "start": 9.18,
+      "end": 9.48
+     },
+     {
+      "word": " nobody",
+      "start": 9.84,
+      "end": 10.2
+     },
+     {
+      "word": " ever",
+      "start": 10.2,
+      "end": 10.68
+     },
+     {
+      "word": " took",
+      "start": 10.68,
+      "end": 11.02
+     },
+     {
+      "word": " one.",
+      "start": 11.02,
+      "end": 11.3
+     }
+    ]
+   },
+   {
+    "text": "He's one of 510 dogs who have an intake record here and nothing that says they left.",
+    "start": 11.7,
+    "end": 17.8,
+    "words": [
+     {
+      "word": " He's",
+      "start": 11.7,
+      "end": 11.92
+     },
+     {
+      "word": " one",
+      "start": 11.92,
+      "end": 12.12
+     },
+     {
+      "word": " of",
+      "start": 12.12,
+      "end": 12.4
+     },
+     {
+      "word": " 510",
+      "start": 12.4,
+      "end": 13.16
+     },
+     {
+      "word": " dogs",
+      "start": 13.16,
+      "end": 14.22
+     },
+     {
+      "word": " who",
+      "start": 14.22,
+      "end": 14.46
+     },
+     {
+      "word": " have",
+      "start": 14.46,
+      "end": 14.58
+     },
+     {
+      "word": " an",
+      "start": 14.58,
+      "end": 14.7
+     },
+     {
+      "word": " intake",
+      "start": 14.7,
+      "end": 15.0
+     },
+     {
+      "word": " record",
+      "start": 15.0,
+      "end": 15.44
+     },
+     {
+      "word": " here",
+      "start": 15.44,
+      "end": 15.78
+     },
+     {
+      "word": " and",
+      "start": 15.78,
+      "end": 16.36
+     },
+     {
+      "word": " nothing",
+      "start": 16.36,
+      "end": 16.64
+     },
+     {
+      "word": " that",
+      "start": 16.64,
+      "end": 16.92
+     },
+     {
+      "word": " says",
+      "start": 16.92,
+      "end": 17.18
+     },
+     {
+      "word": " they",
+      "start": 17.18,
+      "end": 17.44
+     },
+     {
+      "word": " left.",
+      "start": 17.44,
+      "end": 17.8
+     }
+    ]
+   },
+   {
+    "text": "Every one of these is real pulled from the city's open data an hour ago.",
+    "start": 18.32,
+    "end": 22.36,
+    "words": [
+     {
+      "word": " Every",
+      "start": 18.32,
+      "end": 18.62
+     },
+     {
+      "word": " one",
+      "start": 18.62,
+      "end": 18.84
+     },
+     {
+      "word": " of",
+      "start": 18.84,
+      "end": 18.96
+     },
+     {
+      "word": " these",
+      "start": 18.96,
+      "end": 19.14
+     },
+     {
+      "word": " is",
+      "start": 19.14,
+      "end": 19.42
+     },
+     {
+      "word": " real",
+      "start": 19.42,
+      "end": 19.78
+     },
+     {
+      "word": " pulled",
+      "start": 19.78,
+      "end": 20.12
+     },
+     {
+      "word": " from",
+      "start": 20.12,
+      "end": 20.36
+     },
+     {
+      "word": " the",
+      "start": 20.36,
+      "end": 20.52
+     },
+     {
+      "word": " city's",
+      "start": 20.52,
+      "end": 20.92
+     },
+     {
+      "word": " open",
+      "start": 20.92,
+      "end": 21.14
+     },
+     {
+      "word": " data",
+      "start": 21.14,
+      "end": 21.48
+     },
+     {
+      "word": " an",
+      "start": 21.48,
+      "end": 21.72
+     },
+     {
+      "word": " hour",
+      "start": 21.72,
+      "end": 22.0
+     },
+     {
+      "word": " ago.",
+      "start": 22.0,
+      "end": 22.36
+     }
+    ]
+   },
+   {
+    "text": "The brighter the frame, the longer they've been waiting.",
+    "start": 22.72,
+    "end": 25.32,
+    "words": [
+     {
+      "word": " The",
+      "start": 22.72,
+      "end": 22.88
+     },
+     {
+      "word": " brighter",
+      "start": 22.88,
+      "end": 23.12
+     },
+     {
+      "word": " the",
+      "start": 23.12,
+      "end": 23.36
+     },
+     {
+      "word": " frame,",
+      "start": 23.36,
+      "end": 23.66
+     },
+     {
+      "word": " the",
+      "start": 23.86,
+      "end": 23.94
+     },
+     {
+      "word": " longer",
+      "start": 23.94,
+      "end": 24.32
+     },
+     {
+      "word": " they've",
+      "start": 24.32,
+      "end": 24.88
+     },
+     {
+      "word": " been",
+      "start": 24.88,
+      "end": 25.02
+     },
+     {
+      "word": " waiting.",
+      "start": 25.02,
+      "end": 25.32
+     }
+    ]
+   },
+   {
+    "text": "And each one reads its own record out loud.",
+    "start": 25.74,
+    "end": 28.3,
+    "words": [
+     {
+      "word": " And",
+      "start": 25.74,
+      "end": 25.92
+     },
+     {
+      "word": " each",
+      "start": 25.92,
+      "end": 26.16
+     },
+     {
+      "word": " one",
+      "start": 26.16,
+      "end": 26.34
+     },
+     {
+      "word": " reads",
+      "start": 26.34,
+      "end": 26.64
+     },
+     {
+      "word": " its",
+      "start": 26.64,
+      "end": 26.88
+     },
+     {
+      "word": " own",
+      "start": 26.88,
+      "end": 27.22
+     },
+     {
+      "word": " record",
+      "start": 27.22,
+      "end": 27.7
+     },
+     {
+      "word": " out",
+      "start": 27.7,
+      "end": 28.02
+     },
+     {
+      "word": " loud.",
+      "start": 28.02,
+      "end": 28.3
+     }
+    ]
+   },
+   {
+    "text": "Nothing in there is invented.",
+    "start": 28.3,
+    "end": 30.48,
+    "words": [
+     {
+      "word": " Nothing",
+      "start": 28.3,
+      "end": 29.04
+     },
+     {
+      "word": " in",
+      "start": 29.04,
+      "end": 29.36
+     },
+     {
+      "word": " there",
+      "start": 29.36,
+      "end": 29.62
+     },
+     {
+      "word": " is",
+      "start": 29.62,
+      "end": 29.98
+     },
+     {
+      "word": " invented.",
+      "start": 29.98,
+      "end": 30.48
+     }
+    ]
+   },
+   {
+    "text": "Anyone who works in rescue will tell you about black dog syndrome.",
+    "start": 30.94,
+    "end": 34.54,
+    "words": [
+     {
+      "word": " Anyone",
+      "start": 30.94,
+      "end": 31.3
+     },
+     {
+      "word": " who",
+      "start": 31.3,
+      "end": 31.7
+     },
+     {
+      "word": " works",
+      "start": 31.7,
+      "end": 31.94
+     },
+     {
+      "word": " in",
+      "start": 31.94,
+      "end": 32.1
+     },
+     {
+      "word": " rescue",
+      "start": 32.1,
+      "end": 32.42
+     },
+     {
+      "word": " will",
+      "start": 32.42,
+      "end": 32.7
+     },
+     {
+      "word": " tell",
+      "start": 32.7,
+      "end": 32.92
+     },
+     {
+      "word": " you",
+      "start": 32.92,
+      "end": 33.12
+     },
+     {
+      "word": " about",
+      "start": 33.12,
+      "end": 33.34
+     },
+     {
+      "word": " black",
+      "start": 33.34,
+      "end": 33.7
+     },
+     {
+      "word": " dog",
+      "start": 33.7,
+      "end": 34.0
+     },
+     {
+      "word": " syndrome.",
+      "start": 34.0,
+      "end": 34.54
+     }
+    ]
+   },
+   {
+    "text": "The idea that a dark coat keeps a dog in the kennel.",
+    "start": 35.02,
+    "end": 38.4,
+    "words": [
+     {
+      "word": " The",
+      "start": 35.02,
+      "end": 35.1
+     },
+     {
+      "word": " idea",
+      "start": 35.1,
+      "end": 35.42
+     },
+     {
+      "word": " that",
+      "start": 35.42,
+      "end": 35.72
+     },
+     {
+      "word": " a",
+      "start": 35.72,
+      "end": 35.88
+     },
+     {
+      "word": " dark",
+      "start": 35.88,
+      "end": 36.14
+     },
+     {
+      "word": " coat",
+      "start": 36.14,
+      "end": 36.54
+     },
+     {
+      "word": " keeps",
+      "start": 36.54,
+      "end": 36.92
+     },
+     {
+      "word": " a",
+      "start": 36.92,
+      "end": 37.18
+     },
+     {
+      "word": " dog",
+      "start": 37.18,
+      "end": 37.6
+     },
+     {
+      "word": " in",
+      "start": 37.6,
+      "end": 37.88
+     },
+     {
+      "word": " the",
+      "start": 37.88,
+      "end": 38.0
+     },
+     {
+      "word": " kennel.",
+      "start": 38.0,
+      "end": 38.4
+     }
+    ]
+   },
+   {
+    "text": "So I checked it, 99,916 shelter records going back to 2013 and it isn't true.",
+    "start": 38.78,
+    "end": 46.74,
+    "words": [
+     {
+      "word": " So",
+      "start": 38.78,
+      "end": 38.88
+     },
+     {
+      "word": " I",
+      "start": 38.88,
+      "end": 39.08
+     },
+     {
+      "word": " checked",
+      "start": 39.08,
+      "end": 39.42
+     },
+     {
+      "word": " it,",
+      "start": 39.42,
+      "end": 39.64
+     },
+     {
+      "word": " 99,916",
+      "start": 40.04,
+      "end": 40.68
+     },
+     {
+      "word": " shelter",
+      "start": 41.72,
+      "end": 42.2
+     },
+     {
+      "word": " records",
+      "start": 42.2,
+      "end": 43.18
+     },
+     {
+      "word": " going",
+      "start": 43.18,
+      "end": 43.62
+     },
+     {
+      "word": " back",
+      "start": 43.62,
+      "end": 43.92
+     },
+     {
+      "word": " to",
+      "start": 43.92,
+      "end": 44.14
+     },
+     {
+      "word": " 2013",
+      "start": 44.14,
+      "end": 44.98
+     },
+     {
+      "word": " and",
+      "start": 44.98,
+      "end": 46.0
+     },
+     {
+      "word": " it",
+      "start": 46.0,
+      "end": 46.16
+     },
+     {
+      "word": " isn't",
+      "start": 46.16,
+      "end": 46.4
+     },
+     {
+      "word": " true.",
+      "start": 46.4,
+      "end": 46.74
+     }
+    ]
+   },
+   {
+    "text": "Dogs with black coats leave in 9 days.",
+    "start": 47.14,
+    "end": 50.26,
+    "words": [
+     {
+      "word": " Dogs",
+      "start": 47.14,
+      "end": 47.38
+     },
+     {
+      "word": " with",
+      "start": 47.38,
+      "end": 47.68
+     },
+     {
+      "word": " black",
+      "start": 47.68,
+      "end": 48.04
+     },
+     {
+      "word": " coats",
+      "start": 48.04,
+      "end": 48.6
+     },
+     {
+      "word": " leave",
+      "start": 48.6,
+      "end": 49.02
+     },
+     {
+      "word": " in",
+      "start": 49.02,
+      "end": 49.3
+     },
+     {
+      "word": " 9",
+      "start": 49.3,
+      "end": 49.66
+     },
+     {
+      "word": " days.",
+      "start": 49.66,
+      "end": 50.26
+     }
+    ]
+   },
+   {
+    "text": "That's faster than white, faster than brown.",
+    "start": 50.76,
+    "end": 53.64,
+    "words": [
+     {
+      "word": " That's",
+      "start": 50.76,
+      "end": 51.24
+     },
+     {
+      "word": " faster",
+      "start": 51.24,
+      "end": 51.6
+     },
+     {
+      "word": " than",
+      "start": 51.6,
+      "end": 51.9
+     },
+     {
+      "word": " white,",
+      "start": 51.9,
+      "end": 52.26
+     },
+     {
+      "word": " faster",
+      "start": 52.5,
+      "end": 53.0
+     },
+     {
+      "word": " than",
+      "start": 53.0,
+      "end": 53.28
+     },
+     {
+      "word": " brown.",
+      "start": 53.28,
+      "end": 53.64
+     }
+    ]
+   },
+   {
+    "text": "The coats that do wait are blue and brindle and fawn, which are the coats pit bulls come",
+    "start": 54.16,
+    "end": 60.8,
+    "words": [
+     {
+      "word": " The",
+      "start": 53.86,
+      "end": 54.18
+     },
+     {
+      "word": " coats",
+      "start": 54.18,
+      "end": 54.6
+     },
+     {
+      "word": " that",
+      "start": 54.6,
+      "end": 54.88
+     },
+     {
+      "word": " do",
+      "start": 54.88,
+      "end": 55.26
+     },
+     {
+      "word": " wait",
+      "start": 55.26,
+      "end": 55.64
+     },
+     {
+      "word": " are",
+      "start": 55.64,
+      "end": 55.92
+     },
+     {
+      "word": " blue",
+      "start": 55.92,
+      "end": 56.4
+     },
+     {
+      "word": " and",
+      "start": 56.4,
+      "end": 56.76
+     },
+     {
+      "word": " brindle",
+      "start": 56.76,
+      "end": 57.34
+     },
+     {
+      "word": " and",
+      "start": 57.34,
+      "end": 57.86
+     },
+     {
+      "word": " fawn,",
+      "start": 57.86,
+      "end": 58.42
+     },
+     {
+      "word": " which",
+      "start": 58.5,
+      "end": 58.78
+     },
+     {
+      "word": " are",
+      "start": 58.78,
+      "end": 58.98
+     },
+     {
+      "word": " the",
+      "start": 58.98,
+      "end": 59.1
+     },
+     {
+      "word": " coats",
+      "start": 59.1,
+      "end": 59.4
+     },
+     {
+      "word": " pit",
+      "start": 59.4,
+      "end": 60.04
+     },
+     {
+      "word": " bulls",
+      "start": 60.04,
+      "end": 60.54
+     },
+     {
+      "word": " come",
+      "start": 60.54,
+      "end": 60.8
+     }
+    ]
+   },
+   {
+    "text": "in.",
+    "start": 60.8,
+    "end": 60.96,
+    "words": [
+     {
+      "word": " in.",
+      "start": 60.8,
+      "end": 60.96
+     }
+    ]
+   },
+   {
+    "text": "Split them by breed and the whole thing falls out.",
+    "start": 61.92,
+    "end": 64.74,
+    "words": [
+     {
+      "word": " Split",
+      "start": 61.68,
+      "end": 62.0
+     },
+     {
+      "word": " them",
+      "start": 62.0,
+      "end": 62.3
+     },
+     {
+      "word": " by",
+      "start": 62.3,
+      "end": 62.58
+     },
+     {
+      "word": " breed",
+      "start": 62.58,
+      "end": 62.92
+     },
+     {
+      "word": " and",
+      "start": 62.92,
+      "end": 63.26
+     },
+     {
+      "word": " the",
+      "start": 63.26,
+      "end": 63.42
+     },
+     {
+      "word": " whole",
+      "start": 63.42,
+      "end": 63.78
+     },
+     {
+      "word": " thing",
+      "start": 63.78,
+      "end": 64.1
+     },
+     {
+      "word": " falls",
+      "start": 64.1,
+      "end": 64.42
+     },
+     {
+      "word": " out.",
+      "start": 64.42,
+      "end": 64.74
+     }
+    ]
+   },
+   {
+    "text": "A bully-type dog waits 28 days, every other dog waits 8.",
+    "start": 64.96,
+    "end": 72.06,
+    "words": [
+     {
+      "word": " A",
+      "start": 64.96,
+      "end": 65.02
+     },
+     {
+      "word": " bully",
+      "start": 65.02,
+      "end": 65.34
+     },
+     {
+      "word": "-type",
+      "start": 65.34,
+      "end": 65.72
+     },
+     {
+      "word": " dog",
+      "start": 65.72,
+      "end": 66.22
+     },
+     {
+      "word": " waits",
+      "start": 66.22,
+      "end": 67.3
+     },
+     {
+      "word": " 28",
+      "start": 67.3,
+      "end": 68.7
+     },
+     {
+      "word": " days,",
+      "start": 68.7,
+      "end": 69.7
+     },
+     {
+      "word": " every",
+      "start": 70.12,
+      "end": 70.36
+     },
+     {
+      "word": " other",
+      "start": 70.36,
+      "end": 70.64
+     },
+     {
+      "word": " dog",
+      "start": 70.64,
+      "end": 71.12
+     },
+     {
+      "word": " waits",
+      "start": 71.12,
+      "end": 71.62
+     },
+     {
+      "word": " 8.",
+      "start": 71.62,
+      "end": 72.06
+     }
+    ]
+   },
+   {
+    "text": "It was never the coat, it's the breed written on the kennel card.",
+    "start": 72.64,
+    "end": 76.36,
+    "words": [
+     {
+      "word": " It",
+      "start": 72.64,
+      "end": 72.86
+     },
+     {
+      "word": " was",
+      "start": 72.86,
+      "end": 73.04
+     },
+     {
+      "word": " never",
+      "start": 73.04,
+      "end": 73.28
+     },
+     {
+      "word": " the",
+      "start": 73.28,
+      "end": 73.48
+     },
+     {
+      "word": " coat,",
+      "start": 73.48,
+      "end": 73.78
+     },
+     {
+      "word": " it's",
+      "start": 74.08,
+      "end": 74.18
+     },
+     {
+      "word": " the",
+      "start": 74.18,
+      "end": 74.34
+     },
+     {
+      "word": " breed",
+      "start": 74.34,
+      "end": 74.7
+     },
+     {
+      "word": " written",
+      "start": 74.7,
+      "end": 75.26
+     },
+     {
+      "word": " on",
+      "start": 75.26,
+      "end": 75.56
+     },
+     {
+      "word": " the",
+      "start": 75.56,
+      "end": 75.7
+     },
+     {
+      "word": " kennel",
+      "start": 75.7,
+      "end": 76.04
+     },
+     {
+      "word": " card.",
+      "start": 76.04,
+      "end": 76.36
+     }
+    ]
+   },
+   {
+    "text": "Austin's own adoption site won't tell you any of this.",
+    "start": 77.36,
+    "end": 80.38,
+    "words": [
+     {
+      "word": " Austin's",
+      "start": 77.14,
+      "end": 77.46
+     },
+     {
+      "word": " own",
+      "start": 77.46,
+      "end": 77.72
+     },
+     {
+      "word": " adoption",
+      "start": 77.72,
+      "end": 78.16
+     },
+     {
+      "word": " site",
+      "start": 78.16,
+      "end": 78.68
+     },
+     {
+      "word": " won't",
+      "start": 78.68,
+      "end": 79.14
+     },
+     {
+      "word": " tell",
+      "start": 79.14,
+      "end": 79.38
+     },
+     {
+      "word": " you",
+      "start": 79.38,
+      "end": 79.62
+     },
+     {
+      "word": " any",
+      "start": 79.62,
+      "end": 79.94
+     },
+     {
+      "word": " of",
+      "start": 79.94,
+      "end": 80.14
+     },
+     {
+      "word": " this.",
+      "start": 80.14,
+      "end": 80.38
+     }
+    ]
+   },
+   {
+    "text": "It'll show you a dog, but never how long he's been sitting there.",
+    "start": 80.38,
+    "end": 84.14,
+    "words": [
+     {
+      "word": " It'll",
+      "start": 80.38,
+      "end": 80.98
+     },
+     {
+      "word": " show",
+      "start": 80.98,
+      "end": 81.28
+     },
+     {
+      "word": " you",
+      "start": 81.28,
+      "end": 81.48
+     },
+     {
+      "word": " a",
+      "start": 81.48,
+      "end": 81.62
+     },
+     {
+      "word": " dog,",
+      "start": 81.62,
+      "end": 81.92
+     },
+     {
+      "word": " but",
+      "start": 82.06,
+      "end": 82.28
+     },
+     {
+      "word": " never",
+      "start": 82.28,
+      "end": 82.54
+     },
+     {
+      "word": " how",
+      "start": 82.54,
+      "end": 82.8
+     },
+     {
+      "word": " long",
+      "start": 82.8,
+      "end": 83.1
+     },
+     {
+      "word": " he's",
+      "start": 83.1,
+      "end": 83.36
+     },
+     {
+      "word": " been",
+      "start": 83.36,
+      "end": 83.48
+     },
+     {
+      "word": " sitting",
+      "start": 83.48,
+      "end": 83.8
+     },
+     {
+      "word": " there.",
+      "start": 83.8,
+      "end": 84.14
+     }
+    ]
+   },
+   {
+    "text": "This puts the two halves back together and every dog here links straight to the page",
+    "start": 84.32,
+    "end": 90.1,
+    "words": [
+     {
+      "word": " This",
+      "start": 84.32,
+      "end": 84.7
+     },
+     {
+      "word": " puts",
+      "start": 84.7,
+      "end": 84.98
+     },
+     {
+      "word": " the",
+      "start": 84.98,
+      "end": 85.38
+     },
+     {
+      "word": " two",
+      "start": 85.38,
+      "end": 85.74
+     },
+     {
+      "word": " halves",
+      "start": 85.74,
+      "end": 86.18
+     },
+     {
+      "word": " back",
+      "start": 86.18,
+      "end": 86.5
+     },
+     {
+      "word": " together",
+      "start": 86.5,
+      "end": 87.0
+     },
+     {
+      "word": " and",
+      "start": 87.0,
+      "end": 87.48
+     },
+     {
+      "word": " every",
+      "start": 87.48,
+      "end": 87.8
+     },
+     {
+      "word": " dog",
+      "start": 87.8,
+      "end": 88.12
+     },
+     {
+      "word": " here",
+      "start": 88.12,
+      "end": 88.44
+     },
+     {
+      "word": " links",
+      "start": 88.44,
+      "end": 88.8
+     },
+     {
+      "word": " straight",
+      "start": 88.8,
+      "end": 89.38
+     },
+     {
+      "word": " to",
+      "start": 89.38,
+      "end": 89.64
+     },
+     {
+      "word": " the",
+      "start": 89.64,
+      "end": 89.78
+     },
+     {
+      "word": " page",
+      "start": 89.78,
+      "end": 90.1
+     }
+    ]
+   },
+   {
+    "text": "where you could actually take them home.",
+    "start": 90.1,
+    "end": 92.0,
+    "words": [
+     {
+      "word": " where",
+      "start": 90.1,
+      "end": 90.36
+     },
+     {
+      "word": " you",
+      "start": 90.36,
+      "end": 90.48
+     },
+     {
+      "word": " could",
+      "start": 90.48,
+      "end": 90.62
+     },
+     {
+      "word": " actually",
+      "start": 90.62,
+      "end": 91.14
+     },
+     {
+      "word": " take",
+      "start": 91.14,
+      "end": 91.42
+     },
+     {
+      "word": " them",
+      "start": 91.42,
+      "end": 91.62
+     },
+     {
+      "word": " home.",
+      "start": 91.62,
+      "end": 92.0
+     }
+    ]
+   },
+   {
+    "text": "216 of the dogs waiting tonight are pit bulls.",
+    "start": 93.9,
+    "end": 98.08,
+    "words": [
+     {
+      "word": " 216",
+      "start": 93.9,
+      "end": 94.54
+     },
+     {
+      "word": " of",
+      "start": 94.54,
+      "end": 95.18
+     },
+     {
+      "word": " the",
+      "start": 95.18,
+      "end": 95.32
+     },
+     {
+      "word": " dogs",
+      "start": 95.32,
+      "end": 95.88
+     },
+     {
+      "word": " waiting",
+      "start": 95.88,
+      "end": 96.34
+     },
+     {
+      "word": " tonight",
+      "start": 96.34,
+      "end": 96.84
+     },
+     {
+      "word": " are",
+      "start": 96.84,
+      "end": 97.14
+     },
+     {
+      "word": " pit",
+      "start": 97.14,
+      "end": 97.38
+     },
+     {
+      "word": " bulls.",
+      "start": 97.38,
+      "end": 98.08
+     }
+    ]
+   },
+   {
+    "text": "Pancho isn't.",
+    "start": 98.1,
+    "end": 99.14,
+    "words": [
+     {
+      "word": " Pancho",
+      "start": 98.1,
+      "end": 98.52
+     },
+     {
+      "word": " isn't.",
+      "start": 98.52,
+      "end": 99.14
+     }
+    ]
+   },
+   {
+    "text": "He's a small white terrier.",
+    "start": 99.46,
+    "end": 101.62,
+    "words": [
+     {
+      "word": " He's",
+      "start": 99.46,
+      "end": 99.68
+     },
+     {
+      "word": " a",
+      "start": 99.68,
+      "end": 99.78
+     },
+     {
+      "word": " small",
+      "start": 99.78,
+      "end": 100.18
+     },
+     {
+      "word": " white",
+      "start": 100.18,
+      "end": 100.72
+     },
+     {
+      "word": " terrier.",
+      "start": 100.72,
+      "end": 101.62
+     }
+    ]
+   },
+   {
+    "text": "And he's been there 449 days.",
+    "start": 101.62,
+    "end": 105.4,
+    "words": [
+     {
+      "word": " And",
+      "start": 101.62,
+      "end": 102.24
+     },
+     {
+      "word": " he's",
+      "start": 102.24,
+      "end": 102.54
+     },
+     {
+      "word": " been",
+      "start": 102.54,
+      "end": 102.76
+     },
+     {
+      "word": " there",
+      "start": 102.76,
+      "end": 103.04
+     },
+     {
+      "word": " 449",
+      "start": 103.04,
+      "end": 104.94
+     },
+     {
+      "word": " days.",
+      "start": 104.94,
+      "end": 105.4
+     }
+    ]
+   }
+  ],
+  "text": "This is Pancho, he's a terrier at the Austin Animal Shelter and he's been waiting 449 days. He doesn't have a photo, nobody ever took one. He's one of 510 dogs who have an intake record here and nothing that says they left. Every one of these is real pulled from the city's open data an hour ago. The brighter the frame, the longer they've been waiting. And each one reads its own record out loud. Nothing in there is invented. Anyone who works in rescue will tell you about black dog syndrome. The idea that a dark coat keeps a dog in the kennel. So I checked it, 99,916 shelter records going back to 2013 and it isn't true. Dogs with black coats leave in 9 days. That's faster than white, faster than brown. The coats that do wait are blue and brindle and fawn, which are the coats pit bulls come in. Split them by breed and the whole thing falls out. A bully-type dog waits 28 days, every other dog waits 8. It was never the coat, it's the breed written on the kennel card. Austin's own adoption site won't tell you any of this. It'll show you a dog, but never how long he's been sitting there. This puts the two halves back together and every dog here links straight to the page where you could actually take them home. 216 of the dogs waiting tonight are pit bulls. Pancho isn't. He's a small white terrier. And he's been there 449 days.",
+  "duration": 105.4
+ }
+}
