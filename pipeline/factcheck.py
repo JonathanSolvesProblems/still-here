@@ -114,6 +114,31 @@ def main():
                 print(f"  {fname}: {label} = {val} does NOT appear")
                 bad += 1
 
+    # Day counts tick over every night, so the writeup can be a day behind the
+    # board while still passing every check above: the current figure appears
+    # once and yesterday's sits three paragraphs away. Flag any "NNN days" in
+    # the prose that is close enough to the real count to be the same claim but
+    # is not the same number.
+    #
+    # Block quotes are exempt. They reproduce what a recording actually says,
+    # and those recordings are dated in the surrounding prose. Correcting a
+    # quote to today's figure would make the post misquote its own artifact,
+    # which is a worse error than the one this check exists to catch.
+    longest_days = longest["days_waiting"]
+    for fname in ("POST.md", "README.md", os.path.join("broll", "DEMO_SCRIPT.md")):
+        path = os.path.join(ROOT, fname)
+        if not os.path.exists(path):
+            continue
+        for i, line in enumerate(open(path, encoding="utf-8"), 1):
+            if line.lstrip().startswith(">"):
+                continue
+            for m in re.findall(r"\b(\d{2,4}) days\b", line):
+                n = int(m)
+                if n != longest_days and abs(n - longest_days) <= 7:
+                    print(f"  {fname}:{i}: '{n} days' is a stale day count "
+                          f"({longest['name']} is now at {longest_days})")
+                    bad += 1
+
     # stale numbers: figures the project used to quote and must not any more
     retired = {
         "516": "old waiting count before the duplicate-intake fix",

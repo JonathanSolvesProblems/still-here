@@ -182,7 +182,8 @@ can be re-derived by running the pipeline.
 
 | claim | source |
 |---|---|
-| Black dog syndrome is not supported; coat colour did not predict length of stay across two shelters | Hoffman et al., summarised at [ScienceDaily](https://www.sciencedaily.com/releases/2016/02/160203185534.htm) |
+| Black dog syndrome is not supported; black dogs left slightly faster than average at both shelters studied | Hoffman et al. (2016), *Animal Welfare*, ~16,700 records across two shelters, summarised at [ScienceDaily](https://www.sciencedaily.com/releases/2016/02/160203185534.htm) |
+| Bully breeds stayed roughly 2.5 to 3 times longer than average, independently of this project's data | Hoffman et al. (2016), same study as above |
 | Shelter staff labelled 52% of a sample pit bull-type where DNA put it at 21% | Olson et al., *The Veterinary Journal* 206 (2015) 197-202, summary at [National Canine Research Council](https://nationalcanineresearchcouncil.com/research_library/summary-analysis-inconsistent-identification-of-pit-bull-type-dogs-by-shelter-staff/) |
 | About two million dogs were adopted from US shelters last year | [ASPCA / Shelter Animals Count](https://www.aspca.org/helping-shelters-people-pets/us-animal-shelter-statistics) |
 | Austin Animal Center operates under a City of Austin mandate of a 95% live-release rate | [City of Austin, Ordinance Change FAQs](https://austintexas.gov/page/ordinance-change-faqs) |
@@ -204,6 +205,6 @@ why that distinction matters.
 ## Credits
 
 Data: [Austin Animal Center](https://data.austintexas.gov) open data.
-Black dog syndrome prior work: Hoffman et al., summarized
+Black dog syndrome prior work: Hoffman et al. (2016), *Animal Welfare*, summarized
 [here](https://www.sciencedaily.com/releases/2016/02/160203185534.htm).
 Breed identification: Olson et al., *The Veterinary Journal* 206 (2015) 197-202.

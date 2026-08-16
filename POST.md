@@ -1,8 +1,8 @@
 ---
 title: "Everyone Believes Black Dogs Get Left Behind. I Checked 99,916 Shelter Records. They Don't."
-published: false
+published: true
 description: "A live board of the 510 dogs Austin hasn't placed yet, ordered by how long they have waited, and the 99,916-record reason the ones at the top are still there."
-tags: weekendchallenge, snowflake, datascience, showdev
+tags: weekendchallenge, snowflake, elevenlabs, showdev
 cover_image: https://raw.githubusercontent.com/JonathanSolvesProblems/still-here/main/assets/shots/1-hero.jpg
 ---
 
@@ -18,7 +18,7 @@ That exchange happened about [two million times last year in the United States a
 
 **[Still Here](https://jonathansolvesproblems.github.io/still-here/)** is a live board of every dog Austin Animal Center has an intake record for and no outcome record. As I write this there are **510** of them.
 
-![The board opens on Pancho, a white Cairn Terrier who has been waiting 448 days and has no photograph anywhere public](https://raw.githubusercontent.com/JonathanSolvesProblems/still-here/main/assets/shots/1-hero.jpg)
+![The board opens on Pancho, a white Cairn Terrier who has been waiting 449 days and has no photograph anywhere public](https://raw.githubusercontent.com/JonathanSolvesProblems/still-here/main/assets/shots/1-hero.jpg)
 
 The one at the top is called Pancho. He is a white Cairn Terrier, he was picked up as a stray on May 23, 2025, and he has been there **449 days**. 99.7% of the dogs in his breed group were adopted in less time than he has already been waiting.
 
@@ -48,7 +48,9 @@ I pulled every completed dog stay the city has released since October 2013 and r
 
 Black dogs are in the fast half. Thirteen thousand nine hundred and twenty-two of them, leaving in a median of nine days, quicker than white, brown or chocolate.
 
-So the myth does not survive its first contact with the data. That much matches the published research: a [2015 study by Christy Hoffman and colleagues](https://www.sciencedaily.com/releases/2016/02/160203185534.htm) found no evidence for black dog syndrome across two shelters either.
+So the myth does not survive its first contact with the data. That much matches the published research: a [2016 study by Christy Hoffman and colleagues](https://www.sciencedaily.com/releases/2016/02/160203185534.htm), in *Animal Welfare*, looked at nearly 16,700 records across two shelters and found black dogs left slightly faster than average at both.
+
+That study also reports the other half of what I found, which I did not know when I started looking: bully breeds stayed roughly 2.5 to 3 times longer than average. Two Pacific Northwest shelters, a decade earlier, a completely separate dataset from mine.
 
 But there is something much more interesting sitting in that same table, and it took me a second pass to see it.
 
@@ -93,9 +95,9 @@ Both halves of that are public. They are just never printed next to each other. 
 
 ## Demo
 
-{% embed YOUTUBE_URL_HERE %}
+{% embed https://www.youtube.com/watch?v=RNa5V26TXzI %}
 
-*105-second walkthrough. Narrated over the live site, with the research citations on screen where the claims are made.*
+*Under two minutes, narrated over the live site, with the research citations on screen where the claims are made.*
 
 **Live board: [jonathansolvesproblems.github.io/still-here](https://jonathansolvesproblems.github.io/still-here/)**
 
@@ -105,11 +107,11 @@ The board is a photographic contact sheet, one frame per dog, ordered by how lon
 
 Every frame links to that dog's real adoption page, so clicking one takes you somewhere you could actually adopt it.
 
-![Canela, 322 days, with her photograph, an adopt button, and a play button to hear her record read aloud](https://raw.githubusercontent.com/JonathanSolvesProblems/still-here/main/assets/shots/4-adopt.jpg)
+![Canela, 323 days, with her photograph, an adopt button, and a play button to hear her record read aloud](https://raw.githubusercontent.com/JonathanSolvesProblems/still-here/main/assets/shots/4-adopt.jpg)
 
 Things worth trying:
 
-- **Search a breed.** Type `labrador`, `husky` or `brindle`. Multiple words narrow rather than widen, so `black lab` finds 23 dogs. Austin's own site lets you filter by breed but never tells you how long any of them has waited; this does both.
+- **Search a breed.** Type `labrador`, `husky` or `brindle`. Multiple words narrow rather than widen, so `black lab` finds 19 dogs. Austin's own site lets you filter by breed but never tells you how long any of them has waited; this does both.
 - **Press play on any dog.** Each one reads its own record aloud, and each breed group opens with its own sound: a howl for the hounds, a husky's howl for the spitz breeds, a yip for the toy dogs.
 - **Filter to "Over a year"** for the 18 dogs who have been there more than 365 days.
 - **Filter to "Unnamed"** for the ones who arrived without a name.
@@ -203,7 +205,7 @@ The interesting thing about the black dog myth is not that it is wrong. It is th
 
 The real pattern is not a superstition. People are avoiding a breed. 216 of the dogs in that shelter tonight are that breed, and the ones at the top of the board have been waiting since before last summer.
 
-Pancho is not one of them. He is a small white terrier and he has been there 448 days, which is the part I cannot explain and did not try to.
+Pancho is not one of them. He is a small white terrier and he has been there 449 days, which is the part I cannot explain and did not try to.
 
 When my mom brought that second dog home, one dog stopped waiting. I did not think about it in those terms at the time and I doubt she did either. This weekend I built the list of everyone still waiting, and it turns out to be 510 names long.
 
