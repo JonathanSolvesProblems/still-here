@@ -13,7 +13,7 @@ has already been waiting.
 
 ## The finding
 
-Black dog syndrome, the belief that black dogs are passed over for their color,
+Black dog syndrome, the belief that a dark coat keeps a dog in the kennel,
 does not appear in Austin's records. Across **99,916 completed dog stays** since
 2013, black dogs leave in a median of **9 days**, faster than white, brown or
 chocolate.
@@ -163,6 +163,43 @@ Started and finished inside the DEV Weekend Challenge window (opens 2026-08-14
 02:00 UTC, closes 2026-08-17 06:59 UTC). The repository was created on
 2026-08-15 and every commit in its history falls inside that window; `git log`
 is the record. Nothing here was carried over from an earlier project.
+
+## Sources
+
+Every external claim in this project and in the writeup, and where it comes
+from. Anything not listed here is computed from the Austin data in `data/` and
+can be re-derived by running the pipeline.
+
+**Data**
+
+- Austin Animal Center intakes, live feed: <https://data.austintexas.gov/resource/pyqf-r2dc.json>
+- Austin Animal Center outcomes, live feed: <https://data.austintexas.gov/resource/gsvs-ypi7.json>
+- Austin Animal Center intakes, archive 2013-10-01 to 2025-05-05: <https://data.austintexas.gov/resource/wter-evkm.json>
+- Austin Animal Center outcomes, archive 2013-10-01 to 2025-05-05: <https://data.austintexas.gov/resource/9t4d-g238.json>
+- Photographs and adoption pages: Austin Animal Center's own listings, <https://adopt.adopets.com/shelter/austin-animal-center>. Embedded, not copied.
+
+**Claims that are not mine**
+
+| claim | source |
+|---|---|
+| Black dog syndrome is not supported; coat colour did not predict length of stay across two shelters | Hoffman et al., summarised at [ScienceDaily](https://www.sciencedaily.com/releases/2016/02/160203185534.htm) |
+| Shelter staff labelled 52% of a sample pit bull-type where DNA put it at 21% | Olson et al., *The Veterinary Journal* 206 (2015) 197-202, summary at [National Canine Research Council](https://nationalcanineresearchcouncil.com/research_library/summary-analysis-inconsistent-identification-of-pit-bull-type-dogs-by-shelter-staff/) |
+| About two million dogs were adopted from US shelters last year | [ASPCA / Shelter Animals Count](https://www.aspca.org/helping-shelters-people-pets/us-animal-shelter-statistics) |
+| Austin Animal Center operates under a City of Austin mandate of a 95% live-release rate | [City of Austin, Ordinance Change FAQs](https://austintexas.gov/page/ordinance-change-faqs) |
+| Texas stray hold periods are set by local ordinance, not by state statute | [Texas Health and Safety Code ch. 823](https://statutes.capitol.texas.gov/SOTWDocs/HS/htm/HS.823.htm) covers shelter standards and does not set a hold period |
+
+**Claims deliberately not made**
+
+The 133 dogs with no photograph are mostly recent arrivals, and a stray hold is
+the obvious explanation for that. It cannot be verified dog by dog from public
+data, so the writeup calls it the likeliest reading rather than a fact.
+
+Nothing here is causal. The analysis shows which dogs wait, not why any
+individual adopter chose as they did.
+
+"Bully-type" means *a dog Austin recorded as a pit bull, Staffordshire or
+American bulldog*, not a dog with verified ancestry. See the Olson row above for
+why that distinction matters.
 
 ## Credits
 

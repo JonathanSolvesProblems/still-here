@@ -86,6 +86,20 @@ def main():
         return [f"{n:,}", str(n)] if isinstance(n, int) else [str(n)]
 
     bad = 0
+
+    # The title and description are the most-read sentences in the submission and
+    # the easiest to leave behind on a refresh: a stale figure there still passes
+    # a whole-file search, because the corrected one is sitting in the body.
+    post = os.path.join(ROOT, "POST.md")
+    if os.path.exists(post):
+        raw = open(post, encoding="utf-8").read()
+        head = raw.split("---")[1] if raw.startswith("---") else ""
+        for stale in re.findall(r"\d{2,3},\d{3}", head):
+            if stale.replace(",", "") != str(c["stays_total"]):
+                print(f"  POST.md front matter: '{stale}' is not the corpus size "
+                      f"({c['stays_total']:,})")
+                bad += 1
+
     for fname, items in must_appear.items():
         path = os.path.join(ROOT, fname)
         if not os.path.exists(path):

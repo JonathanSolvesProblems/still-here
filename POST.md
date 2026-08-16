@@ -1,7 +1,7 @@
 ---
-title: "Everyone Believes Black Dogs Get Left Behind. I Checked 99,905 Shelter Records. They Don't."
+title: "Everyone Believes Black Dogs Get Left Behind. I Checked 99,916 Shelter Records. They Don't."
 published: false
-description: "A live board of the 510 dogs Austin hasn't placed yet, ordered by how long they have waited, and the 99,905-record reason the ones at the top are still there."
+description: "A live board of the 510 dogs Austin hasn't placed yet, ordered by how long they have waited, and the 99,916-record reason the ones at the top are still there."
 tags: weekendchallenge, snowflake, datascience, showdev
 cover_image: https://raw.githubusercontent.com/JonathanSolvesProblems/still-here/main/assets/shots/1-hero.jpg
 ---
@@ -12,7 +12,7 @@ My family's dog died recently. He lived with my mom, I met him the day he was bo
 
 A little while later my mom brought home another dog. He does not replace the first one, and nobody in my family pretends otherwise. But a house with a dog in it is a different house, and hers is whole again.
 
-That exchange happens hundreds of thousands of times a year. What I had not thought about until this weekend is that there is a queue for it, that the queue is very long for some dogs and very short for others, and that the difference is not what almost everyone believes it is.
+That exchange happened about [two million times last year in the United States alone](https://www.aspca.org/helping-shelters-people-pets/us-animal-shelter-statistics), counting dogs only. What I had not thought about until this weekend is that there is a queue for it, that the queue is very long for some dogs and very short for others, and that the difference is not what almost everyone believes it is.
 
 ## What I Built
 
@@ -141,7 +141,7 @@ I checked the join rather than trusting it: of the matched dogs that have a name
 
 **377 of the 510 have a real photograph**, embedded from the shelter's own platform rather than copied.
 
-133 have none. I nearly wrote that up as dogs being overlooked, which would have been wrong: most are recent arrivals still inside a mandatory stray hold, and their median wait is 20 days against 84 for the listed ones. But the unlisted share never drops below about a sixth at any length of stay, and **33 dogs have passed 100 days without appearing publicly at all**. Pancho is one of them, which is why the biggest frame on the page is empty.
+133 have none. I nearly wrote that up as dogs being overlooked, which would have been wrong. Their median wait is 20 days against 84 for the listed ones, so most of them are simply recent arrivals. Texas shelters hold a stray for a period before it can be offered for adoption, set by local ordinance rather than by state law, and that is the likeliest explanation for the gap. I cannot verify it dog by dog from public data, so I am not going to claim it as more than the obvious reading. But the unlisted share never drops below about a sixth at any length of stay, and **33 dogs have passed 100 days without appearing publicly at all**. Pancho is one of them, which is why the biggest frame on the page is empty.
 
 For those 133 I generated one illustration per breed group and used it as a CSS mask, so the alpha channel carries the drawing while the fill comes from the coat the shelter recorded. A black pit bull and a white Great Pyrenees stay visibly different animals. They illustrate a breed *type*, never an individual: generating a portrait of a specific dog nobody has photographed would be inventing evidence about a real animal, and the "no photograph on file" caption stays on every one.
 
@@ -157,7 +157,7 @@ The clips are recordings made on 2026-08-15, so a day count spoken aloud can sit
 
 Name, coat, breed, intake reason, intake date, elapsed days, cohort percentile, cohort median. Eight fields, no biography, no "loves long walks". The phrasing varies between dogs but is selected by a hash of the animal ID rather than randomly, so re-running produces byte-identical scripts.
 
-The pit bulls deliberately got the warmest, deepest voice available, because 51 of the dogs without photographs are pit bulls and a growling read would reinforce the exact prejudice the other 99,916 records spend this whole page dismantling.
+The pit bulls deliberately got the warmest, deepest voice available, because 51 of the dogs without photographs are pit bulls and a growling read would reinforce the exact assumption the other 99,916 records spend this whole page dismantling.
 
 A straight top-16 by wait length turned out to be thirteen pit bulls, which meant no howl or yip would ever have played anywhere, so the generator tops up with the longest waiter from every breed group the top-16 missed. Twenty-three clips, all ten groups.
 
@@ -185,7 +185,7 @@ ElevenLabs gives 23 dogs a voice and gives each breed group its own animal, gene
 
 ## What this is not
 
-This is one municipal shelter, and Austin is a no-kill city with an unusually high live-release rate, so these waits are likely shorter than the national picture rather than longer.
+This is one municipal shelter, and an atypical one. Austin Animal Center operates under a [City of Austin mandate of a 95% live-release rate](https://austintexas.gov/page/ordinance-change-faqs), so these waits are likely shorter than the national picture rather than longer.
 
 Nothing here is causal. It shows which dogs wait, not why any individual adopter chose as they did.
 
@@ -195,7 +195,7 @@ Breed labels deserve a warning too. They are assigned by staff from appearance, 
 
 ## Why I built it
 
-The interesting thing about the black dog myth is not that it is wrong. It is that it is a *kinder* thing to believe. If dogs are passed over for their color, that is a superstition, and superstitions can be argued away with a good photo and a hashtag.
+The interesting thing about the black dog myth is not that it is wrong. It is that it is a *kinder* thing to believe. If dogs are passed over for the colour of their coat, that is a superstition, and superstitions can be argued away with a good photo and a hashtag.
 
 The real pattern is not a superstition. People are avoiding a breed. 216 of the dogs in that shelter tonight are that breed, and the ones at the top of the board have been waiting since before last summer.
 
